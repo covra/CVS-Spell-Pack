@@ -71,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4837896541254483191
+  Name: "Animated Neon Sign - Flags"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "fxsm_NeonSign_flags"
+  }
+}
+Assets {
   Id: 3066870136491835037
   Name: "Decal Elven Symbols"
   PlatformAssetType: 14
