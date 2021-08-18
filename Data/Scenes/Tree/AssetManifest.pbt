@@ -8,12 +8,30 @@ Assets {
   }
 }
 Assets {
+  Id: 16322635077100878811
+  Name: "Generic Muzzleflash VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_generic_muzzleflash"
+  }
+}
+Assets {
   Id: 15857297983291997403
   Name: "Fantasy Book Open 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fan_book_open_001_ref"
+  }
+}
+Assets {
+  Id: 15640746390725125720
+  Name: "Whitebox Wall 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_wall_001"
   }
 }
 Assets {
@@ -53,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8468221781841598779
+  Name: "Plasma Muzzleflash VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_plasma_muzzleflash"
+  }
+}
+Assets {
   Id: 7887238662729938253
   Name: "Sky Dome"
   PlatformAssetType: 6
@@ -71,6 +98,24 @@ Assets {
   }
 }
 Assets {
+  Id: 4743545353488241913
+  Name: "Tank Muzzle Flash VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_mil_tank_mf"
+  }
+}
+Assets {
+  Id: 3906146812223150222
+  Name: "Flashbang Post Process"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_ppm_flashbang_vfx"
+  }
+}
+Assets {
   Id: 3066870136491835037
   Name: "Decal Elven Symbols"
   PlatformAssetType: 14
@@ -86,5 +131,14 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxmi_add_edgeline_sharpline_topfade"
+  }
+}
+Assets {
+  Id: 132672053610873933
+  Name: "Plastic Matte"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_matte_001"
   }
 }

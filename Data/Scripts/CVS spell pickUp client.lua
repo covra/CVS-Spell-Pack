@@ -4,17 +4,23 @@ local VFX_CIRCLES = (script:GetCustomProperty("VFX_Circles"):WaitForObject()):Ge
 local VFX_BEAM = script:GetCustomProperty("VFX_Beam"):WaitForObject()
 local SFX_PICK = script:GetCustomProperty("SFX_Pick"):WaitForObject()
 local SFX_SUCTION = script:GetCustomProperty("SFX_suction"):WaitForObject()
-
+local ROOT_SPELL	 = script:GetCustomProperty("rootSpell"):WaitForObject()
+local MAIN_EQUIP = ROOT_SPELL:FindAncestorByType("Equipment")
 --user exposed
 local ANIM_TYPE = script:GetCustomProperty("animationType")
 --local
 local localPlayer = Game.GetLocalPlayer()
-
+local listAdd = nil
 
 -------------------------------------------------------
 
-function onRecServ (player)
+function onRecServ (player, destroy)
 	if player == localPlayer then 
+		if destroy then 
+			if Object.IsValid(script.parent) then 
+				script.parent:Destroy()
+			end
+		end 
 		Task.Wait(0.5)
 		local refPos = player:GetWorldPosition()
 		startAnim()
@@ -34,8 +40,7 @@ function startAnim()
 		Task.Wait(1)
 		SFX_SUCTION:Play()
 		Task.Wait(1.5)
-		VISUAL_FOLDER.visibility = Visibility.FORCE_OFF
-		
+		VISUAL_FOLDER.visibility = Visibility.FORCE_OFF		
 	else 
 	end 
 end 
@@ -52,4 +57,15 @@ function animCircles()
 	end 
 end 
 
-Events.Connect("SPL.add", onRecServ)
+function onDestroy (objectSelf)
+	listAdd:Disconnect()
+end
+
+listAdd = Events.Connect("SPL.add", onRecServ)
+script.destroyEvent:Connect( onDestroy )
+
+if MAIN_EQUIP then 
+	if MAIN_EQUIP:GetCustomProperty("isMainEquipment") then 
+		script.parent:Destroy()
+	end
+end 

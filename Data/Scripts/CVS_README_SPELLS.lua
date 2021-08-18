@@ -7,7 +7,7 @@ Features
 Main Equipment
 --------------
 	- isMainEquipment: If true, new picked spells will be added to this equipment. If false, when pick new spell, older will be deleted. Default = true
-
+	- if spells are added to main equipment before the game starts, the script will delete the PickUp Object' folder from inside 'Client Context' folder to save performance
 Spells
 ---------
 custom properties

@@ -15,9 +15,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 16238231457572033949
         ChildIds: 11378430699751749919
-        ChildIds: 12848865102129506073
         ChildIds: 7842929756320764398
         ChildIds: 220413047582408249
         ChildIds: 4298867992406349540
@@ -28,7 +27,7 @@ Assets {
           }
           Overrides {
             Name: "cs:spell_Name"
-            String: "Blast of Fire"
+            String: "Fire Balls"
           }
           Overrides {
             Name: "cs:isPickable:tooltip"
@@ -58,16 +57,16 @@ Assets {
           }
           Weapon {
             ProjectileAssetRef {
-              Id: 841534158063459245
+              Id: 10035475313569214919
             }
             MuzzleFlashAssetRef {
-              Id: 841534158063459245
+              Id: 6006475471038264845
             }
             TrailAssetRef {
-              Id: 841534158063459245
+              Id: 12841816668802294556
             }
             ImpactAssetRef {
-              Id: 841534158063459245
+              Id: 14315832551668553556
             }
             Muzzle {
               Location {
@@ -84,6 +83,7 @@ Assets {
             ImpactProjectileAssetRef {
               Id: 841534158063459245
             }
+            IsHitscan: true
             BeamAssetRef {
               Id: 841534158063459245
             }
@@ -99,7 +99,7 @@ Assets {
             MaxAmmo: -1
             AmmoType: "fireBalls"
             MultiShot: 1
-            ProjectileSpeed: 20000
+            ProjectileSpeed: 2000
             ProjectileLifeSpan: 10
             ProjectileGravity: 1
             ProjectileLength: 100
@@ -113,7 +113,7 @@ Assets {
               SubObjectId: 11378430699751749919
             }
             ReloadAbility {
-              SubObjectId: 12848865102129506073
+              SelfId: 841534158063459245
             }
             Damage: 10
             WeaponTrajectoryMode {
@@ -153,7 +153,7 @@ Assets {
         Ability {
           IsEnabled: true
           CastPhaseSettings {
-            Duration: 0.5
+            Duration: 0.1
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -164,7 +164,7 @@ Assets {
             }
           }
           ExecutePhaseSettings {
-            Duration: 0.3
+            Duration: 0.1
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -175,7 +175,7 @@ Assets {
             }
           }
           RecoveryPhaseSettings {
-            Duration: 0.2
+            Duration: 0.05
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -186,7 +186,7 @@ Assets {
             }
           }
           CooldownPhaseSettings {
-            Duration: 1
+            Duration: 0.2
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -199,88 +199,6 @@ Assets {
           Animation: "unarmed_magic_bolt"
           KeyBinding_v2 {
             Value: "mc:egameaction:extraaction_11"
-          }
-        }
-      }
-      Objects {
-        Id: 12848865102129506073
-        Name: "test"
-        Transform {
-          Location {
-            X: 219.652481
-            Y: -1076.88184
-            Z: -2.28881836e-05
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 14517814200896022533
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Ability {
-          IsEnabled: true
-          CastPhaseSettings {
-            Duration: 0.15
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
-            }
-          }
-          ExecutePhaseSettings {
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
-            }
-          }
-          RecoveryPhaseSettings {
-            Duration: 0.1
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
-            }
-          }
-          CooldownPhaseSettings {
-            Duration: 3
-            CanMove: true
-            CanJump: true
-            CanRotate: true
-            PreventOtherAbilities: true
-            IsTargetDataUpdated: true
-            Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
-            }
-          }
-          Animation: "1hand_melee_slash_left"
-          KeyBinding_v2 {
-            Value: "mc:egameaction:primaryaction"
           }
         }
       }
@@ -539,12 +457,22 @@ Assets {
             String: "FLAMES"
           }
           Overrides {
+            Name: "cs:rootSpell"
+            ObjectReference {
+              SubObjectId: 14517814200896022533
+            }
+          }
+          Overrides {
             Name: "cs:visualReference:tooltip"
             String: "Visual reference of the pickable spell"
           }
           Overrides {
             Name: "cs:animationType:tooltip"
             String: "Type of animation pre-defined. FLAMES: flames will be faster when player pickup the spell on his direction"
+          }
+          Overrides {
+            Name: "cs:rootSpell:tooltip"
+            String: "The spell associated to this script"
           }
         }
         Collidable_v2 {
