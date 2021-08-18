@@ -22,7 +22,8 @@ Objects {
   ChildIds: 14982843161775482339
   ChildIds: 2803615599128017152
   ChildIds: 8545238584137842983
-  ChildIds: 6150613972846801875
+  ChildIds: 16238231457572033949
+  ChildIds: 17583822433309865786
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,16 +39,9 @@ Objects {
   }
 }
 Objects {
-  Id: 6150613972846801875
-  Name: "BRANCH"
+  Id: 17583822433309865786
+  Name: "SPELL 1_fireBall"
   Transform {
-    Location {
-      X: -486.96698
-      Y: -563.842163
-      Z: 349.329834
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -55,99 +49,49 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 13599479979165792470
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 13599479979165792470
-  Name: "Animated Neon Sign - Flags"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6150613972846801875
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4837896541254483191
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14517814200896022533
+      value {
+        Overrides {
+          Name: "Name"
+          String: "SPELL 1_fireBall"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -219.652481
+            Y: 1076.88184
+            Z: 2.28881836e-05
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
       }
-      BoundsScale: 1
     }
-  }
-}
-Objects {
-  Id: 8545238584137842983
-  Name: "CVS Utils and equip"
-  Transform {
-    Location {
-      X: 78.4503403
-      Y: 806.055542
-      Z: 2.28881836e-05
+    TemplateAsset {
+      Id: 8430762303253286298
     }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  ChildIds: 3908015111613228630
-  ChildIds: 2746581803285178018
-  ChildIds: 16238231457572033949
-  Folder {
-    IsGroup: true
   }
 }
 Objects {
   Id: 16238231457572033949
-  Name: "Equipment"
+  Name: "CVS_Spell_Equipment"
   Transform {
     Location {
-      X: -413.180847
-      Y: 9.52481079
+      X: -334.730499
+      Y: 746.044434
+      Z: 105.28315
     }
     Rotation {
     }
@@ -157,10 +101,20 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8545238584137842983
+  ParentId: 4781671109827199097
   ChildIds: 15722913369382382097
   ChildIds: 8400951071151878478
   ChildIds: 5050408978642061218
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:isMainEquipment"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:isMainEquipment:tooltip"
+      String: "If true, new picked spells will be added to this equipment. If false, when pick new spell, older will be deleted. Default = true"
+    }
+  }
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -175,7 +129,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Equipment {
-    SocketName: "necke"
+    SocketName: "neck"
     PickupTrigger {
       SelfId: 15722913369382382097
     }
@@ -186,12 +140,14 @@ Objects {
   Name: "ClientContext"
   Transform {
     Location {
-      Z: 119.016945
+      X: 75
+      Y: -30
+      Z: -5
     }
     Rotation {
-      Pitch: 17.9634724
-      Yaw: -56.8628235
-      Roll: -11.6579285
+      Pitch: 60
+      Yaw: -60
+      Roll: -30
     }
     Scale {
       X: 1
@@ -264,9 +220,6 @@ Objects {
   Name: "GeoArt"
   Transform {
     Location {
-      X: 22.5264854
-      Y: 3.15575504
-      Z: -16.2167416
     }
     Rotation {
     }
@@ -554,7 +507,6 @@ Objects {
   }
   ParentId: 16238231457572033949
   ChildIds: 14398677201966980398
-  ChildIds: 1046568257273675022
   ChildIds: 2630137108127840356
   WantsNetworking: true
   Collidable_v2 {
@@ -615,49 +567,6 @@ Objects {
   }
 }
 Objects {
-  Id: 1046568257273675022
-  Name: "CVS reactivateEquipment"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8400951071151878478
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:timeToActivate"
-      Int: 5
-    }
-    Overrides {
-      Name: "cs:timeToActivate:tooltip"
-      String: "if equipment is unequiped, this script allow re-activate it. "
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Script {
-    ScriptAsset {
-      Id: 5056778248312316157
-    }
-  }
-}
-Objects {
   Id: 14398677201966980398
   Name: "CVS animatedStance"
   Transform {
@@ -702,7 +611,7 @@ Objects {
 }
 Objects {
   Id: 15722913369382382097
-  Name: "BoxTrigger"
+  Name: "takeTrigger"
   Transform {
     Location {
     }
@@ -715,6 +624,16 @@ Objects {
     }
   }
   ParentId: 16238231457572033949
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:prefixInteractLabel"
+      String: "Do you want to take"
+    }
+    Overrides {
+      Name: "cs:prefixInteractLabel:tooltip"
+      String: "This will be the prefix of the interaction label (before the own spell name). Enabled if \'isPickable\' option is enabled"
+    }
+  }
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -736,6 +655,30 @@ Objects {
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
     }
+  }
+}
+Objects {
+  Id: 8545238584137842983
+  Name: "CVS Utils and equip"
+  Transform {
+    Location {
+      X: 78.4503403
+      Y: 806.055542
+      Z: 2.28881836e-05
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 3908015111613228630
+  ChildIds: 2746581803285178018
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
