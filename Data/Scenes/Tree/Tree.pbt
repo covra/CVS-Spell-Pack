@@ -24,8 +24,7 @@ Objects {
   ChildIds: 8545238584137842983
   ChildIds: 5340693029167821513
   ChildIds: 16238231457572033949
-  ChildIds: 3546863709838169861
-  ChildIds: 1694681764619882750
+  ChildIds: 18268297516306964138
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -41,94 +40,57 @@ Objects {
   }
 }
 Objects {
-  Id: 1694681764619882750
-  Name: "fireBall Impact Player"
+  Id: 18268297516306964138
+  Name: "Cube - Rounded"
   Transform {
+    Location {
+      X: -81.3391876
+      Y: 128.707199
+      Z: 97.5215836
+    }
+    Rotation {
+    }
     Scale {
       X: 1
-      Y: 1
-      Z: 1
+      Y: 4.69710875
+      Z: 2.94298959
     }
   }
   ParentId: 4781671109827199097
-  WantsNetworking: true
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 5343263032295693167
+      }
+    }
+  }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1340338591592003177
-      value {
-        Overrides {
-          Name: "Name"
-          String: "fireBall Impact Player"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 2357.37427
-            Y: -547.708252
-            Z: 796.591064
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18441653383185430768
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
       }
-    }
-    TemplateAsset {
-      Id: 3296553996154350859
-    }
-  }
-}
-Objects {
-  Id: 3546863709838169861
-  Name: "fireBall Impact Player_2nd"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16862077629249931547
-      value {
-        Overrides {
-          Name: "Name"
-          String: "fireBall Impact Player_2nd"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 2356.32739
-            Y: -338.685486
-            Z: 190.82605
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 8507973944816971552
+      BoundsScale: 1
     }
   }
 }
@@ -153,7 +115,7 @@ Objects {
   ChildIds: 15722913369382382097
   ChildIds: 8400951071151878478
   ChildIds: 5050408978642061218
-  ChildIds: 18058920484416290844
+  ChildIds: 629839469868872539
   UnregisteredParameters {
     Overrides {
       Name: "cs:isMainEquipment"
@@ -185,8 +147,8 @@ Objects {
   }
 }
 Objects {
-  Id: 18058920484416290844
-  Name: "SPELL 1_fireBall"
+  Id: 629839469868872539
+  Name: "SPELL 2_fireBlast"
   Transform {
     Scale {
       X: 1
@@ -204,35 +166,24 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 11378430699751749919
+      key: 18438290002749979220
       value {
         Overrides {
           Name: "Name"
-          String: "Throw Fire Ball"
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 14517814200896022533
-      value {
-        Overrides {
-          Name: "Name"
-          String: "SPELL 1_fireBall"
+          String: "SPELL 2_fireBlast"
         }
         Overrides {
-          Name: "Position"
+          Name: "Scale"
           Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 8430762303253286298
+      Id: 17479822332702538697
     }
   }
 }
@@ -1362,8 +1313,42 @@ Objects {
   ChildIds: 10922896870361111873
   ChildIds: 16974235620108989198
   ChildIds: 15946561993339403393
+  ChildIds: 10333537384130832567
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 10333537384130832567
+  Name: "hitpoints"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8545238584137842983
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5839550811326296697
+    }
   }
 }
 Objects {
