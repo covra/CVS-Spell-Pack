@@ -1,10 +1,11 @@
 local LAVA_DROPS = script:GetCustomProperty("fireBallLavaDrops")
 local ROOT = script.parent
 local localPlayer = Game.GetLocalPlayer()
+local SFX = script:GetCustomProperty("SFX"):WaitForObject()
 
 function Tick ()
 	Task.Spawn(function()
-		if Object.IsValid(script) then 
+		if Object.IsValid(script) and Object.IsValid(LAVA_DROPS) then 
 			local drop = World.SpawnAsset(LAVA_DROPS,{position = script:GetWorldPosition()})
 			Task.Spawn(function()
 				local dropS = drop:FindDescendantByType("StaticMesh")			
@@ -38,8 +39,15 @@ Task.Spawn(function()
 			Task.Wait(0.2)
 		end 
 		Task.Spawn(function() 
-			local spark = ROOT:FindDescendantByName("Impact Sparks VFX")
-			spark:SetSmartProperty("Looping", false)
+			if Object.IsValid(ROOT) then 
+				local spark = ROOT:FindDescendantByName("Impact Sparks VFX")
+				spark:SetSmartProperty("Looping", false)
+			end 
 		end,1.5)
+		Task.Spawn(function() 
+			if Object.IsValid(SFX) then 
+				SFX:Stop()
+			end 
+		end,1)
 	end
 end,14)
