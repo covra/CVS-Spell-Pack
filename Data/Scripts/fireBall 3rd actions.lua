@@ -41,7 +41,9 @@ Task.Spawn(function()
 		Task.Spawn(function() 
 			if Object.IsValid(ROOT) then 
 				local spark = ROOT:FindDescendantByName("Impact Sparks VFX")
-				spark:SetSmartProperty("Looping", false)
+				if spark then 
+					spark:SetSmartProperty("Looping", false)
+				end 
 			end 
 		end,1.5)
 		Task.Spawn(function() 
@@ -51,3 +53,4 @@ Task.Spawn(function()
 		end,1)
 	end
 end,14)
+

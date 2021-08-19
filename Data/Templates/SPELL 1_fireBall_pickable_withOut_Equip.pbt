@@ -1,13 +1,13 @@
 Assets {
-  Id: 8430762303253286298
-  Name: "SPELL 1_fireBall"
+  Id: 6641108677877093713
+  Name: "SPELL 1_fireBall_pickable_withOut_Equip"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14517814200896022533
       Objects {
         Id: 14517814200896022533
-        Name: "SPELL 1_fireBall"
+        Name: "SPELL 1_fireBall_pickable_withOut_Equip"
         Transform {
           Scale {
             X: 1
@@ -18,7 +18,6 @@ Assets {
         ParentId: 16238231457572033949
         ChildIds: 11378430699751749919
         ChildIds: 7842929756320764398
-        ChildIds: 784002915497078422
         ChildIds: 220413047582408249
         ChildIds: 4298867992406349540
         UnregisteredParameters {
@@ -31,20 +30,12 @@ Assets {
             String: "Fire Balls"
           }
           Overrides {
-            Name: "cs:extraFireDamage"
-            Bool: true
-          }
-          Overrides {
             Name: "cs:isPickable:tooltip"
             String: "If enabled, the spell will remain at its place and when player take it, it will play an animation and will dissapear from floor/place. Default = enabled"
           }
           Overrides {
             Name: "cs:spell_Name:tooltip"
             String: "The name of the spell as you want it will be shown in many places"
-          }
-          Overrides {
-            Name: "cs:extraFireDamage:tooltip"
-            String: "If enabled, a fire extra will burn the target player causing extra damage. Default = enabled"
           }
         }
         WantsNetworking: true
@@ -63,6 +54,7 @@ Assets {
         Equipment {
           SocketName: "right_prop"
           PickupTrigger {
+            SubObjectId: 7842929756320764398
           }
           Weapon {
             ProjectileAssetRef {
@@ -100,7 +92,7 @@ Assets {
             BurstDuration: 4
             Range: 100000
             ImpactPlayerAssetRef {
-              Id: 3296553996154350859
+              Id: 841534158063459245
             }
             ReticleType {
               Value: "mc:ereticletype:none"
@@ -257,82 +249,6 @@ Assets {
           }
           TriggerShape_v2 {
             Value: "mc:etriggershape:box"
-          }
-        }
-      }
-      Objects {
-        Id: 784002915497078422
-        Name: "SP_extraDamage"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 14517814200896022533
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:rootSpell"
-            ObjectReference {
-              SubObjectId: 14517814200896022533
-            }
-          }
-          Overrides {
-            Name: "cs:damage"
-            Int: 5
-          }
-          Overrides {
-            Name: "cs:timeRate"
-            Float: 3
-          }
-          Overrides {
-            Name: "cs:timeTotal"
-            Int: 15
-          }
-          Overrides {
-            Name: "cs:extraDmgVisual"
-            AssetReference {
-              Id: 8507973944816971552
-            }
-          }
-          Overrides {
-            Name: "cs:damage:tooltip"
-            String: "damage done to target player"
-          }
-          Overrides {
-            Name: "cs:timeRate:tooltip"
-            String: "time rate in seconds to do the damage"
-          }
-          Overrides {
-            Name: "cs:extraDmgVisual:tooltip"
-            String: "FX to attach to the player when extra damage is done"
-          }
-          Overrides {
-            Name: "cs:timeTotal:tooltip"
-            String: "Total time suffering damage"
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 4820230415548906489
           }
         }
       }

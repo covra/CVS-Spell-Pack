@@ -116,6 +116,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3357972230609358657
+  Name: "Japanese Table 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_jpn_table_001_ref"
+  }
+}
+Assets {
   Id: 3066870136491835037
   Name: "Decal Elven Symbols"
   PlatformAssetType: 14
