@@ -8,6 +8,24 @@ Assets {
   }
 }
 Assets {
+  Id: 17518180378751572853
+  Name: "Suction Whoosh 05 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_suction_whoosh_05_Cue_ref"
+  }
+}
+Assets {
+  Id: 17239665496848081969
+  Name: "Dust Motes Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_dust_motes"
+  }
+}
+Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -35,6 +53,24 @@ Assets {
   }
 }
 Assets {
+  Id: 15696524381397938084
+  Name: "Magic Circle Generator Advanced: Scifi VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_magic_circle_generator_scifi"
+  }
+}
+Assets {
+  Id: 15664487798598489960
+  Name: "Beam Up Teleport VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_Teleporter"
+  }
+}
+Assets {
   Id: 15640746390725125720
   Name: "Whitebox Wall 01"
   PlatformAssetType: 1
@@ -50,6 +86,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_grass_artificial_001_uv_ref"
+  }
+}
+Assets {
+  Id: 14040801277181328014
+  Name: "Torch Fire VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_torch_fire"
+  }
+}
+Assets {
+  Id: 12353421659613261783
+  Name: "Sphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_002"
   }
 }
 Assets {
@@ -77,6 +131,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Skylight"
+  }
+}
+Assets {
+  Id: 9337660376557937055
+  Name: "Magic Dark Low Drone Spell Cast 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_magic_dark_low_drone_spell_cast_01_Cue_ref"
   }
 }
 Assets {

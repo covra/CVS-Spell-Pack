@@ -1,0 +1,8 @@
+local target = script:GetCustomProperty("target"):WaitForObject()
+local size = target:GetWorldScale()
+Task.Wait(.45)
+target:ScaleTo(size * 5, .1)
+Task.Wait(.7)
+target:ScaleTo(size * 10, .1)
+Task.Wait(.7)
+target:ScaleTo(size * 20, .1)

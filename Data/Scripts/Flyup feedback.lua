@@ -58,4 +58,4 @@ function OnPlayerJoined(player)
 	player.damagedEvent:Connect( onDamage )
 end
 
-Game.playerJoinedEvent:Connect(OnPlayerJoined)
+--Game.playerJoinedEvent:Connect(OnPlayerJoined)

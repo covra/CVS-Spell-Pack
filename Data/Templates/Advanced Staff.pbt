@@ -36,7 +36,7 @@ Assets {
           Overrides {
             Name: "cs:SwingSound"
             AssetReference {
-              Id: 13033197038424522750
+              Id: 841534158063459245
             }
           }
           Overrides {

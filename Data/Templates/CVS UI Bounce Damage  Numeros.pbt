@@ -142,7 +142,7 @@ Assets {
           Overrides {
             Name: "cs:damage"
             AssetReference {
-              Id: 10709354924124644891
+              Id: 841534158063459245
             }
           }
           Overrides {

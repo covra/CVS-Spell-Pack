@@ -7,7 +7,7 @@ Assets {
       RootId: 18438290002749979220
       Objects {
         Id: 18438290002749979220
-        Name: "SPELL 2_fireBlast"
+        Name: "SPELL 2_shrapnel"
         Transform {
           Scale {
             X: 1
@@ -27,7 +27,7 @@ Assets {
           }
           Overrides {
             Name: "cs:spell_Name"
-            String: "Fire Balls"
+            String: "Fire Shrapnel"
           }
           Overrides {
             Name: "cs:isPickable:tooltip"
@@ -57,7 +57,7 @@ Assets {
           }
           Weapon {
             ProjectileAssetRef {
-              Id: 10035475313569214919
+              Id: 10907755067141016943
             }
             MuzzleFlashAssetRef {
               Id: 6006475471038264845
@@ -83,7 +83,6 @@ Assets {
             ImpactProjectileAssetRef {
               Id: 841534158063459245
             }
-            IsHitscan: true
             BeamAssetRef {
               Id: 841534158063459245
             }
@@ -99,12 +98,14 @@ Assets {
             MaxAmmo: -1
             AmmoType: "fireBalls"
             MultiShot: 1
-            ProjectileSpeed: 2000
+            ProjectileSpeed: 20000
             ProjectileLifeSpan: 10
             ProjectileGravity: 1
             ProjectileLength: 100
             ProjectileRadius: 4
-            SpreadMin: 1
+            ProjectileBounces: 5
+            ProjectilePierces: 1
+            SpreadMin: 45
             SpreadMax: 90
             SpreadDecreaseSpeed: 6
             SpreadIncreasePerShot: 2
@@ -124,7 +125,7 @@ Assets {
       }
       Objects {
         Id: 2641076081744724684
-        Name: "Throw"
+        Name: "Spread Shrapnel"
         Transform {
           Location {
           }
@@ -198,7 +199,7 @@ Assets {
           }
           Animation: "unarmed_magic_bolt"
           KeyBinding_v2 {
-            Value: "mc:egameaction:extraaction_11"
+            Value: "mc:egameaction:primaryaction"
           }
         }
       }

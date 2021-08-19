@@ -1,9 +1,9 @@
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local LIGHT = script:GetCustomProperty("Light"):WaitForObject()
 
-local MIN_RADIUS = ROOT:GetCustomProperty("MinRadius") or 500
-local MAX_RADIUS = ROOT:GetCustomProperty("MaxRadius") or 700
-local FLICKER_SPEED = ROOT:GetCustomProperty("FlickerSpeed") or 36
+local MIN_RADIUS = ROOT:GetCustomProperty("MinRadius") or 50
+local MAX_RADIUS = ROOT:GetCustomProperty("MaxRadius") or 100
+local FLICKER_SPEED = ROOT:GetCustomProperty("FlickerSpeed") or 15
 
 -- Validate input
 MIN_RADIUS = math.max(1, MIN_RADIUS)
