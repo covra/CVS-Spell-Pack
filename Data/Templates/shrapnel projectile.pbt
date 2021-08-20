@@ -16,7 +16,6 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 18130465727699825408
         ChildIds: 3466642534255813024
         ChildIds: 9594941301427285997
         ChildIds: 3468273980681297549
@@ -32,61 +31,6 @@ Assets {
           Value: "mc:ecollisionsetting:forceoff"
         }
         NetworkContext {
-        }
-      }
-      Objects {
-        Id: 18130465727699825408
-        Name: "Fire Ball Bullet"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.433902889
-            Y: 0.433902889
-            Z: 0.433902889
-          }
-        }
-        ParentId: 2133325025564152900
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 8406654603017027461
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.679999948
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17599463513586113556
-          }
-          Teams {
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
         }
       }
       Objects {
@@ -1335,15 +1279,6 @@ Assets {
         Relevance {
           Value: "mc:eproxyrelevance:critical"
         }
-      }
-    }
-    Assets {
-      Id: 17599463513586113556
-      Name: "Ball"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_sphere_001"
       }
     }
     Assets {

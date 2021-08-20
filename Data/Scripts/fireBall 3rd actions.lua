@@ -5,7 +5,7 @@ local SFX = script:GetCustomProperty("SFX"):WaitForObject()
 
 function Tick ()
 	Task.Spawn(function()
-		if Object.IsValid(script) and Object.IsValid(LAVA_DROPS) then 
+		if Object.IsValid(script) and LAVA_DROPS ~= nil then 					
 			local drop = World.SpawnAsset(LAVA_DROPS,{position = script:GetWorldPosition()})
 			Task.Spawn(function()
 				local dropS = drop:FindDescendantByType("StaticMesh")			
@@ -24,7 +24,7 @@ function Tick ()
 		end
 	end)
 	local randTime = math.random (1,5)
-	Task.Wait(1/randTime)
+	Task.Wait((1/randTime) *2)
 end 
 
 Task.Spawn(function() 
