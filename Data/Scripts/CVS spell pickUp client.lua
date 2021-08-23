@@ -5,7 +5,6 @@ local VFX_BEAM = script:GetCustomProperty("VFX_Beam"):WaitForObject()
 local SFX_PICK = script:GetCustomProperty("SFX_Pick"):WaitForObject()
 local SFX_SUCTION = script:GetCustomProperty("SFX_suction"):WaitForObject()
 local ROOT_SPELL	 = script:GetCustomProperty("rootSpell"):WaitForObject()
-local MAIN_EQUIP = ROOT_SPELL:FindAncestorByType("Equipment")
 --user exposed
 local ANIM_TYPE = script:GetCustomProperty("animationType")
 --local
@@ -14,22 +13,22 @@ local listAdd = nil
 
 -------------------------------------------------------
 
-function onRecServ (player, destroy)
-	if player == localPlayer then 
+function onRecServ (player, destroy, ref)
+	local spell = ref:GetObject()
+	if player == localPlayer and spell == ROOT_SPELL then  
 		if destroy then 
 			if Object.IsValid(script.parent) then 
 				script.parent:Destroy()
 			end
 		end 
 		Task.Wait(0.5)
-		local refPos = player:GetWorldPosition()
 		startAnim()
 	end 
 end
 
 function startAnim()
 	local isAnim = true
-	if ANIM_TYPE == "FLAMES" then 		
+	if ANIM_TYPE == "FLAMES" then 	
 		local flames = VISUAL_FOLDER:FindDescendantsByName("Torch Fire VFX")
 		local vector = (localPlayer:GetWorldPosition() - VISUAL_FOLDER:GetWorldPosition()):GetNormalized()
 		for _, flam in pairs (flames) do
@@ -63,9 +62,3 @@ end
 
 listAdd = Events.Connect("SPL.add", onRecServ)
 script.destroyEvent:Connect( onDestroy )
-
-if MAIN_EQUIP then 
-	if MAIN_EQUIP:GetCustomProperty("isMainEquipment") then 
-		script.parent:Destroy()
-	end
-end 

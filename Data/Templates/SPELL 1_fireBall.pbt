@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16238231457572033949
+        ParentId: 4781671109827199097
         ChildIds: 11378430699751749919
         ChildIds: 7842929756320764398
         ChildIds: 784002915497078422
@@ -23,7 +23,7 @@ Assets {
         ChildIds: 4298867992406349540
         UnregisteredParameters {
           Overrides {
-            Name: "cs:isPickable"
+            Name: "cs:linkToEquipment"
             Bool: true
           }
           Overrides {
@@ -35,8 +35,8 @@ Assets {
             Bool: true
           }
           Overrides {
-            Name: "cs:isPickable:tooltip"
-            String: "If enabled, the spell will remain at its place and when player take it, it will play an animation and will dissapear from floor/place. Default = enabled"
+            Name: "cs:linkToEquipment:tooltip"
+            String: "If enabled,  animation stance, and some FX will be added when fire spell. Default = true"
           }
           Overrides {
             Name: "cs:spell_Name:tooltip"
@@ -227,14 +227,6 @@ Assets {
         }
         ParentId: 14517814200896022533
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:prefixInteractLabel"
-            String: "Do you want to take "
-          }
-          Overrides {
-            Name: "cs:prefixInteractLabel:tooltip"
-            String: "This will be the prefix of the interaction label (before the own spell name). Enabled if \'isPickable\' option is enabled"
-          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -251,6 +243,7 @@ Assets {
         }
         Trigger {
           Interactable: true
+          InteractionLabel: "Do you want to take "
           TeamSettings {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
@@ -353,6 +346,7 @@ Assets {
         ParentId: 14517814200896022533
         ChildIds: 5437137079832640370
         ChildIds: 4699712378447353105
+        ChildIds: 10436819873746595036
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -461,6 +455,47 @@ Assets {
         Script {
           ScriptAsset {
             Id: 12827049940594866193
+          }
+        }
+      }
+      Objects {
+        Id: 10436819873746595036
+        Name: "EquipmentPickupServer"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 220413047582408249
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Trigger"
+            ObjectReference {
+              SubObjectId: 7842929756320764398
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 8459825612529451237
           }
         }
       }

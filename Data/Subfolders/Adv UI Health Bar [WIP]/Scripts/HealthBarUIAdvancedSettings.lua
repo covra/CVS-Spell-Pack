@@ -238,7 +238,8 @@ function Tick(deltaTime)
 
         if(UI_SETTINGS.showProfileImage) then
             -- fix
-            profileImage:SetImage(player)
+            --profileImage:SetImage(player) ---deprecated
+            profileImage:SetPlayerProfile(player)
         end
     end
 end
@@ -378,7 +379,8 @@ else
 
     if (not useRegularProgressBar) then
 
-        healthBarProgressBar.isVisible = false
+        --healthBarProgressBar.isVisible = false				-- deprecated
+        healthBarProgressBar.visibility = Visibility.FORCE_OFF --
         -- Load custom Profile Image Frame
         local custProgressBar = World.SpawnAsset(UI_SETTINGS.customHealthbarDefault, {parent = healthBarProgressPanel})
         custProgressBar.width = healthBarProgressPanel.width
