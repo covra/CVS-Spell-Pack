@@ -20,11 +20,12 @@ Assets {
         ChildIds: 7842929756320764398
         ChildIds: 784002915497078422
         ChildIds: 220413047582408249
+        ChildIds: 6815005413079042529
         ChildIds: 4298867992406349540
         UnregisteredParameters {
           Overrides {
             Name: "cs:linkToEquipment"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:spell_Name"
@@ -500,10 +501,11 @@ Assets {
         }
       }
       Objects {
-        Id: 4298867992406349540
-        Name: "ClientContext"
+        Id: 6815005413079042529
+        Name: "PickUp FX"
         Transform {
           Location {
+            Y: 1.07769775
           }
           Rotation {
           }
@@ -514,7 +516,6 @@ Assets {
           }
         }
         ParentId: 14517814200896022533
-        ChildIds: 15074353436161504672
         ChildIds: 5291700375696588929
         WantsNetworking: true
         Collidable_v2 {
@@ -533,50 +534,10 @@ Assets {
         }
       }
       Objects {
-        Id: 15074353436161504672
-        Name: "WeaponSpreadClient"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4298867992406349540
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:SpreadStandPrecision"
-            Float: 0.95
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 6652974207271369531
-          }
-        }
-      }
-      Objects {
         Id: 5291700375696588929
         Name: "PickUp Object"
         Transform {
           Location {
-            Y: 1.07769775
           }
           Rotation {
           }
@@ -586,7 +547,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4298867992406349540
+        ParentId: 6815005413079042529
         ChildIds: 6150711797783962010
         ChildIds: 3954559283036368751
         Collidable_v2 {
@@ -3028,6 +2989,85 @@ Assets {
           Radius: 385.195
           EnableOcclusion: true
           IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 4298867992406349540
+        Name: "ClientContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14517814200896022533
+        ChildIds: 15074353436161504672
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 15074353436161504672
+        Name: "WeaponSpreadClient"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4298867992406349540
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:SpreadStandPrecision"
+            Float: 0.95
+          }
+          Overrides {
+            Name: "cs:SpreadWalkPrecision"
+            Float: 0.8
+          }
+          Overrides {
+            Name: "cs:SpreadCrouchPrecision"
+            Float: 0.9
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6652974207271369531
+          }
         }
       }
     }

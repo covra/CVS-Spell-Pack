@@ -28,9 +28,13 @@ custom properties
 	------
 	- prefixInteractLabel: This will be the prefix of the interaction label (before the own spell name). Enabled if 'isPickable' option is enabled
 
-
-
-
+cauldron
+--------
+ the template of the cauldron itself is called 'cauldron CAULDRON '. Inside you will found the next user exposed properties:
+  -DPS: damage per second when a player is inside the cauldron
+  -timeDPS: max time doing damage to player
+  -ratioSlow: this is a multiplier of the max walk speed of the player when he is inside the cauldron
+-burnFlame: Extra FX that will be spawned and attached to burning player
 
 
 --]]

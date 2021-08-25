@@ -12,6 +12,7 @@ local FX = script:GetCustomProperty("extraDmgVisual")
 function OnImpact(spell, impactData)
     local target = impactData.targetObject
     if Object.IsValid(target) and target:IsA("Player") then
+    	print(script.name.." >> impact on player")
     	local player = target
     	local fire = World.SpawnAsset(FX,{position = target:GetWorldPosition()}) 
     	fire:AttachToPlayer(target, "neck")

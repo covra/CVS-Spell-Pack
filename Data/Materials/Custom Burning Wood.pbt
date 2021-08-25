@@ -32,7 +32,7 @@ Assets {
       }
       Overrides {
         Name: "speed"
-        Float: 0.654843211
+        Float: 3
       }
       Overrides {
         Name: "asherode"

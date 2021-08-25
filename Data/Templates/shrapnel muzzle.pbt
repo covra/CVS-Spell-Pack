@@ -17,6 +17,8 @@ Assets {
         }
         ParentId: 4781671109827199097
         ChildIds: 17275761349144461756
+        ChildIds: 11425997872183510572
+        Lifespan: 1.5
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -41,7 +43,6 @@ Assets {
             Z: 5.60092163
           }
           Rotation {
-            Roll: 90
           }
           Scale {
             X: 3.3
@@ -54,9 +55,6 @@ Assets {
         ChildIds: 8691106634829640605
         ChildIds: 1735953111196804765
         ChildIds: 11923057539439645208
-        ChildIds: 11981908699699784317
-        ChildIds: 12238220244069939212
-        ChildIds: 4997400899677678676
         UnregisteredParameters {
           Overrides {
             Name: "bp:Element A Set"
@@ -118,6 +116,11 @@ Assets {
           Overrides {
             Name: "bp:Use Element Local Orientation"
             Bool: true
+          }
+          Overrides {
+            Name: "bp:Circle Rotation Axis"
+            Vector {
+            }
           }
         }
         Collidable_v2 {
@@ -274,9 +277,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 0.303030252
-            Y: 0.303030252
-            Z: 0.303030252
+            X: 0.916467547
+            Y: 0.916467547
+            Z: 0.916467547
           }
         }
         ParentId: 17275761349144461756
@@ -300,6 +303,7 @@ Assets {
           TeamSettings {
           }
           Vfx {
+            AutoPlay: true
           }
         }
         Relevance {
@@ -315,7 +319,7 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 0.818181694
+            X: 0.818
             Y: 0.818181694
             Z: 0.818181694
           }
@@ -592,7 +596,6 @@ Assets {
           Overrides {
             Name: "bp:Circle Rotation Axis"
             Vector {
-              Z: 1
             }
           }
           Overrides {
@@ -958,7 +961,6 @@ Assets {
           Overrides {
             Name: "bp:Circle Rotation Axis"
             Vector {
-              Z: 1
             }
           }
           Overrides {
@@ -972,7 +974,6 @@ Assets {
           Overrides {
             Name: "bp:Element Rotation Animation Axis"
             Vector {
-              Z: 1
             }
           }
           Overrides {
@@ -1039,106 +1040,68 @@ Assets {
         }
       }
       Objects {
-        Id: 11981908699699784317
-        Name: "MCG: All - Inner_Glyph"
+        Id: 11425997872183510572
+        Name: "Object Rotator Continuous"
         Transform {
           Location {
+            X: -107.866951
+            Y: 3426.45654
+            Z: -381.998657
           }
           Rotation {
           }
           Scale {
-            X: 0.303030252
-            Y: 0.303030252
-            Z: 0.303030252
+            X: 2.31645441
+            Y: 2.31645441
+            Z: 2.31645441
           }
         }
-        ParentId: 17275761349144461756
+        ParentId: 4558413719701554417
         UnregisteredParameters {
           Overrides {
-            Name: "bp:Count"
-            Int: 12
-          }
-          Overrides {
-            Name: "bp:Distance"
-            Float: 210.326767
-          }
-          Overrides {
-            Name: "bp:Fade Axis"
-            Enum {
-              Value: "mc:emcfadeaxisxy:29"
+            Name: "cs:Object"
+            ObjectReference {
+              SubObjectId: 17275761349144461756
             }
           }
           Overrides {
-            Name: "bp:Fade Start"
-            Float: 0
-          }
-          Overrides {
-            Name: "bp:Border Edge Fade"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Fade Softness"
-            Float: 0.148363069
-          }
-          Overrides {
-            Name: "bp:Fade Point Count"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Fade Style"
-            Enum {
-              Value: "mc:emcfadestyle:30"
+            Name: "cs:RotateVelocity"
+            Rotator {
+              Yaw: -30
             }
           }
           Overrides {
-            Name: "bp:Coloring Method"
-            Enum {
-              Value: "mc:emccoloringmethod:3"
+            Name: "cs:RotationMultiplier"
+            Float: 1
+          }
+          Overrides {
+            Name: "cs:LocalSpace"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:StartDelayRange"
+            Vector2 {
             }
           }
           Overrides {
-            Name: "bp:Element A Theme"
-            Enum {
-              Value: "mc:emagiccirclealltypes:newenumerator1"
-            }
+            Name: "cs:RotationMultiplier:tooltip"
+            String: "Optional multiplier for very fast rotations."
           }
           Overrides {
-            Name: "bp:Element A Set"
-            Enum {
-              Value: "mc:emagiccircleselementtype:newenumerator1"
-            }
+            Name: "cs:StartDelayRange:tooltip"
+            String: "Random delay range for the object to take action at the start of the game."
           }
           Overrides {
-            Name: "bp:Element A Shape"
-            Int: 3
+            Name: "cs:LocalSpace:tooltip"
+            String: "Whether RotateTo is in local space"
           }
           Overrides {
-            Name: "bp:Scale"
-            Float: 1.0931828
+            Name: "cs:Object:tooltip"
+            String: "Object to transform"
           }
           Overrides {
-            Name: "bp:Keystone"
-            Float: 0.586821854
-          }
-          Overrides {
-            Name: "bp:Width"
-            Float: 1.39297068
-          }
-          Overrides {
-            Name: "bp:Height"
-            Float: 1.65597737
-          }
-          Overrides {
-            Name: "bp:Emissive"
-            Float: 25.0313187
-          }
-          Overrides {
-            Name: "bp:Rotation Speed"
-            Float: 0.178063989
-          }
-          Overrides {
-            Name: "bp:Circle Rotation Speed"
-            Float: 32.2770081
+            Name: "cs:RotateVelocity:tooltip"
+            String: "Smoothly rotates the object over time by the given angular velocity."
           }
         }
         Collidable_v2 {
@@ -1150,233 +1113,10 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 14388349938129413296
+        Script {
+          ScriptAsset {
+            Id: 2331688389429807128
           }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-      }
-      Objects {
-        Id: 12238220244069939212
-        Name: "MCG: All - Inner Glyph 2"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.106687203
-            Y: 0.106687203
-            Z: 0.106687203
-          }
-        }
-        ParentId: 17275761349144461756
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Count"
-            Int: 12
-          }
-          Overrides {
-            Name: "bp:Distance"
-            Float: 210.326767
-          }
-          Overrides {
-            Name: "bp:Fade Axis"
-            Enum {
-              Value: "mc:emcfadeaxisxy:29"
-            }
-          }
-          Overrides {
-            Name: "bp:Fade Start"
-            Float: 0
-          }
-          Overrides {
-            Name: "bp:Border Edge Fade"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Fade Softness"
-            Float: 0.148363069
-          }
-          Overrides {
-            Name: "bp:Fade Point Count"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Fade Style"
-            Enum {
-              Value: "mc:emcfadestyle:30"
-            }
-          }
-          Overrides {
-            Name: "bp:Coloring Method"
-            Enum {
-              Value: "mc:emccoloringmethod:3"
-            }
-          }
-          Overrides {
-            Name: "bp:Element A Theme"
-            Enum {
-              Value: "mc:emagiccirclealltypes:newenumerator1"
-            }
-          }
-          Overrides {
-            Name: "bp:Element A Set"
-            Enum {
-              Value: "mc:emagiccircleselementtype:newenumerator1"
-            }
-          }
-          Overrides {
-            Name: "bp:Element A Shape"
-            Int: 2
-          }
-          Overrides {
-            Name: "bp:Scale"
-            Float: 1.0931828
-          }
-          Overrides {
-            Name: "bp:Keystone"
-            Float: 0.586821854
-          }
-          Overrides {
-            Name: "bp:Width"
-            Float: 1.39297068
-          }
-          Overrides {
-            Name: "bp:Height"
-            Float: 1.65597737
-          }
-          Overrides {
-            Name: "bp:Emissive"
-            Float: 25.0313187
-          }
-          Overrides {
-            Name: "bp:Rotation Speed"
-            Float: 0.597990751
-          }
-          Overrides {
-            Name: "bp:Circle Rotation Speed"
-            Float: 32.2770081
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 14388349938129413296
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
-        }
-      }
-      Objects {
-        Id: 4997400899677678676
-        Name: "Binding Chains VFX"
-        Transform {
-          Location {
-            Z: 31.0096054
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.909090877
-            Y: 0.909090877
-            Z: 0.303030252
-          }
-        }
-        ParentId: 17275761349144461756
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.820000052
-              G: 0.0651655793
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 19.7541771
-          }
-          Overrides {
-            Name: "bp:Hold Duration"
-            Float: 3
-          }
-          Overrides {
-            Name: "bp:Chain Count"
-            Int: 6
-          }
-          Overrides {
-            Name: "bp:Manual Animation"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Randomize Times"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Fade Value"
-            Float: 0
-          }
-          Overrides {
-            Name: "bp:Animation Value"
-            Float: 0
-          }
-          Overrides {
-            Name: "bp:Loop"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 6944913226793731875
-          }
-          TeamSettings {
-          }
-          Vfx {
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
         }
       }
     }
@@ -1405,15 +1145,6 @@ Assets {
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_fire_volume_vfx"
-      }
-    }
-    Assets {
-      Id: 6944913226793731875
-      Name: "Binding Chains VFX"
-      PlatformAssetType: 8
-      PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_chainBind"
       }
     }
     PrimaryAssetId {

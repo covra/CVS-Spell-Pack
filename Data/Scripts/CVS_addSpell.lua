@@ -1,12 +1,13 @@
 --custom properties
 local ROOT_SPELL = script:GetCustomProperty("spellRoot"):WaitForObject()
 local TRIGGER_SPELL = script:GetCustomProperty("pickTrigSpell"):WaitForObject()
+local fxFolder = ROOT_SPELL:FindDescendantByName("PickUp FX")
 --user exposed
 local SPELL_NAME = ROOT_SPELL:GetCustomProperty("spell_Name")
 local PREFIX_LABEL = TRIGGER_SPELL:GetCustomProperty("prefixInteractLabel")	
 local IS_LINK = ROOT_SPELL:GetCustomProperty("linkToEquipment")
 --local
-TRIGGER_SPELL.interactionLabel = TRIGGER_SPELL.interactionLabel .. SPELL_NAME.." spell ? "
+TRIGGER_SPELL.interactionLabel = TRIGGER_SPELL.interactionLabel .." ".. SPELL_NAME.." spell ? "
 local destroyList = nil
 local triggList = nil
 local abilityList = {}
@@ -15,27 +16,53 @@ local abilityList = {}
 --TRIGGER when interacted
 function OnInteracted (trigg, other)
 	if other:IsA("Player") then 
+		TRIGGER_SPELL.isInteractable = false
 		local player = other
 		Events.BroadcastToPlayer(player,"SPL.add",player,nil, ROOT_SPELL:GetReference())
-		Task.Wait(3)
+		Task.Wait(5)
+		destroyFold(player)
 		ROOT_SPELL:Equip(player)
 		if IS_LINK then 
-			abilityList = {}
-			for _,ab in pairs (ROOT_SPELL:GetAbilities()) do 
-				local ref = ab:GetReference()
-				table.insert(abilityList, ref)
-			end
-			Events.BroadcastToPlayer(player, "SPL.report", player, abilityList)
-			Task.Wait()
+			addLink ()
 		end
 	end 
 end 
+
+function addLink ()
+	abilityList = {}
+	for _,ab in pairs (ROOT_SPELL:GetAbilities()) do 
+		local ref = ab:GetReference()
+		table.insert(abilityList, ref)
+	end
+	Events.BroadcastToPlayer(player, "SPL.report", player, abilityList)
+	Task.Wait()
+end 
+
+function checkPrevious ()
+	print(ROOT_SPELL.owner)
+	local MAIN_EQUIP = ROOT_SPELL:FindAncestorByType('Equipment')
+	if MAIN_EQUIP ~= nil then 
+		addLink ()
+	end 
+end
+
+function destroyFold (player)	
+	if Object.IsValid(fxFolder) then 
+		fxFolder:Destroy()
+	end 
+end
 
 function onDestroy (objSelf)
 	destroyList:Disconnect()
 	triggList:Disconnect()
 end 
 
+function OnEquipped (equp, player)
+	destroyFold (player)
+end 
 
 destroyList = script.destroyEvent:Connect( onDestroy )
 triggList = TRIGGER_SPELL.interactedEvent:Connect(OnInteracted)
+-- Initialize
+ROOT_SPELL.equippedEvent:Connect(OnEquipped)
+checkPrevious()

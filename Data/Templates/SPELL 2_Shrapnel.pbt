@@ -19,11 +19,12 @@ Assets {
         ChildIds: 13227233952078412643
         ChildIds: 10628847209970845377
         ChildIds: 12654456931945459038
+        ChildIds: 5685637803149238988
         ChildIds: 13716995938362732471
         UnregisteredParameters {
           Overrides {
             Name: "cs:linkToEquipment"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:spell_Name"
@@ -65,7 +66,7 @@ Assets {
               Id: 10907755067141016943
             }
             MuzzleFlashAssetRef {
-              Id: 6006475471038264845
+              Id: 841534158063459245
             }
             TrailAssetRef {
               Id: 841534158063459245
@@ -377,11 +378,11 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:BaseDamage"
-            Float: 15
+            Float: 5
           }
           Overrides {
             Name: "cs:HeadshotDamage"
-            Float: 60
+            Float: 15
           }
         }
         Collidable_v2 {
@@ -457,8 +458,8 @@ Assets {
         }
       }
       Objects {
-        Id: 13716995938362732471
-        Name: "Client Context"
+        Id: 5685637803149238988
+        Name: "PickUp FX"
         Transform {
           Location {
           }
@@ -471,10 +472,7 @@ Assets {
           }
         }
         ParentId: 17886792431389911077
-        ChildIds: 16102308199707356083
         ChildIds: 11420101985873375537
-        UnregisteredParameters {
-        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -483,61 +481,12 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         NetworkContext {
-        }
-      }
-      Objects {
-        Id: 16102308199707356083
-        Name: "WeaponSpreadClient"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 13716995938362732471
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:SpreadStandPrecision"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "cs:SpreadWalkPrecision"
-            Float: 0.3
-          }
-          Overrides {
-            Name: "cs:SpreadJumpPrecision"
-            Float: 0.2
-          }
-          Overrides {
-            Name: "cs:SpreadCrouchPrecision"
-            Float: 0.75
-          }
-          Overrides {
-            Name: "cs:SpreadAimModifierBonus"
-            Float: 0.35
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 6652974207271369531
-          }
         }
       }
       Objects {
@@ -554,7 +503,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 13716995938362732471
+        ParentId: 5685637803149238988
         ChildIds: 6178737795830026996
         ChildIds: 2635685431763763306
         Collidable_v2 {
@@ -3008,6 +2957,143 @@ Assets {
           Radius: 385.195
           EnableOcclusion: true
           IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 13716995938362732471
+        Name: "Client Context"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17886792431389911077
+        ChildIds: 1641965169059843067
+        ChildIds: 16102308199707356083
+        UnregisteredParameters {
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 1641965169059843067
+        Name: "SPL Ability Cast"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13716995938362732471
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:FX"
+            AssetReference {
+              Id: 3374807659199421392
+            }
+          }
+          Overrides {
+            Name: "cs:placeToFX"
+            String: "hands"
+          }
+          Overrides {
+            Name: "cs:FX:tooltip"
+            String: "The extra FX to show when casting spell"
+          }
+          Overrides {
+            Name: "cs:placeToFX:tooltip"
+            String: "Select: \"hands\" to place on hands or \"ground\" if want to place on the ground"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 8256501495048703971
+          }
+        }
+      }
+      Objects {
+        Id: 16102308199707356083
+        Name: "WeaponSpreadClient"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.00000012
+            Y: 1.00000012
+            Z: 1
+          }
+        }
+        ParentId: 13716995938362732471
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:SpreadStandPrecision"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "cs:SpreadWalkPrecision"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "cs:SpreadJumpPrecision"
+            Float: 0.2
+          }
+          Overrides {
+            Name: "cs:SpreadCrouchPrecision"
+            Float: 0.75
+          }
+          Overrides {
+            Name: "cs:SpreadAimModifierBonus"
+            Float: 0.35
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6652974207271369531
+          }
         }
       }
     }

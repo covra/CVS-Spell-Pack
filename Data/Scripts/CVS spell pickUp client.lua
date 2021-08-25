@@ -15,16 +15,10 @@ local listAdd = nil
 
 function onRecServ (player, destroy, ref)
 	local spell = ref:GetObject()
-	if player == localPlayer and spell == ROOT_SPELL then  
-		if destroy then 
-			if Object.IsValid(script.parent) then 
-				script.parent:Destroy()
-			end
-		end 
-		Task.Wait(0.5)
-		startAnim()
-	end 
+	Task.Spawn(function() SFX_SUCTION:Play() end , 1)
+	startAnim()
 end
+
 
 function startAnim()
 	local isAnim = true
@@ -49,16 +43,16 @@ function animCircles()
 		for _, circ in pairs (VFX_CIRCLES) do 
 			circ:SetSmartProperty("Emissive", i)
 		end 
-		Task.Wait(0.2)
+		Task.Wait(0.05)
 	end
-	if Object.IsValid(script.parent) then 
-		script.parent:Destroy()
-	end 
 end 
 
 function onDestroy (objectSelf)
-	listAdd:Disconnect()
+	if Object.IsValid(listAdd) then 
+		listAdd:Disconnect()
+	end
 end
+
 
 listAdd = Events.Connect("SPL.add", onRecServ)
 script.destroyEvent:Connect( onDestroy )
