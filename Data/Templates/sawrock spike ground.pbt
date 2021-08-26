@@ -27,7 +27,7 @@ Assets {
             String: "Damage of each spawned rock spike."
           }
         }
-        Lifespan: 10
+        Lifespan: 3
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

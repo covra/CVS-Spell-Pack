@@ -27,7 +27,7 @@ Assets {
             String: "When spawns apply damage to inside players"
           }
         }
-        Lifespan: 10
+        Lifespan: 3
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

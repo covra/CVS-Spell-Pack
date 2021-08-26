@@ -161,6 +161,24 @@ Assets {
   }
 }
 Assets {
+  Id: 11002993242402753124
+  Name: "Magic Burst Hemicircle VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_magic_burst_hemicircle"
+  }
+}
+Assets {
+  Id: 9419067108453606554
+  Name: "Dust Puff VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_dust_puff"
+  }
+}
+Assets {
   Id: 9337660376557937055
   Name: "Magic Dark Low Drone Spell Cast 01 SFX"
   PlatformAssetType: 7
@@ -242,6 +260,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3486525155321821186
+  Name: "Explosion Kit Dust Burst VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_mil_dirt_impact_explosikit_Dust"
+  }
+}
+Assets {
   Id: 3357972230609358657
   Name: "Japanese Table 01"
   PlatformAssetType: 1
@@ -266,6 +293,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxmi_add_edgeline_sharpline_topfade"
+  }
+}
+Assets {
+  Id: 2289845238589602368
+  Name: "Smoke Puff Radial VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_smoke_puff_radial"
+  }
+}
+Assets {
+  Id: 876407560728839966
+  Name: "Explosion Kit Soft Dust Spikes VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_mil_dirt_impact_explosikit_midspikes"
   }
 }
 Assets {

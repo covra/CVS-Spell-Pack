@@ -3,8 +3,8 @@ local spell = script:GetCustomProperty("spell")
 
 function OnPlayerJoined(player)
 	print("player joined: " .. player.name)
-	local localSpell = World.SpawnAsset(spell)
-	localSpell:Equip(player)
+	--local localSpell = World.SpawnAsset(spell)
+	--localSpell:Equip(player)
 end
 
 function OnPlayerLeft(player)

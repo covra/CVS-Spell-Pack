@@ -11,7 +11,7 @@ TRIGGER_SPELL.interactionLabel = TRIGGER_SPELL.interactionLabel .." ".. SPELL_NA
 local destroyList = nil
 local triggList = nil
 local abilityList = {}
-local debugPrint = false
+local debugPrint = true
 --------------------------------------------------------------------
 
 --TRIGGER when interacted
@@ -20,7 +20,7 @@ function OnInteracted (trigg, other)
 		TRIGGER_SPELL.isInteractable = false
 		local player = other
 		Events.BroadcastToPlayer(player,"SPL.add",player,nil, ROOT_SPELL:GetReference())
-		Task.Wait(5)
+		Task.Wait(7)
 		destroyFold(player)
 		ROOT_SPELL:Equip(player)
 		if IS_LINK then 
@@ -55,6 +55,7 @@ function destroyFold (player)
 	if Object.IsValid(fxFolder) then 
 		if debugPrint then print(script.name.." >> destroying self pickUp FX folder..", fxFolder) end 
 		fxFolder:Destroy()
+		TRIGGER_SPELL:Destroy()
 	end 
 end
 
