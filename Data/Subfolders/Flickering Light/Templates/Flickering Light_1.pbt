@@ -198,6 +198,6 @@ Assets {
   Marketplace {
     Description: "Change the values on the root of the object to control the light.\r\n\r\nMinRadius = The smallest the light\'s attenuation radius should get\r\nMaxRadius = The largest the light\'s attenuation radius should get\r\nFlickerSpeed = Higher speed means a faster flicker\r\n\r\nThis is not networked"
   }
-  SerializationVersion: 95
+  SerializationVersion: 97
   DirectlyPublished: true
 }

@@ -2,7 +2,7 @@ Assets {
   Id: 13911115201188532053
   Name: "enviro_props"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 3313081711161368178
     ParameterOverrides {

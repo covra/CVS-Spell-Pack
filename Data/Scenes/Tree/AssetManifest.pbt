@@ -8,6 +8,24 @@ Assets {
   }
 }
 Assets {
+  Id: 17518180378751572853
+  Name: "Suction Whoosh 05 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_suction_whoosh_05_Cue_ref"
+  }
+}
+Assets {
+  Id: 17239665496848081969
+  Name: "Dust Motes Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_dust_motes"
+  }
+}
+Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -26,12 +44,39 @@ Assets {
   }
 }
 Assets {
+  Id: 16263460330489563889
+  Name: "Big Hammer Huge Ground Impact 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_big_hammer_explode_ground_impact_01a_Cue_ref"
+  }
+}
+Assets {
   Id: 15857297983291997403
   Name: "Fantasy Book Open 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fan_book_open_001_ref"
+  }
+}
+Assets {
+  Id: 15696524381397938084
+  Name: "Magic Circle Generator Advanced: Scifi VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_magic_circle_generator_scifi"
+  }
+}
+Assets {
+  Id: 15664487798598489960
+  Name: "Beam Up Teleport VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_Teleporter"
   }
 }
 Assets {
@@ -44,12 +89,48 @@ Assets {
   }
 }
 Assets {
+  Id: 14964967653464214432
+  Name: "Decal Dirt Patch"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_dirt_patch_001"
+  }
+}
+Assets {
   Id: 14743946308299308333
   Name: "Artificial Grass 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_grass_artificial_001_uv_ref"
+  }
+}
+Assets {
+  Id: 14040801277181328014
+  Name: "Torch Fire VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_torch_fire"
+  }
+}
+Assets {
+  Id: 13331605163592656631
+  Name: "Skid Trail VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_skid_trail"
+  }
+}
+Assets {
+  Id: 12353421659613261783
+  Name: "Sphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_002"
   }
 }
 Assets {
@@ -80,6 +161,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9337660376557937055
+  Name: "Magic Dark Low Drone Spell Cast 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_magic_dark_low_drone_spell_cast_01_Cue_ref"
+  }
+}
+Assets {
   Id: 8468221781841598779
   Name: "Plasma Muzzleflash VFX"
   PlatformAssetType: 8
@@ -98,6 +188,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7886743528345473203
+  Name: "Rock 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_002_sm_rock_generic_002_LOD0"
+  }
+}
+Assets {
   Id: 6242934337410939567
   Name: "Small Crowd Ooh Cringe Reaction 01 SFX"
   PlatformAssetType: 7
@@ -107,12 +206,30 @@ Assets {
   }
 }
 Assets {
+  Id: 6141877587577575230
+  Name: "Rock Flat 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_004"
+  }
+}
+Assets {
   Id: 4743545353488241913
   Name: "Tank Muzzle Flash VFX"
   PlatformAssetType: 8
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_mil_tank_mf"
+  }
+}
+Assets {
+  Id: 4268335315230027351
+  Name: "Rocket Trail Wispy"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_rocket_trail_wispy"
   }
 }
 Assets {
@@ -149,6 +266,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxmi_add_edgeline_sharpline_topfade"
+  }
+}
+Assets {
+  Id: 710877093761989948
+  Name: "Curling Dust VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_base_curl"
   }
 }
 Assets {

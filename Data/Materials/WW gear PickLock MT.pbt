@@ -2,7 +2,7 @@ Assets {
   Id: 3523364075378661675
   Name: "WW gear PickLock MT"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 477817745712798327
     ParameterOverrides {

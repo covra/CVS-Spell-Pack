@@ -2,7 +2,7 @@ Assets {
   Id: 9204704024301454676
   Name: "WW brilliant needed CVS"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 5351428073291024820
     ParameterOverrides {

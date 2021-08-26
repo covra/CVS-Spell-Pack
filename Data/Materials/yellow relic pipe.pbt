@@ -2,7 +2,7 @@ Assets {
   Id: 670491963700920014
   Name: "yellow relic pipe"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 11867682330736357559
     ParameterOverrides {

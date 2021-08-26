@@ -2,7 +2,7 @@ Assets {
   Id: 301975705435826908
   Name: "WW_flamewall_MT"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 17301915808104638925
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 8423496540395676844
   Name: "CVS wireframe MT wall test"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 4367680979899409124
     ParameterOverrides {

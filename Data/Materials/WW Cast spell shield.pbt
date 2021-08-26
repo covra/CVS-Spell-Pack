@@ -2,7 +2,7 @@ Assets {
   Id: 2988773797894903903
   Name: "WW Cast spell shield"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 3313081711161368178
     ParameterOverrides {

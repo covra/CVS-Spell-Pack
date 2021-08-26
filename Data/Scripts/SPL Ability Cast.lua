@@ -15,6 +15,7 @@ end
 --local
 local localPlayer = Game.GetLocalPlayer()
 local castList = nil 
+local debugPrint = false
 
 function onCast (ability)
 	local player = ability.owner
@@ -31,8 +32,7 @@ function onCast (ability)
 	end 
 	local params = {position = pos, rotation = rot, scale = sc}
 	local fx = World.SpawnAsset(FX,params)
-	--fx:AttachToPlayer(player, "nameplate")	
-	print(script.name.." >> "..player.name.." casted "..SPELL_ROOT.name, PLACE_TO, pos, rot, sc)
+	if debugPrint then print(script.name.." >> "..player.name.." casted "..SPELL_ROOT.name, PLACE_TO, pos, rot, sc) end 
 end
 
 function OnEquipped(equip, player)
@@ -46,6 +46,13 @@ function OnUnequipped(equip, player)
 	castList:Disconnect()
 end
 
+function checkPrevious ()
+	local MAIN_EQUIP = SPELL_ROOT:FindAncestorByType('Equipment')
+	if MAIN_EQUIP ~= nil and MAIN_EQUIP:GetCustomProperty("isMainEquip") == true then 
+		debugPrint = MAIN_EQUIP:GetCustomProperty("debugPrint")
+	end 
+end
 -- Initialize
+checkPrevious()
 SPELL_ROOT.equippedEvent:Connect(OnEquipped)
 SPELL_ROOT.unequippedEvent:Connect(OnUnequipped)

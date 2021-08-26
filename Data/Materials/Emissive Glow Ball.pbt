@@ -2,7 +2,7 @@ Assets {
   Id: 11848754254057747056
   Name: "Emissive Glow Ball"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 3313081711161368178
     ParameterOverrides {

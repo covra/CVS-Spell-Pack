@@ -1976,5 +1976,5 @@ Assets {
       AssetId: "Advanced_Assault_Rifle"
     }
   }
-  SerializationVersion: 95
+  SerializationVersion: 97
 }

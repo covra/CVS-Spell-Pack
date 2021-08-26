@@ -4,7 +4,7 @@ local VFX_CIRCLES = (script:GetCustomProperty("VFX_Circles"):WaitForObject()):Ge
 local VFX_BEAM = script:GetCustomProperty("VFX_Beam"):WaitForObject()
 local SFX_PICK = script:GetCustomProperty("SFX_Pick"):WaitForObject()
 local SFX_SUCTION = script:GetCustomProperty("SFX_suction"):WaitForObject()
-local ROOT_SPELL	 = script:GetCustomProperty("rootSpell"):WaitForObject()
+local ROOT_SPELL = script:GetCustomProperty("rootSpell"):WaitForObject()
 --user exposed
 local ANIM_TYPE = script:GetCustomProperty("animationType")
 --local
@@ -15,8 +15,10 @@ local listAdd = nil
 
 function onRecServ (player, destroy, ref)
 	local spell = ref:GetObject()
-	Task.Spawn(function() SFX_SUCTION:Play() end , 1)
-	startAnim()
+	if spell == ROOT_SPELL then 
+		Task.Spawn(function() SFX_SUCTION:Play() end , 1)
+		startAnim()
+	end 
 end
 
 
@@ -33,7 +35,10 @@ function startAnim()
 		Task.Wait(1)
 		SFX_SUCTION:Play()
 		Task.Wait(1.5)
-		VISUAL_FOLDER.visibility = Visibility.FORCE_OFF		
+		VISUAL_FOLDER.visibility = Visibility.FORCE_OFF	
+		if Object.IsValid(VISUAL_FOLDER) then 
+			VISUAL_FOLDER:Destroy()
+		end 
 	else 
 	end 
 end 

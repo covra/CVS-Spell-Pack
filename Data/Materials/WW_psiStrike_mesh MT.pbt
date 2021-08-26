@@ -2,7 +2,7 @@ Assets {
   Id: 2734506017304368522
   Name: "WW_psiStrike_mesh MT"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 16831904816972150168
     ParameterOverrides {

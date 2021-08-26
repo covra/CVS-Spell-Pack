@@ -2,7 +2,7 @@ Assets {
   Id: 3600728033218885836
   Name: "WW_permShieldInner_MT"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 4847877850185625348
     ParameterOverrides {

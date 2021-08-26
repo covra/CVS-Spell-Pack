@@ -2,7 +2,7 @@ Assets {
   Id: 14488186979195486974
   Name: "Lower Trim Mat"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 9691130252922943749
     ParameterOverrides {

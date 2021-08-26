@@ -2,7 +2,7 @@ Assets {
   Id: 14507105591767847570
   Name: "Custom Plasmafield Doublesided"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 10225386228410194396
     ParameterOverrides {

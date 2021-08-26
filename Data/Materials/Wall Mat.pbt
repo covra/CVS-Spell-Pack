@@ -2,7 +2,7 @@ Assets {
   Id: 10158060830993823972
   Name: "Wall Mat"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 2326016125854285767
     ParameterOverrides {

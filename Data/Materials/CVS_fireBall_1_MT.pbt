@@ -2,7 +2,7 @@ Assets {
   Id: 8570940804776669749
   Name: "CVS_fireBall_1_MT"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 13103825246893228381
     ParameterOverrides {

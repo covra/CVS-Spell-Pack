@@ -2,7 +2,7 @@ Assets {
   Id: 123344428147699577
   Name: "Custom Detail 2 from Fantasy Book Open 01"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 97
   CustomMaterialAsset {
     BaseMaterialId: 6689082133310992536
     ParameterOverrides {

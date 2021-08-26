@@ -40,5 +40,5 @@ Assets {
     Version: "1.0.0"
     Description: "Al detectar da\303\261o , aparece la cantidad con un peque\303\261o efecto de bounce"
   }
-  SerializationVersion: 95
+  SerializationVersion: 97
 }

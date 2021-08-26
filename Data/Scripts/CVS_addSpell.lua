@@ -11,6 +11,7 @@ TRIGGER_SPELL.interactionLabel = TRIGGER_SPELL.interactionLabel .." ".. SPELL_NA
 local destroyList = nil
 local triggList = nil
 local abilityList = {}
+local debugPrint = false
 --------------------------------------------------------------------
 
 --TRIGGER when interacted
@@ -23,31 +24,36 @@ function OnInteracted (trigg, other)
 		destroyFold(player)
 		ROOT_SPELL:Equip(player)
 		if IS_LINK then 
-			addLink ()
+			addLink (player)
 		end
 	end 
 end 
 
-function addLink ()
-	abilityList = {}
+function addLink (player)
+	abilityList = {}	
 	for _,ab in pairs (ROOT_SPELL:GetAbilities()) do 
 		local ref = ab:GetReference()
 		table.insert(abilityList, ref)
 	end
+	if debugPrint then print(script.name.." >> Adding link to visual equipment for extra FX..", abilityList) end
 	Events.BroadcastToPlayer(player, "SPL.report", player, abilityList)
 	Task.Wait()
 end 
 
 function checkPrevious ()
-	print(ROOT_SPELL.owner)
 	local MAIN_EQUIP = ROOT_SPELL:FindAncestorByType('Equipment')
-	if MAIN_EQUIP ~= nil then 
-		addLink ()
+	if MAIN_EQUIP ~= nil and MAIN_EQUIP:GetCustomProperty("isMainEquip") == true then 
+		debugPrint = MAIN_EQUIP:GetCustomProperty("debugPrint")
+		local player = MAIN_EQUIP.owner
+		if debugPrint then print(script.name.." >> Found main equipment in"..player.name) end 
+		addLink (player)
+		destroyFold (player)
 	end 
 end
 
 function destroyFold (player)	
 	if Object.IsValid(fxFolder) then 
+		if debugPrint then print(script.name.." >> destroying self pickUp FX folder..", fxFolder) end 
 		fxFolder:Destroy()
 	end 
 end

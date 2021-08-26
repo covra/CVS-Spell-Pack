@@ -30,7 +30,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ratioSlow"
-            Float: 5.5
+            Float: 8
           }
           Overrides {
             Name: "cs:burnFlame"
@@ -171,8 +171,12 @@ Assets {
           }
         }
         ParentId: 12374530537148800835
+        ChildIds: 5854214709078785489
+        ChildIds: 6393289695160309107
+        ChildIds: 15934415367845852505
         ChildIds: 12474402168132527225
         ChildIds: 3387975255271076484
+        ChildIds: 16860103131715978562
         ChildIds: 14486534593577686812
         ChildIds: 1103385470830819674
         ChildIds: 12976585761361154041
@@ -192,6 +196,200 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         NetworkContext {
+        }
+      }
+      Objects {
+        Id: 5854214709078785489
+        Name: "CVS cauldron anim stones"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3776653341265862063
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:rollSFX1"
+            ObjectReference {
+              SubObjectId: 12474402168132527225
+            }
+          }
+          Overrides {
+            Name: "cs:rollSFX2"
+            ObjectReference {
+              SubObjectId: 3387975255271076484
+            }
+          }
+          Overrides {
+            Name: "cs:lavaFloor"
+            ObjectReference {
+              SubObjectId: 16860103131715978562
+            }
+          }
+          Overrides {
+            Name: "cs:cauldron"
+            ObjectReference {
+              SubObjectId: 14486534593577686812
+            }
+          }
+          Overrides {
+            Name: "cs:puff"
+            ObjectReference {
+              SubObjectId: 15934415367845852505
+            }
+          }
+          Overrides {
+            Name: "cs:base"
+            ObjectReference {
+              SubObjectId: 6393289695160309107
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 371846474772568796
+          }
+        }
+      }
+      Objects {
+        Id: 6393289695160309107
+        Name: "base"
+        Transform {
+          Location {
+            Z: -50
+          }
+          Rotation {
+          }
+          Scale {
+            X: 8.52721119
+            Y: 8.52721119
+            Z: -0.0389932394
+          }
+        }
+        ParentId: 3776653341265862063
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6333816432109971126
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3.07491612
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 2.29540086
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 13532430437727329144
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 15934415367845852505
+        Name: "Dust Puff VFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.74385738
+            Y: 1.74385738
+            Z: 1.74385738
+          }
+        }
+        ParentId: 3776653341265862063
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Radius"
+            Float: 2.32193279
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 1.37795401
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 1.56354666
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 2.2201159
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 9419067108453606554
+          }
+          TeamSettings {
+          }
+          Vfx {
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
         }
       }
       Objects {
@@ -228,7 +426,6 @@ Assets {
           AudioAsset {
             Id: 16357363261568345768
           }
-          AutoPlay: true
           Volume: 1.63511574
           Falloff: -1
           Radius: -1
@@ -271,7 +468,6 @@ Assets {
           AudioAsset {
             Id: 5380035586500373404
           }
-          AutoPlay: true
           Volume: 1.63511574
           Falloff: -1
           Radius: -1
@@ -281,13 +477,70 @@ Assets {
         }
       }
       Objects {
+        Id: 16860103131715978562
+        Name: "lavaFloor"
+        Transform {
+          Location {
+            X: 6.60778809
+            Y: 16.1046829
+            Z: -128.989929
+          }
+          Rotation {
+          }
+          Scale {
+            X: 5.74644
+            Y: 5.02094269
+            Z: 0.7
+          }
+        }
+        ParentId: 3776653341265862063
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3220366790135828613
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 11508385906633947460
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
         Id: 14486534593577686812
         Name: "obj"
         Transform {
           Location {
-            X: 35.3121338
-            Y: -27.2435379
-            Z: 31.3521194
+            Z: -230
           }
           Rotation {
           }
@@ -301,7 +554,6 @@ Assets {
         ChildIds: 11525557957827283866
         ChildIds: 17365395354338323366
         ChildIds: 7528446273881819578
-        ChildIds: 16860103131715978562
         ChildIds: 9514585531571145524
         ChildIds: 610695010114822567
         ChildIds: 5256280319171927157
@@ -780,17 +1032,17 @@ Assets {
         Name: "Rock Block 02"
         Transform {
           Location {
-            X: -242.688843
-            Y: -162.35228
+            X: -242.688873
+            Y: -162.352264
             Z: 20.2367477
           }
           Rotation {
             Yaw: -35.3941956
           }
           Scale {
-            X: 0.627548575
-            Y: 0.602811813
-            Z: 0.798462689
+            X: 0.570299566
+            Y: 0.547819436
+            Z: 0.72562176
           }
         }
         ParentId: 891416715928488893
@@ -1073,11 +1325,13 @@ Assets {
             Z: 20.2367477
           }
           Rotation {
-            Yaw: 163.243912
+            Pitch: 3.47201729
+            Yaw: 163.212067
+            Roll: -1.04672241
           }
           Scale {
-            X: 0.652257502
-            Y: 0.626546681
+            X: 0.52539134
+            Y: 0.626546621
             Z: 0.829901099
           }
         }
@@ -1337,65 +1591,6 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 14090759685747447913
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-            BoundsScale: 1
-          }
-        }
-      }
-      Objects {
-        Id: 16860103131715978562
-        Name: "floor"
-        Transform {
-          Location {
-            X: 6.60778809
-            Y: 16.104681
-            Z: -31.3521194
-          }
-          Rotation {
-          }
-          Scale {
-            X: 5.74644
-            Y: 5.02094269
-            Z: 0.401713878
-          }
-        }
-        ParentId: 14486534593577686812
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3220366790135828613
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 11508385906633947460
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2152,6 +2347,33 @@ Assets {
       }
     }
     Assets {
+      Id: 13532430437727329144
+      Name: "Cylinder - Chamfered"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cylinder_chamfer"
+      }
+    }
+    Assets {
+      Id: 6333816432109971126
+      Name: "Stone Basic"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "stone_001"
+      }
+    }
+    Assets {
+      Id: 9419067108453606554
+      Name: "Dust Puff VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_dust_puff"
+      }
+    }
+    Assets {
       Id: 16357363261568345768
       Name: "Material Rolling Movement Rock Heavy Rumble 02 SFX"
       PlatformAssetType: 7
@@ -2170,21 +2392,21 @@ Assets {
       }
     }
     Assets {
-      Id: 14090759685747447913
-      Name: "Rock Block 02"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_rock_generic_007"
-      }
-    }
-    Assets {
       Id: 11508385906633947460
       Name: "Cylinder - Rounded Bottom-Aligned"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cylinder_rounded_001"
+      }
+    }
+    Assets {
+      Id: 14090759685747447913
+      Name: "Rock Block 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_rock_generic_007"
       }
     }
     Assets {
@@ -2237,5 +2459,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 95
+  SerializationVersion: 97
 }

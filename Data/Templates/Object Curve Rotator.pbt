@@ -118,5 +118,5 @@ Assets {
       AssetId: "Object_Curve_Rotator"
     }
   }
-  SerializationVersion: 95
+  SerializationVersion: 97
 }
