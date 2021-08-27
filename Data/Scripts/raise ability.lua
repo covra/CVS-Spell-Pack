@@ -5,8 +5,7 @@ local TIME_STONED = script:GetCustomProperty("timeStoned")
 --asset
 local ROCK_HAND = script:GetCustomProperty("stonedProjectile")
 local CAST_FX = script:GetCustomProperty("cast_FX")
-local STATUA = script:GetCustomProperty("statua")
-
+local EXE_COLUMN = script:GetCustomProperty("exe_COLUMN")
 --local 
 local listC = nil
 local listE = nil
@@ -24,49 +23,33 @@ end
 
 function onExecute (ab)
 	local player = ab.owner
-	local targetData = ab:GetTargetData()
-	if targetData then 
-		local hr = targetData:GetHitResult()
-		if hr then 
-			print(" >> hitResult: ", hr, hr.other)
-		end 
-		if targetData.hitObject then 
-			print(" >> hitObject >> ", targetData.hitObject)
-		end
-	end 
-	if targetData.hitPlayer then 
-		print(">> hitPlayer >>HITTED por fin joer", targetData.hitPlayer.name)
-	end 
 end 
 
---[[
+
 function onImpact(weapon, data)	
 	local target = data.targetObject
-	print("weapon, data:>>", weapon , data, target.name)
-	if Object.IsValid(target) and target:IsA("Player") then	
-		print(script.name.." >> impact from StoneIt!", target)
-		 player.serverUserData.maxWalk = 600
+	if Object.IsValid(target) and target:IsA("Player") then
+		local player = target
+		print(script.name.." >> impact from raise!", target)
+		player.serverUserData.maxWalk = 600
 		Task.Spawn(function()
-			if Object.IsVisible (player) then 
+			if Object.IsValid (player) then 
 				player.isVisible = true
 				player.isMovementEnabled = true
 				player.maxWalkSpeed =  player.serverUserData.maxWalk
 			end 
-		end, TIME_STONED)
-		local player = target
+		end, 10)
+		local cl = World.SpawnAsset(EXE_COLUMN,{position = player:GetWorldPosition(), rotation = player:GetWorldRotation()})
+		player:EnableRagdoll()
+		player:ResetVelocity()
+		local platform = cl:FindChildByName("collide")
+		platform:MoveTo(player:GetWorldPosition()+Vector3.UP*1000,3)		
         player.serverUserData.maxWalk = player.maxWalkSpeed
-        for i = player.serverUserData.maxWalk, 0  -60 do 
-        	player.maxWalkSpeed = i
-        	Task.Wait(0.2)
-        end 
         player.isMovementEnabled = false
-        local trf = player:GetTransform()
-        local st = World.SpawnAsset(STATUA,{position = player:GetWorldPosition()})
-        st:SetTransform(trf)
-        player.isVisible = false
+        
     end 
 end 
-]]--
+
 
 
 function OnEquipped (eq, ply)
@@ -86,4 +69,4 @@ end
 --Init
 SPELL_ROOT.equippedEvent:Connect(OnEquipped)
 SPELL_ROOT.unequippedEvent:Connect(OnUnequipped)
---SPELL_ROOT.targetImpactedEvent:Connect(onImpact)
+SPELL_ROOT.targetImpactedEvent:Connect(onImpact)

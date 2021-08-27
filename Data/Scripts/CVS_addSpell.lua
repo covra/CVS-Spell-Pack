@@ -70,6 +70,7 @@ function destroyFold (player)
 			if player.serverUserData.animSt == nil then 
 				player.animationStance = "unarmed_stance"
 			else 
+				print(script.name.." >> restoring previous player animation stance.." ,player.serverUserData.animSt) 
 				player.animationStance = player.serverUserData.animSt
 			end 
 		end 

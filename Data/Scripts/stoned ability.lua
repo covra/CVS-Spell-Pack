@@ -1,13 +1,14 @@
 --custom
 local ABILITY_ROOT = script:GetCustomProperty("ability"):WaitForObject()
 local SPELL_ROOT = ABILITY_ROOT.parent
-local TIME_STONED = script:GetCustomProperty("timeStoned")
+local TIME_STONED = SPELL_ROOT:GetCustomProperty("timeStoned")
 --asset
 local ROCK_HAND = script:GetCustomProperty("stonedProjectile")
 local CAST_FX = script:GetCustomProperty("cast_FX")
 local STATUA = script:GetCustomProperty("statua")
 
 --local 
+local st = nil
 local listC = nil
 local listE = nil
 if SPELL_ROOT.owner == localPlayer then 
@@ -28,29 +29,38 @@ end
 
 function onImpact(weapon, data)	
 	local target = data.targetObject
-	print("weapon, data:>>", weapon , data, target.name)
-	if Object.IsValid(target) and target:IsA("Player") then	
+	if Object.IsValid(target) and target:IsA("Player") then
+		local player = target
 		print(script.name.." >> impact from StoneIt!", target)
-		 player.serverUserData.maxWalk = 600
+		player.serverUserData.maxWalk = 600
 		Task.Spawn(function()
-			if Object.IsVisible (player) then 
+			destroyStatue(st)
+		end, TIME_STONED-1)
+		Task.Spawn(function()
+			if Object.IsValid (player) then 
+				print(script.name.." >> reseting target player params (movement and visibility)", TIME_STONED)
 				player.isVisible = true
 				player.isMovementEnabled = true
 				player.maxWalkSpeed =  player.serverUserData.maxWalk
 			end 
 		end, TIME_STONED)
-		local player = target
+		
         player.serverUserData.maxWalk = player.maxWalkSpeed
         for i = player.serverUserData.maxWalk, 0  -60 do 
         	player.maxWalkSpeed = i
         	Task.Wait(0.2)
         end 
         player.isMovementEnabled = false
-        local trf = player:GetTransform()
-        local st = World.SpawnAsset(STATUA,{position = player:GetWorldPosition()})
-        st:SetTransform(trf)
+        st = World.SpawnAsset(STATUA,{position = player:GetWorldPosition()-(Vector3.UP*100), rotation = player:GetWorldRotation()})
         player.isVisible = false
     end 
+end 
+
+function destroyStatue (st)
+	local stRef = st:GetReference()
+	Events.BroadcastToAllPlayers("ELE.stue",stRef)
+	Task.Wait(0.5)
+	st:Destroy()
 end 
 
 function OnEquipped (eq, ply)

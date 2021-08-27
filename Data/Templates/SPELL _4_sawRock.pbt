@@ -32,10 +32,6 @@ Assets {
             String: "Saw of Rocks"
           }
           Overrides {
-            Name: "cs:extraFireDamage"
-            Bool: false
-          }
-          Overrides {
             Name: "cs:linkToEquipment:tooltip"
             String: "If enabled,  animation stance, and some FX will be added when fire spell. Default = true"
           }
@@ -44,8 +40,12 @@ Assets {
             String: "The name of the spell as you want it will be shown in many places"
           }
           Overrides {
-            Name: "cs:extraFireDamage:tooltip"
-            String: "If enabled, a fire extra will burn the target player causing extra damage. Default = enabled"
+            Name: "cs:animationStancePick"
+            String: "1hand_melee_shield_block"
+          }
+          Overrides {
+            Name: "cs:animationStancePick:tooltip"
+            String: "Animation stance to the player when picks the spell"
           }
         }
         WantsNetworking: true
@@ -222,9 +222,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 2.61493039
+            Y: 2.61493039
+            Z: 2.61493039
           }
         }
         ParentId: 15268411335749147480

@@ -1,8 +1,12 @@
 local spell = script:GetCustomProperty("spell")
-
+local index = 0
 
 function OnPlayerJoined(player)
-	print("player joined: " .. player.name)
+	index = index + 1
+	if index == 5 then index = 1 end
+	player.team = index
+	
+	print("player joined: " .. player.name, player.team)
 	local localSpell = World.SpawnAsset(spell)
 	localSpell:Equip(player)
 end

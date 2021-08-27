@@ -8,24 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 18323305709355461055
-  Name: "Magic Circle Generator Advanced: Basic VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_magic_circle_generator_basic"
-  }
-}
-Assets {
-  Id: 17518180378751572853
-  Name: "Suction Whoosh 05 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_suction_whoosh_05_Cue_ref"
-  }
-}
-Assets {
   Id: 17239665496848081969
   Name: "Dust Motes Volume VFX"
   PlatformAssetType: 8
@@ -41,15 +23,6 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_SunLight"
-  }
-}
-Assets {
-  Id: 16751224094635422494
-  Name: "Rock 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_001"
   }
 }
 Assets {
@@ -86,15 +59,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fan_book_open_001_ref"
-  }
-}
-Assets {
-  Id: 15696524381397938084
-  Name: "Magic Circle Generator Advanced: Scifi VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_magic_circle_generator_scifi"
   }
 }
 Assets {
@@ -140,15 +104,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_grass_artificial_001_uv_ref"
-  }
-}
-Assets {
-  Id: 14336758442979279790
-  Name: "Material Rolling Movement Rock Scrape 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_material_rolling_movement__rock_scrape_01_Cue_ref"
   }
 }
 Assets {
@@ -215,30 +170,12 @@ Assets {
   }
 }
 Assets {
-  Id: 10835155324150586940
-  Name: "Rock Pile 001"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rocks_small_001"
-  }
-}
-Assets {
   Id: 9419067108453606554
   Name: "Dust Puff VFX"
   PlatformAssetType: 8
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_dust_puff"
-  }
-}
-Assets {
-  Id: 9337660376557937055
-  Name: "Magic Dark Low Drone Spell Cast 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_magic_dark_low_drone_spell_cast_01_Cue_ref"
   }
 }
 Assets {
@@ -269,15 +206,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6466573658342400750
-  Name: "Magic Circle Generator Advanced: Nature VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_magic_circle_generator_nature"
-  }
-}
-Assets {
   Id: 6242934337410939567
   Name: "Small Crowd Ooh Cringe Reaction 01 SFX"
   PlatformAssetType: 7
@@ -302,15 +230,6 @@ Assets {
   PrimaryAsset {
     AssetType: "SkeletonAssetRef"
     AssetId: "npc_gal_wireframe_001_ref"
-  }
-}
-Assets {
-  Id: 5086428590627947051
-  Name: "Rock 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_003"
   }
 }
 Assets {
@@ -356,15 +275,6 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_mil_dirt_impact_explosikit_Dust"
-  }
-}
-Assets {
-  Id: 3439665421297325774
-  Name: "Falling Dust Stream VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_falling_dust_stream"
   }
 }
 Assets {

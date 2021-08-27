@@ -71,6 +71,12 @@ Assets {
               SubObjectId: 9988185479562267940
             }
           }
+          Overrides {
+            Name: "cs:fallStones"
+            AssetReference {
+              Id: 4622891427605349561
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -114,7 +120,7 @@ Assets {
           Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"

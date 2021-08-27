@@ -1,13 +1,13 @@
 Assets {
-  Id: 17930148120680325237
-  Name: "SPELL _5_stoned"
+  Id: 14023178832271403832
+  Name: "SPELL _6_raise"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 11009008633459171541
+      RootId: 17484086847626897149
       Objects {
-        Id: 11009008633459171541
-        Name: "SPELL _5_stoned"
+        Id: 17484086847626897149
+        Name: "SPELL _6_raise"
         Transform {
           Scale {
             X: 1
@@ -16,28 +16,28 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 7784725379127560636
-        ChildIds: 8660238699279455978
-        ChildIds: 6279460004781562047
-        ChildIds: 1597837581558898008
-        ChildIds: 7732520111376542897
-        ChildIds: 11616004053127984252
+        ChildIds: 15726277267742674579
+        ChildIds: 5404916448681409549
+        ChildIds: 1221652192115485844
+        ChildIds: 14904418733318530270
+        ChildIds: 10395538022606654570
+        ChildIds: 13423724015220068205
         UnregisteredParameters {
           Overrides {
             Name: "cs:linkToEquipment"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "cs:spell_Name"
-            String: "Stone it!"
+            String: "Raise"
           }
           Overrides {
-            Name: "cs:extraFireDamage"
-            Bool: false
+            Name: "cs:animationStancePick"
+            String: "1hand_melee_shield_block"
           }
           Overrides {
-            Name: "cs:timeStoned"
-            Float: 15
+            Name: "cs:columnHeight"
+            Int: 1000
           }
           Overrides {
             Name: "cs:linkToEquipment:tooltip"
@@ -48,20 +48,12 @@ Assets {
             String: "The name of the spell as you want it will be shown in many places"
           }
           Overrides {
-            Name: "cs:extraFireDamage:tooltip"
-            String: "If enabled, a fire extra will burn the target player causing extra damage. Default = enabled"
-          }
-          Overrides {
-            Name: "cs:timeStoned:tooltip"
-            String: "How many time , in seconds, , the target player will be become in stone"
-          }
-          Overrides {
-            Name: "cs:animationStancePick"
-            String: "1hand_melee_shield_block"
-          }
-          Overrides {
             Name: "cs:animationStancePick:tooltip"
             String: "Animation stance to the player when picks the spell"
+          }
+          Overrides {
+            Name: "cs:columnHeight:tooltip"
+            String: "Height of the column (in cm) where will raise the player. Default = 1000"
           }
         }
         WantsNetworking: true
@@ -86,7 +78,7 @@ Assets {
               Id: 9615930250230786520
             }
             MuzzleFlashAssetRef {
-              Id: 841534158063459245
+              Id: 9379420623325059936
             }
             TrailAssetRef {
               Id: 2336733781318849399
@@ -127,7 +119,7 @@ Assets {
             ProjectileSpeed: 5000
             ProjectileLifeSpan: 5
             ProjectileLength: 100
-            ProjectileRadius: 100
+            ProjectileRadius: 200
             ProjectileDrag: 0.2
             SpreadMin: 1
             SpreadMax: 1
@@ -135,7 +127,7 @@ Assets {
             SpreadIncreasePerShot: 2
             SpreadPenaltyPerShot: 1.5
             DefaultAbility {
-              SubObjectId: 7784725379127560636
+              SubObjectId: 15726277267742674579
             }
             ReloadAbility {
               SelfId: 841534158063459245
@@ -148,8 +140,8 @@ Assets {
         }
       }
       Objects {
-        Id: 7784725379127560636
-        Name: "stoneIt"
+        Id: 15726277267742674579
+        Name: "raise"
         Transform {
           Location {
           }
@@ -161,7 +153,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11009008633459171541
+        ParentId: 17484086847626897149
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -190,7 +182,7 @@ Assets {
             PreventOtherAbilities: true
             IsTargetDataUpdated: true
             Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
+              Value: "mc:eabilitysetfacing:aim"
             }
           }
           RecoveryPhaseSettings {
@@ -215,14 +207,14 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "2hand_staff_magic_bolt"
+          Animation: "2hand_staff_magic_up"
           KeyBinding_v2 {
-            Value: "mc:egameaction:extraaction_15"
+            Value: "mc:egameaction:extraaction_16"
           }
         }
       }
       Objects {
-        Id: 8660238699279455978
+        Id: 5404916448681409549
         Name: "pickSpell"
         Transform {
           Location {
@@ -230,12 +222,12 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 3.28432131
-            Y: 2.78285289
-            Z: 2.25849032
+            X: 3.6356504
+            Y: 3.6356504
+            Z: 3.6356504
           }
         }
-        ParentId: 11009008633459171541
+        ParentId: 17484086847626897149
         UnregisteredParameters {
         }
         WantsNetworking: true
@@ -264,8 +256,8 @@ Assets {
         }
       }
       Objects {
-        Id: 6279460004781562047
-        Name: "stoned ability"
+        Id: 1221652192115485844
+        Name: "raise ability"
         Transform {
           Location {
           }
@@ -277,12 +269,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11009008633459171541
+        ParentId: 17484086847626897149
         UnregisteredParameters {
           Overrides {
             Name: "cs:ability"
             ObjectReference {
-              SubObjectId: 7784725379127560636
+              SubObjectId: 15726277267742674579
             }
           }
           Overrides {
@@ -298,9 +290,9 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:statua"
+            Name: "cs:exe_COLUMN"
             AssetReference {
-              Id: 11120972603762616383
+              Id: 16920023150866207430
             }
           }
         }
@@ -319,12 +311,12 @@ Assets {
         }
         Script {
           ScriptAsset {
-            Id: 5435785871274660361
+            Id: 1156050533409995675
           }
         }
       }
       Objects {
-        Id: 1597837581558898008
+        Id: 14904418733318530270
         Name: "ServerContext"
         Transform {
           Location {
@@ -337,10 +329,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11009008633459171541
-        ChildIds: 623909933037868442
-        ChildIds: 7909261883729760663
-        ChildIds: 5325804085308255879
+        ParentId: 17484086847626897149
+        ChildIds: 16075983253745167835
+        ChildIds: 163987333506025888
+        ChildIds: 1487596529011733854
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -359,7 +351,7 @@ Assets {
         }
       }
       Objects {
-        Id: 623909933037868442
+        Id: 16075983253745167835
         Name: "WeaponDamageShootServer"
         Transform {
           Location {
@@ -372,7 +364,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1597837581558898008
+        ParentId: 14904418733318530270
         UnregisteredParameters {
           Overrides {
             Name: "cs:BaseDamage"
@@ -398,7 +390,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7909261883729760663
+        Id: 163987333506025888
         Name: "SP_addSpell"
         Transform {
           Location {
@@ -411,18 +403,18 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1597837581558898008
+        ParentId: 14904418733318530270
         UnregisteredParameters {
           Overrides {
             Name: "cs:spellRoot"
             ObjectReference {
-              SubObjectId: 11009008633459171541
+              SubObjectId: 17484086847626897149
             }
           }
           Overrides {
             Name: "cs:pickTrigSpell"
             ObjectReference {
-              SubObjectId: 8660238699279455978
+              SubObjectId: 5404916448681409549
             }
           }
           Overrides {
@@ -453,7 +445,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5325804085308255879
+        Id: 1487596529011733854
         Name: "EquipmentPickupServer"
         Transform {
           Location {
@@ -466,12 +458,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 1597837581558898008
+        ParentId: 14904418733318530270
         UnregisteredParameters {
           Overrides {
             Name: "cs:Trigger"
             ObjectReference {
-              SubObjectId: 8660238699279455978
+              SubObjectId: 5404916448681409549
             }
           }
         }
@@ -494,7 +486,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7732520111376542897
+        Id: 10395538022606654570
         Name: "PickUp FX"
         Transform {
           Location {
@@ -507,8 +499,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11009008633459171541
-        ChildIds: 17404120895943485229
+        ParentId: 17484086847626897149
+        ChildIds: 14245333394779186109
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -526,7 +518,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17404120895943485229
+        Id: 14245333394779186109
         Name: "pickup earth"
         Transform {
           Location {
@@ -539,12 +531,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 7732520111376542897
-        ChildIds: 15626864506458986964
-        ChildIds: 16602965804372124745
-        ChildIds: 2569182615737619896
-        ChildIds: 13178803427287966199
-        ChildIds: 11998431704047580228
+        ParentId: 10395538022606654570
+        ChildIds: 233318687551629940
+        ChildIds: 14430641285807916771
+        ChildIds: 10006961841153407897
+        ChildIds: 9868866402607738166
+        ChildIds: 6819272404579780829
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -562,7 +554,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15626864506458986964
+        Id: 233318687551629940
         Name: "CVS spell pickUp client"
         Transform {
           Location {
@@ -575,36 +567,36 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17404120895943485229
+        ParentId: 14245333394779186109
         UnregisteredParameters {
           Overrides {
             Name: "cs:visualReference"
             ObjectReference {
-              SubObjectId: 11998431704047580228
+              SubObjectId: 6819272404579780829
             }
           }
           Overrides {
             Name: "cs:VFX_Circles"
             ObjectReference {
-              SubObjectId: 10063336380275309981
+              SubObjectId: 9413695147265351286
             }
           }
           Overrides {
             Name: "cs:VFX_Beam"
             ObjectReference {
-              SubObjectId: 13178803427287966199
+              SubObjectId: 9868866402607738166
             }
           }
           Overrides {
             Name: "cs:SFX_Pick"
             ObjectReference {
-              SubObjectId: 2569182615737619896
+              SubObjectId: 10006961841153407897
             }
           }
           Overrides {
             Name: "cs:SFX_suction"
             ObjectReference {
-              SubObjectId: 16602965804372124745
+              SubObjectId: 14430641285807916771
             }
           }
           Overrides {
@@ -614,7 +606,7 @@ Assets {
           Overrides {
             Name: "cs:rootSpell"
             ObjectReference {
-              SubObjectId: 11009008633459171541
+              SubObjectId: 17484086847626897149
             }
           }
           Overrides {
@@ -649,7 +641,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16602965804372124745
+        Id: 14430641285807916771
         Name: "suction"
         Transform {
           Location {
@@ -662,7 +654,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17404120895943485229
+        ParentId: 14245333394779186109
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -688,7 +680,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2569182615737619896
+        Id: 10006961841153407897
         Name: "SFX spell pickable"
         Transform {
           Location {
@@ -701,7 +693,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17404120895943485229
+        ParentId: 14245333394779186109
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -727,7 +719,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13178803427287966199
+        Id: 9868866402607738166
         Name: "VFX beam"
         Transform {
           Location {
@@ -740,7 +732,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17404120895943485229
+        ParentId: 14245333394779186109
         UnregisteredParameters {
           Overrides {
             Name: "bp:Looping"
@@ -807,7 +799,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11998431704047580228
+        Id: 6819272404579780829
         Name: "visual reference"
         Transform {
           Location {
@@ -823,26 +815,26 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 17404120895943485229
-        ChildIds: 6101234524502042038
-        ChildIds: 12838364059846642332
-        ChildIds: 15715454685716045829
-        ChildIds: 8203458620539653735
-        ChildIds: 2803680003983634565
-        ChildIds: 651267198879102252
-        ChildIds: 11148407037885257436
-        ChildIds: 16874499195544011018
-        ChildIds: 10063336380275309981
-        ChildIds: 12337976181029320074
-        ChildIds: 16833024021086508086
-        ChildIds: 18158313639977546163
-        ChildIds: 11433331933379721668
-        ChildIds: 8151442657745100294
-        ChildIds: 9431497909050198826
-        ChildIds: 160187333030939977
-        ChildIds: 5130790942005230729
-        ChildIds: 2285500821152506721
-        ChildIds: 10370318038023769528
+        ParentId: 14245333394779186109
+        ChildIds: 17461398856276465375
+        ChildIds: 15781142901582193309
+        ChildIds: 17319569082808334824
+        ChildIds: 9893966673974771233
+        ChildIds: 13137824000744073534
+        ChildIds: 8955813650976389855
+        ChildIds: 15710933686714786658
+        ChildIds: 880761483983027913
+        ChildIds: 9413695147265351286
+        ChildIds: 16457575668808553495
+        ChildIds: 3707348517561572955
+        ChildIds: 8153903988580052183
+        ChildIds: 152277465096587785
+        ChildIds: 5676576161609720472
+        ChildIds: 13288652029796186202
+        ChildIds: 6834465524048628232
+        ChildIds: 17554246016060340890
+        ChildIds: 6652739910100782006
+        ChildIds: 6970291217115003623
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -860,7 +852,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6101234524502042038
+        Id: 17461398856276465375
         Name: "dustFall"
         Transform {
           Location {
@@ -876,7 +868,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11998431704047580228
+        ParentId: 6819272404579780829
         UnregisteredParameters {
           Overrides {
             Name: "bp:Emissive Boost"
@@ -931,7 +923,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12838364059846642332
+        Id: 15781142901582193309
         Name: "expl"
         Transform {
           Location {
@@ -944,7 +936,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11998431704047580228
+        ParentId: 6819272404579780829
         UnregisteredParameters {
           Overrides {
             Name: "bp:Looping"
@@ -985,7 +977,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15715454685716045829
+        Id: 17319569082808334824
         Name: "puf1"
         Transform {
           Location {
@@ -998,7 +990,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11998431704047580228
+        ParentId: 6819272404579780829
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
@@ -1043,7 +1035,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8203458620539653735
+        Id: 9893966673974771233
         Name: "Rock Pile 001"
         Transform {
           Location {
@@ -1058,7 +1050,7 @@ Assets {
             Z: 1.84550488
           }
         }
-        ParentId: 11998431704047580228
+        ParentId: 6819272404579780829
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -1101,7 +1093,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2803680003983634565
+        Id: 13137824000744073534
         Name: "Object Rotator Continuous"
         Transform {
           Location {
@@ -1117,12 +1109,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11998431704047580228
+        ParentId: 6819272404579780829
         UnregisteredParameters {
           Overrides {
             Name: "cs:Object"
             ObjectReference {
-              SubObjectId: 11148407037885257436
+              SubObjectId: 15710933686714786658
             }
           }
           Overrides {
@@ -1182,7 +1174,7 @@ Assets {
         }
       }
       Objects {
-        Id: 651267198879102252
+        Id: 8955813650976389855
         Name: "Object Curve Mover"
         Transform {
           Location {
@@ -1198,12 +1190,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11998431704047580228
+        ParentId: 6819272404579780829
         UnregisteredParameters {
           Overrides {
             Name: "cs:Object"
             ObjectReference {
-              SubObjectId: 11148407037885257436
+              SubObjectId: 15710933686714786658
             }
           }
           Overrides {
@@ -1375,7 +1367,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11148407037885257436
+        Id: 15710933686714786658
         Name: "hexRock"
         Transform {
           Location {
@@ -1391,10 +1383,10 @@ Assets {
             Z: 0.861701131
           }
         }
-        ParentId: 11998431704047580228
-        ChildIds: 15436409313032269792
-        ChildIds: 1134384541261054283
-        ChildIds: 366038268425429192
+        ParentId: 6819272404579780829
+        ChildIds: 4755368913398108371
+        ChildIds: 5743125957527766909
+        ChildIds: 5327569527742622313
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1412,26 +1404,26 @@ Assets {
         }
       }
       Objects {
-        Id: 15436409313032269792
-        Name: "Rock Hexagonal"
+        Id: 4755368913398108371
+        Name: "r1"
         Transform {
           Location {
-            X: -20.7683582
-            Y: 36.2411804
+            X: -32.325428
+            Y: 55.4586906
             Z: 34.5249519
           }
           Rotation {
-            Pitch: -25.4979858
-            Yaw: -8.80041504
-            Roll: 25.2550869
+            Pitch: -80.8277
+            Yaw: -119.959625
+            Roll: 141.721848
           }
           Scale {
-            X: 0.638393164
-            Y: 0.638393164
-            Z: 1.99212039
+            X: 0.638394713
+            Y: 0.63839072
+            Z: 0.474836349
           }
         }
-        ParentId: 11148407037885257436
+        ParentId: 15710933686714786658
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1454,7 +1446,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 10152775025186856603
+            Id: 7886743528345473203
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1471,8 +1463,8 @@ Assets {
         }
       }
       Objects {
-        Id: 1134384541261054283
-        Name: "Rock Hexagonal"
+        Id: 5743125957527766909
+        Name: "r2"
         Transform {
           Location {
             X: -20.7683582
@@ -1483,11 +1475,11 @@ Assets {
           }
           Scale {
             X: 0.466622591
-            Y: 0.466622591
-            Z: 2.09029055
+            Y: 0.466622204
+            Z: 1.6727742
           }
         }
-        ParentId: 11148407037885257436
+        ParentId: 15710933686714786658
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1510,7 +1502,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 10152775025186856603
+            Id: 7886743528345473203
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1527,8 +1519,8 @@ Assets {
         }
       }
       Objects {
-        Id: 366038268425429192
-        Name: "Rock Hexagonal"
+        Id: 5327569527742622313
+        Name: "r3"
         Transform {
           Location {
             X: 15.9518499
@@ -1544,7 +1536,7 @@ Assets {
             Z: 1.71965
           }
         }
-        ParentId: 11148407037885257436
+        ParentId: 15710933686714786658
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -1567,7 +1559,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 10152775025186856603
+            Id: 7886743528345473203
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1584,7 +1576,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16874499195544011018
+        Id: 880761483983027913
         Name: "Object Rotator Continuous"
         Transform {
           Location {
@@ -1600,12 +1592,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11998431704047580228
+        ParentId: 6819272404579780829
         UnregisteredParameters {
           Overrides {
             Name: "cs:Object"
             ObjectReference {
-              SubObjectId: 10063336380275309981
+              SubObjectId: 9413695147265351286
             }
           }
           Overrides {
@@ -1665,7 +1657,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10063336380275309981
+        Id: 9413695147265351286
         Name: "circle"
         Transform {
           Location {
@@ -1681,10 +1673,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11998431704047580228
-        ChildIds: 9074487622662851256
-        ChildIds: 10509611030711281547
-        ChildIds: 10073219270484641537
+        ParentId: 6819272404579780829
+        ChildIds: 13832861389545641614
+        ChildIds: 3838234480336989580
+        ChildIds: 6630895987105856227
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1702,7 +1694,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9074487622662851256
+        Id: 13832861389545641614
         Name: "Magic Circle Generator Advanced: Basic VFX"
         Transform {
           Location {
@@ -1715,7 +1707,7 @@ Assets {
             Z: 0.800254583
           }
         }
-        ParentId: 10063336380275309981
+        ParentId: 9413695147265351286
         UnregisteredParameters {
           Overrides {
             Name: "bp:Element A Set"
@@ -1791,7 +1783,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10509611030711281547
+        Id: 3838234480336989580
         Name: "Magic Circle Generator Advanced: Nature VFX"
         Transform {
           Location {
@@ -1804,7 +1796,7 @@ Assets {
             Z: 0.800254583
           }
         }
-        ParentId: 10063336380275309981
+        ParentId: 9413695147265351286
         UnregisteredParameters {
           Overrides {
             Name: "bp:Element Type"
@@ -1922,7 +1914,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10073219270484641537
+        Id: 6630895987105856227
         Name: "Magic Circle Generator Advanced: Scifi VFX"
         Transform {
           Location {
@@ -1935,7 +1927,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 10063336380275309981
+        ParentId: 9413695147265351286
         UnregisteredParameters {
           Overrides {
             Name: "bp:Element Type"
@@ -2026,7 +2018,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12337976181029320074
+        Id: 16457575668808553495
         Name: "Material Rolling Movement Rock Scrape 01 SFX"
         Transform {
           Location {
@@ -2042,7 +2034,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11998431704047580228
+        ParentId: 6819272404579780829
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2069,7 +2061,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16833024021086508086
+        Id: 3707348517561572955
         Name: "Dust Motes Volume VFX"
         Transform {
           Location {
@@ -2085,7 +2077,7 @@ Assets {
             Z: 2.13684607
           }
         }
-        ParentId: 11998431704047580228
+        ParentId: 6819272404579780829
         UnregisteredParameters {
           Overrides {
             Name: "bp:Emissive Boost"
@@ -2139,7 +2131,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18158313639977546163
+        Id: 8153903988580052183
         Name: "Decal Dirt Patch"
         Transform {
           Location {
@@ -2155,7 +2147,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11998431704047580228
+        ParentId: 6819272404579780829
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -2193,7 +2185,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11433331933379721668
+        Id: 152277465096587785
         Name: "Curling Dust VFX"
         Transform {
           Location {
@@ -2209,7 +2201,7 @@ Assets {
             Z: 0.2
           }
         }
-        ParentId: 11998431704047580228
+        ParentId: 6819272404579780829
         UnregisteredParameters {
           Overrides {
             Name: "bp:Life"
@@ -2255,7 +2247,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8151442657745100294
+        Id: 5676576161609720472
         Name: "Object Rotator Continuous"
         Transform {
           Location {
@@ -2271,12 +2263,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11998431704047580228
+        ParentId: 6819272404579780829
         UnregisteredParameters {
           Overrides {
             Name: "cs:Object"
             ObjectReference {
-              SubObjectId: 9431497909050198826
+              SubObjectId: 13288652029796186202
             }
           }
           Overrides {
@@ -2336,7 +2328,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9431497909050198826
+        Id: 13288652029796186202
         Name: "floatingRocks"
         Transform {
           Location {
@@ -2352,10 +2344,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11998431704047580228
-        ChildIds: 9231393248327426191
-        ChildIds: 3860242053741826216
-        ChildIds: 6956729953066449417
+        ParentId: 6819272404579780829
+        ChildIds: 13089415395198468998
+        ChildIds: 10670002980296043968
+        ChildIds: 5062218671272867144
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -2373,7 +2365,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9231393248327426191
+        Id: 13089415395198468998
         Name: "Rock 03"
         Transform {
           Location {
@@ -2388,7 +2380,7 @@ Assets {
             Z: 0.231696889
           }
         }
-        ParentId: 9431497909050198826
+        ParentId: 13288652029796186202
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -2431,7 +2423,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3860242053741826216
+        Id: 10670002980296043968
         Name: "Rock 01"
         Transform {
           Location {
@@ -2450,7 +2442,7 @@ Assets {
             Z: 0.0728109628
           }
         }
-        ParentId: 9431497909050198826
+        ParentId: 13288652029796186202
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -2493,7 +2485,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6956729953066449417
+        Id: 5062218671272867144
         Name: "Rock 02"
         Transform {
           Location {
@@ -2512,7 +2504,7 @@ Assets {
             Z: 0.182098702
           }
         }
-        ParentId: 9431497909050198826
+        ParentId: 13288652029796186202
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -2555,7 +2547,7 @@ Assets {
         }
       }
       Objects {
-        Id: 160187333030939977
+        Id: 6834465524048628232
         Name: "Object Curve Mover"
         Transform {
           Location {
@@ -2571,12 +2563,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11998431704047580228
+        ParentId: 6819272404579780829
         UnregisteredParameters {
           Overrides {
             Name: "cs:Object"
             ObjectReference {
-              SubObjectId: 9231393248327426191
+              SubObjectId: 13089415395198468998
             }
           }
           Overrides {
@@ -2715,7 +2707,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5130790942005230729
+        Id: 17554246016060340890
         Name: "Object Curve Mover"
         Transform {
           Location {
@@ -2731,12 +2723,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11998431704047580228
+        ParentId: 6819272404579780829
         UnregisteredParameters {
           Overrides {
             Name: "cs:Object"
             ObjectReference {
-              SubObjectId: 3860242053741826216
+              SubObjectId: 10670002980296043968
             }
           }
           Overrides {
@@ -2875,7 +2867,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2285500821152506721
+        Id: 6652739910100782006
         Name: "Object Curve Mover"
         Transform {
           Location {
@@ -2891,12 +2883,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11998431704047580228
+        ParentId: 6819272404579780829
         UnregisteredParameters {
           Overrides {
             Name: "cs:Object"
             ObjectReference {
-              SubObjectId: 6956729953066449417
+              SubObjectId: 5062218671272867144
             }
           }
           Overrides {
@@ -3035,7 +3027,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10370318038023769528
+        Id: 6970291217115003623
         Name: "Falling Dust Stream VFX"
         Transform {
           Location {
@@ -3051,7 +3043,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11998431704047580228
+        ParentId: 6819272404579780829
         UnregisteredParameters {
           Overrides {
             Name: "bp:Emissive Boost"
@@ -3106,7 +3098,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11616004053127984252
+        Id: 13423724015220068205
         Name: "ClientContext"
         Transform {
           Location {
@@ -3119,8 +3111,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11009008633459171541
-        ChildIds: 10406075033974240010
+        ParentId: 17484086847626897149
+        ChildIds: 3180763893667914874
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -3138,7 +3130,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10406075033974240010
+        Id: 3180763893667914874
         Name: "WeaponSpreadClient"
         Transform {
           Location {
@@ -3151,7 +3143,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11616004053127984252
+        ParentId: 13423724015220068205
         UnregisteredParameters {
           Overrides {
             Name: "cs:SpreadStandPrecision"
@@ -3249,12 +3241,12 @@ Assets {
       }
     }
     Assets {
-      Id: 10152775025186856603
-      Name: "Rock Hexagonal"
+      Id: 7886743528345473203
+      Name: "Rock 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_rock_generic_008"
+        AssetId: "sm_rock_generic_002_sm_rock_generic_002_LOD0"
       }
     }
     Assets {
@@ -3336,15 +3328,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_rock_generic_001"
-      }
-    }
-    Assets {
-      Id: 7886743528345473203
-      Name: "Rock 02"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_rock_generic_002_sm_rock_generic_002_LOD0"
       }
     }
     PrimaryAssetId {
