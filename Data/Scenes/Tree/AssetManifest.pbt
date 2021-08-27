@@ -8,15 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17518180378751572853
-  Name: "Suction Whoosh 05 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_suction_whoosh_05_Cue_ref"
-  }
-}
-Assets {
   Id: 17239665496848081969
   Name: "Dust Motes Volume VFX"
   PlatformAssetType: 8
@@ -53,21 +44,21 @@ Assets {
   }
 }
 Assets {
+  Id: 15862839354445934362
+  Name: "Plasma Impact VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_plasma_impact"
+  }
+}
+Assets {
   Id: 15857297983291997403
   Name: "Fantasy Book Open 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fan_book_open_001_ref"
-  }
-}
-Assets {
-  Id: 15696524381397938084
-  Name: "Magic Circle Generator Advanced: Scifi VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_magic_circle_generator_scifi"
   }
 }
 Assets {
@@ -89,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15505006778994746308
+  Name: "Dimension Slash Impact VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_dSlash_impact"
+  }
+}
+Assets {
   Id: 14964967653464214432
   Name: "Decal Dirt Patch"
   PlatformAssetType: 14
@@ -107,15 +107,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14040801277181328014
-  Name: "Torch Fire VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_torch_fire"
-  }
-}
-Assets {
   Id: 13331605163592656631
   Name: "Skid Trail VFX"
   PlatformAssetType: 8
@@ -125,21 +116,21 @@ Assets {
   }
 }
 Assets {
-  Id: 12353421659613261783
-  Name: "Sphere"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_sphere_002"
-  }
-}
-Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_002"
+  }
+}
+Assets {
+  Id: 11887549032181544333
+  Name: "Impact Sparks VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_impact_sparks"
   }
 }
 Assets {
@@ -176,15 +167,6 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_dust_puff"
-  }
-}
-Assets {
-  Id: 9337660376557937055
-  Name: "Magic Dark Low Drone Spell Cast 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_magic_dark_low_drone_spell_cast_01_Cue_ref"
   }
 }
 Assets {
@@ -239,6 +221,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_mil_tank_mf"
+  }
+}
+Assets {
+  Id: 4721253422549528564
+  Name: "Beam Down Teleport VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_Teleporter_BeamDown"
   }
 }
 Assets {

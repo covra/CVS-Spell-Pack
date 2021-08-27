@@ -55,7 +55,7 @@ function destroyFold (player)
 	if Object.IsValid(fxFolder) then 
 		if debugPrint then print(script.name.." >> destroying self pickUp FX folder..", fxFolder) end 
 		fxFolder:Destroy()
-		TRIGGER_SPELL:Destroy()
+		--TRIGGER_SPELL:Destroy()
 	end 
 end
 
