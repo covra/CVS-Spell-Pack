@@ -5,15 +5,22 @@ if not EQUIPMENT:IsA('Equipment') then
 end
 --user exposed
 local STANCE = script:GetCustomProperty("stance")
-local lastStance = ""
+local lastStance = "unarmed_stance"
 
+-------------------------------------------------------------------------------------
 
 function onEquip (equip, player)
 	lastStance = player.animationStance
 	player.animationStance = STANCE
 end 
+
 function onUnequip (equip, player)
-	player.animationStance = lastStance
+	if lastStance ~= nil then 
+		print(script.name.." >> Restoring last animation stance for "..player.name..": ",lastStance)
+		player.animationStance = lastStance
+	else 
+		player.animationStance = "unarmed_stance"
+	end 
 end  
 
 
