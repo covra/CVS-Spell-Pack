@@ -41,9 +41,9 @@ Objects {
   ChildIds: 18278720400746410147
   ChildIds: 16543066514754936141
   ChildIds: 16238231457572033949
-  ChildIds: 7305746112421914722
+  ChildIds: 15346031808873549115
   ChildIds: 10226704922393261596
-  ChildIds: 15420371595996168426
+  ChildIds: 16232086521826593977
   ChildIds: 4855247575180844931
   ChildIds: 9052128156351745310
   ChildIds: 5337986729710165281
@@ -53,6 +53,14 @@ Objects {
   ChildIds: 8595123538963548594
   ChildIds: 9488681593954022034
   ChildIds: 12206672794416826894
+  ChildIds: 10056722456127619208
+  ChildIds: 2157964027846914811
+  ChildIds: 4124199818548385885
+  ChildIds: 5057942099460025834
+  ChildIds: 13285753884443477945
+  ChildIds: 12537691133361027386
+  ChildIds: 17991189507564368198
+  ChildIds: 1486483424367190686
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -65,6 +73,373 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 1486483424367190686
+  Name: "tsunami wave"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8777210535795985244
+      value {
+        Overrides {
+          Name: "Name"
+          String: "tsunami wave"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3667.63379
+            Y: 4988.97412
+            Z: 9.15527344e-05
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 18000411511564172416
+    }
+  }
+}
+Objects {
+  Id: 17991189507564368198
+  Name: "wave castfx"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 18387400593702869834
+      value {
+        Overrides {
+          Name: "Name"
+          String: "wave castfx"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 819.731873
+            Y: 298.893646
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1917907138588389337
+    }
+  }
+}
+Objects {
+  Id: 12537691133361027386
+  Name: "water beam"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3615195464143534717
+      value {
+        Overrides {
+          Name: "Name"
+          String: "water beam"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1188.15491
+            Y: -627.514832
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6471569811965329120
+    }
+  }
+}
+Objects {
+  Id: 13285753884443477945
+  Name: "Basic Water Splash VFX"
+  Transform {
+    Location {
+      X: -113.843658
+      Y: -1237.58191
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 2671164133412648285
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 5057942099460025834
+  Name: "Water Jet VFX"
+  Transform {
+    Location {
+      X: 54.8154907
+      Y: -1332.03162
+      Z: 179.311264
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Density"
+      Float: 3.28326464
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 2.23755622
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 21.8118
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 268486789918582866
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 4124199818548385885
+  Name: "water ref pos"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12877339965293575985
+      value {
+        Overrides {
+          Name: "Name"
+          String: "water ref pos"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1316.48535
+            Y: -792.90387
+            Z: 41.1815109
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4204850054797319489
+    }
+  }
+}
+Objects {
+  Id: 2157964027846914811
+  Name: "Watersplash Large VFX"
+  Transform {
+    Location {
+      X: -5.59326172
+      Y: -1069.11841
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4145773917286817108
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 10056722456127619208
+  Name: "water projectile"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7812900950973073523
+      value {
+        Overrides {
+          Name: "Name"
+          String: "water projectile"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1543.72925
+            Y: -603.57666
+            Z: 66.1337204
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5117735889527099258
+    }
   }
 }
 Objects {
@@ -6209,126 +6584,12 @@ Objects {
   }
 }
 Objects {
-  Id: 15420371595996168426
+  Id: 16232086521826593977
   Name: "SPELL _9_bubble"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16478626640591853831
-      value {
-        Overrides {
-          Name: "cs:getSpellVFX"
-          AssetReference {
-            Id: 1859870833290217736
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 17484086847626897149
-      value {
-        Overrides {
-          Name: "Name"
-          String: "SPELL _9_bubble"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1994.03772
-            Y: -436.345703
-            Z: 22.9534531
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 537804506944363405
-    }
-  }
-}
-Objects {
-  Id: 10226704922393261596
-  Name: "SPELL _8_tsunami"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 15402832087484574473
-      value {
-        Overrides {
-          Name: "cs:getSpellVFX"
-          AssetReference {
-            Id: 1859870833290217736
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 17484086847626897149
-      value {
-        Overrides {
-          Name: "Name"
-          String: "SPELL _8_tsunami"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1994.03772
-            Y: -970.796265
-            Z: 22.9534531
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14324367480621395084
-    }
-  }
-}
-Objects {
-  Id: 7305746112421914722
-  Name: "SPELL _7_waterBeam"
   Transform {
     Location {
       X: 1994.03772
-      Y: -1495.09583
+      Y: -436.345703
       Z: 22.9534531
     }
     Rotation {
@@ -6340,28 +6601,28 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 5619991925431091212
-  ChildIds: 15907509811922219666
-  ChildIds: 9742661525510218251
-  ChildIds: 6419860262733015617
-  ChildIds: 541720562417877749
-  ChildIds: 3281550612976271858
+  ChildIds: 14546333434321200343
+  ChildIds: 6404714834974348873
+  ChildIds: 9122388279565552250
+  ChildIds: 15940245913878974106
+  ChildIds: 9485810250579273262
+  ChildIds: 12225765782886458665
   UnregisteredParameters {
     Overrides {
       Name: "cs:linkToEquipment"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:spell_Name"
-      String: "Water Beam"
+      String: "BubbleIt"
     }
     Overrides {
       Name: "cs:animationStancePick"
       String: "1hand_melee_shield_block"
     }
     Overrides {
-      Name: "cs:columnHeight"
-      Int: 1000
+      Name: "cs:bubbleLife"
+      Int: 5
     }
     Overrides {
       Name: "cs:linkToEquipment:tooltip"
@@ -6376,8 +6637,8 @@ Objects {
       String: "Animation stance to the player when picks the spell"
     }
     Overrides {
-      Name: "cs:columnHeight:tooltip"
-      String: "Height of the column (in cm) where will raise the player. Default = 1000"
+      Name: "cs:bubbleLife:tooltip"
+      String: "Life of the bubble in seconds. Default = 5"
     }
   }
   WantsNetworking: true
@@ -6399,13 +6660,13 @@ Objects {
     }
     Weapon {
       ProjectileAssetRef {
-        Id: 12965508538043441751
+        Id: 5117735889527099258
       }
       MuzzleFlashAssetRef {
-        Id: 9379420623325059936
+        Id: 17298937177186525835
       }
       TrailAssetRef {
-        Id: 2336733781318849399
+        Id: 1485372274567140240
       }
       ImpactAssetRef {
         Id: 13218744182045489980
@@ -6452,7 +6713,7 @@ Objects {
       SpreadIncreasePerShot: 2
       SpreadPenaltyPerShot: 1.5
       DefaultAbility {
-        SelfId: 5619991925431091212
+        SelfId: 14546333434321200343
       }
       ReloadAbility {
         SelfId: 841534158063459245
@@ -6464,15 +6725,15 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7305746112421914722
+    SelfId: 16232086521826593977
     SubobjectId: 17484086847626897149
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
     WasRoot: true
   }
 }
 Objects {
-  Id: 3281550612976271858
+  Id: 12225765782886458665
   Name: "ClientContext"
   Transform {
     Location {
@@ -6485,8 +6746,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7305746112421914722
-  ChildIds: 13539116612833962725
+  ParentId: 16232086521826593977
+  ChildIds: 4594893187980906046
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -6503,14 +6764,14 @@ Objects {
   NetworkContext {
   }
   InstanceHistory {
-    SelfId: 3281550612976271858
+    SelfId: 12225765782886458665
     SubobjectId: 13423724015220068205
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 13539116612833962725
+  Id: 4594893187980906046
   Name: "WeaponSpreadClient"
   Transform {
     Location {
@@ -6523,7 +6784,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3281550612976271858
+  ParentId: 12225765782886458665
   UnregisteredParameters {
     Overrides {
       Name: "cs:SpreadStandPrecision"
@@ -6556,29 +6817,28 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13539116612833962725
+    SelfId: 4594893187980906046
     SubobjectId: 3180763893667914874
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 541720562417877749
+  Id: 9485810250579273262
   Name: "PickUp FX"
   Transform {
     Location {
-      Y: 118.002075
     }
     Rotation {
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.83142257
+      Y: 1.83142257
+      Z: 1.83142257
     }
   }
-  ParentId: 7305746112421914722
-  ChildIds: 5940628359022816546
+  ParentId: 16232086521826593977
+  ChildIds: 8925348516643317199
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -6595,14 +6855,14 @@ Objects {
   NetworkContext {
   }
   InstanceHistory {
-    SelfId: 541720562417877749
+    SelfId: 9485810250579273262
     SubobjectId: 10395538022606654570
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 5940628359022816546
+  Id: 8925348516643317199
   Name: "pickup water"
   Transform {
     Location {
@@ -6615,14 +6875,13 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 541720562417877749
-  ChildIds: 10735498664060495083
-  ChildIds: 5052584299928412870
-  ChildIds: 6882383075063548028
-  ChildIds: 2098417931580765446
-  ChildIds: 2248858136691647401
-  ChildIds: 14511197391624996418
-  ChildIds: 14053971464599402120
+  ParentId: 9485810250579273262
+  ChildIds: 17820699150535373635
+  ChildIds: 2283195588719472124
+  ChildIds: 5406937782985815833
+  ChildIds: 13043524587205000798
+  ChildIds: 11979555163371371389
+  ChildIds: 11077822897506214223
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6639,34 +6898,152 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 5940628359022816546
-    SubobjectId: 14245333394779186109
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 8925348516643317199
+    SubobjectId: 7511218874303745931
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 14053971464599402120
-  Name: "Object Rotator Continuous"
+  Id: 11077822897506214223
+  Name: "Liquid Decal"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.806661129
+      Y: 0.806661129
+      Z: 0.806661129
+    }
+  }
+  ParentId: 8925348516643317199
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Type"
+      Enum {
+        Value: "mc:eliquiddecaltype:1"
+      }
+    }
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.68
+        G: 0.955496609
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Stain"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 5522655696641006187
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+  InstanceHistory {
+    SelfId: 11077822897506214223
+    SubobjectId: 9969938032646408971
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 11979555163371371389
+  Name: "visual reference"
+  Transform {
+    Location {
+      X: 1.89239502
+      Y: -0.13863945
+      Z: -16.6446838
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
       Z: 1
     }
   }
-  ParentId: 5940628359022816546
+  ParentId: 8925348516643317199
+  ChildIds: 9690670696837868967
+  ChildIds: 15126336010654854207
+  ChildIds: 4081219805487553469
+  ChildIds: 7793213892079451333
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 11979555163371371389
+    SubobjectId: 13105454134615757113
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
+  }
+}
+Objects {
+  Id: 7793213892079451333
+  Name: "Object Rotator Continuous"
+  Transform {
+    Location {
+      X: -1.89241993
+      Y: -513.532043
+      Z: 16.6446857
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.546023667
+      Y: 0.546023667
+      Z: 0.546023667
+    }
+  }
+  ParentId: 11979555163371371389
   UnregisteredParameters {
     Overrides {
       Name: "cs:Object"
       ObjectReference {
-        SelfId: 9141772137311439524
+        SelfId: 9690670696837868967
       }
     }
     Overrides {
       Name: "cs:RotateVelocity"
       Rotator {
-        Yaw: 20
+        Yaw: 40
       }
     }
     Overrides {
@@ -6719,57 +7096,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14053971464599402120
-    SubobjectId: 6109539362349021207
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 7793213892079451333
+    SubobjectId: 9207343719102600833
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 14511197391624996418
-  Name: "visual reference"
-  Transform {
-    Location {
-      X: 1.89239502
-      Y: -0.13863945
-      Z: -16.6446838
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5940628359022816546
-  ChildIds: 9141772137311439524
-  ChildIds: 14340515526807676844
-  ChildIds: 11868085553078210756
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 14511197391624996418
-    SubobjectId: 6819272404579780829
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
-  }
-}
-Objects {
-  Id: 11868085553078210756
+  Id: 4081219805487553469
   Name: "Dust Motes Volume VFX"
   Transform {
     Location {
@@ -6785,7 +7119,7 @@ Objects {
       Z: 2.13684607
     }
   }
-  ParentId: 14511197391624996418
+  ParentId: 11979555163371371389
   UnregisteredParameters {
     Overrides {
       Name: "bp:Emissive Boost"
@@ -6836,17 +7170,17 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11868085553078210756
-    SubobjectId: 3707348517561572955
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 4081219805487553469
+    SubobjectId: 3117448758005068281
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
   Relevance {
     Value: "mc:eproxyrelevance:medium"
   }
 }
 Objects {
-  Id: 14340515526807676844
+  Id: 15126336010654854207
   Name: "waterfall"
   Transform {
     Location {
@@ -6862,11 +7196,11 @@ Objects {
       Z: 0.496897
     }
   }
-  ParentId: 14511197391624996418
-  ChildIds: 3730940544668765576
-  ChildIds: 7907248287072789827
-  ChildIds: 16108254284397799482
-  ChildIds: 4967914344895673294
+  ParentId: 11979555163371371389
+  ChildIds: 16983045217059129774
+  ChildIds: 3359275525445487246
+  ChildIds: 17052949922351659205
+  ChildIds: 1886642761954480531
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6883,14 +7217,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 14340515526807676844
-    SubobjectId: 5819622548255566131
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 15126336010654854207
+    SubobjectId: 13982421886463116923
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 4967914344895673294
+  Id: 1886642761954480531
   Name: "base"
   Transform {
     Location {
@@ -6906,7 +7240,7 @@ Objects {
       Z: 0.117459536
     }
   }
-  ParentId: 14340515526807676844
+  ParentId: 15126336010654854207
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6953,14 +7287,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4967914344895673294
-    SubobjectId: 15218049058173812049
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 1886642761954480531
+    SubobjectId: 706699494998932439
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 16108254284397799482
+  Id: 17052949922351659205
   Name: "Waterfall Small SFX"
   Transform {
     Location {
@@ -6973,7 +7307,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14340515526807676844
+  ParentId: 15126336010654854207
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6999,14 +7333,14 @@ Objects {
     IsAttenuationEnabled: true
   }
   InstanceHistory {
-    SelfId: 16108254284397799482
-    SubobjectId: 5209766291669903013
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 17052949922351659205
+    SubobjectId: 18395022429476590209
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 7907248287072789827
+  Id: 3359275525445487246
   Name: "Waterfall Base Volume VFX"
   Transform {
     Location {
@@ -7021,7 +7355,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14340515526807676844
+  ParentId: 15126336010654854207
   UnregisteredParameters {
     Overrides {
       Name: "bp:Visible In Preview"
@@ -7071,17 +7405,17 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7907248287072789827
-    SubobjectId: 18049579960476249052
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 3359275525445487246
+    SubobjectId: 4431132603140513994
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
   Relevance {
     Value: "mc:eproxyrelevance:medium"
   }
 }
 Objects {
-  Id: 3730940544668765576
+  Id: 16983045217059129774
   Name: "waterFall"
   Transform {
     Location {
@@ -7097,11 +7431,11 @@ Objects {
       Z: 0.515544772
     }
   }
-  ParentId: 14340515526807676844
-  ChildIds: 7855172698255176579
-  ChildIds: 12488411477648004787
-  ChildIds: 9675497606519047777
-  ChildIds: 13693330460996308592
+  ParentId: 15126336010654854207
+  ChildIds: 2774994291262065989
+  ChildIds: 9808913449225339590
+  ChildIds: 17104146454933508493
+  ChildIds: 2860635037577405916
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7118,14 +7452,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 3730940544668765576
-    SubobjectId: 11819199777444037399
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 16983045217059129774
+    SubobjectId: 17892771975272915946
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 13693330460996308592
+  Id: 2860635037577405916
   Name: "Waterfall 90 Inner Corner"
   Transform {
     Location {
@@ -7141,7 +7475,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3730940544668765576
+  ParentId: 16983045217059129774
   UnregisteredParameters {
     Overrides {
       Name: "ma:waterfall:color"
@@ -7182,14 +7516,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 13693330460996308592
-    SubobjectId: 3010857265897963759
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 2860635037577405916
+    SubobjectId: 3770362277364387736
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 9675497606519047777
+  Id: 17104146454933508493
   Name: "Waterfall 90 Inner Corner"
   Transform {
     Location {
@@ -7205,7 +7539,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3730940544668765576
+  ParentId: 16983045217059129774
   UnregisteredParameters {
     Overrides {
       Name: "ma:waterfall:color"
@@ -7246,14 +7580,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9675497606519047777
-    SubobjectId: 1262847330052065534
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 17104146454933508493
+    SubobjectId: 18356147058296077257
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 12488411477648004787
+  Id: 9808913449225339590
   Name: "Waterfall 90 Inner Corner"
   Transform {
     Location {
@@ -7269,7 +7603,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3730940544668765576
+  ParentId: 16983045217059129774
   UnregisteredParameters {
     Overrides {
       Name: "ma:waterfall:color"
@@ -7310,14 +7644,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12488411477648004787
-    SubobjectId: 4219605847139342380
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 9808913449225339590
+    SubobjectId: 11223042999088900226
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 7855172698255176579
+  Id: 2774994291262065989
   Name: "Waterfall 90 Inner Corner"
   Transform {
     Location {
@@ -7332,7 +7666,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3730940544668765576
+  ParentId: 16983045217059129774
   UnregisteredParameters {
     Overrides {
       Name: "ma:waterfall:color"
@@ -7373,14 +7707,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7855172698255176579
-    SubobjectId: 18069533281889598748
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 2774994291262065989
+    SubobjectId: 3846850818798626561
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 9141772137311439524
+  Id: 9690670696837868967
   Name: "circle"
   Transform {
     Location {
@@ -7396,10 +7730,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14511197391624996418
-  ChildIds: 3409572531024124276
-  ChildIds: 15604635294590853424
-  ChildIds: 4027610207422176013
+  ParentId: 11979555163371371389
+  ChildIds: 5083892917416694346
+  ChildIds: 603394456003968806
+  ChildIds: 6114337285490705315
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7416,14 +7750,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 9141772137311439524
-    SubobjectId: 16798097207759406139
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 9690670696837868967
+    SubobjectId: 10780541417262335971
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 4027610207422176013
+  Id: 6114337285490705315
   Name: "Magic Circle Generator Advanced: Scifi VFX"
   Transform {
     Location {
@@ -7436,7 +7770,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9141772137311439524
+  ParentId: 9690670696837868967
   UnregisteredParameters {
     Overrides {
       Name: "bp:Element Type"
@@ -7523,17 +7857,17 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4027610207422176013
-    SubobjectId: 11539417548409460114
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 6114337285490705315
+    SubobjectId: 5132552951962380775
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
   Relevance {
     Value: "mc:eproxyrelevance:medium"
   }
 }
 Objects {
-  Id: 15604635294590853424
+  Id: 603394456003968806
   Name: "Magic Circle Generator Advanced: Nature VFX"
   Transform {
     Location {
@@ -7546,7 +7880,7 @@ Objects {
       Z: 0.800254583
     }
   }
-  ParentId: 9141772137311439524
+  ParentId: 9690670696837868967
   UnregisteredParameters {
     Overrides {
       Name: "bp:Element Type"
@@ -7663,17 +7997,17 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15604635294590853424
-    SubobjectId: 5714505133063434159
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 603394456003968806
+    SubobjectId: 1999511258370299234
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
   Relevance {
     Value: "mc:eproxyrelevance:medium"
   }
 }
 Objects {
-  Id: 3409572531024124276
+  Id: 5083892917416694346
   Name: "Magic Circle Generator Advanced: Basic VFX"
   Transform {
     Location {
@@ -7686,7 +8020,7 @@ Objects {
       Z: 0.800254583
     }
   }
-  ParentId: 9141772137311439524
+  ParentId: 9690670696837868967
   UnregisteredParameters {
     Overrides {
       Name: "bp:Element A Set"
@@ -7758,17 +8092,17 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3409572531024124276
-    SubobjectId: 13299676282253432811
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 5083892917416694346
+    SubobjectId: 6155749193630562318
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
   Relevance {
     Value: "mc:eproxyrelevance:medium"
   }
 }
 Objects {
-  Id: 2248858136691647401
+  Id: 13043524587205000798
   Name: "VFX beam"
   Transform {
     Location {
@@ -7781,7 +8115,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5940628359022816546
+  ParentId: 8925348516643317199
   UnregisteredParameters {
     Overrides {
       Name: "bp:Looping"
@@ -7844,17 +8178,17 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2248858136691647401
-    SubobjectId: 9868866402607738166
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 13043524587205000798
+    SubobjectId: 12025710980318975002
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
   Relevance {
     Value: "mc:eproxyrelevance:medium"
   }
 }
 Objects {
-  Id: 2098417931580765446
+  Id: 5406937782985815833
   Name: "SFX spell pickable"
   Transform {
     Location {
@@ -7867,7 +8201,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5940628359022816546
+  ParentId: 8925348516643317199
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7892,14 +8226,14 @@ Objects {
     IsAttenuationEnabled: true
   }
   InstanceHistory {
-    SelfId: 2098417931580765446
-    SubobjectId: 10006961841153407897
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 5406937782985815833
+    SubobjectId: 6406737358447828317
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 6882383075063548028
+  Id: 2283195588719472124
   Name: "suction"
   Transform {
     Location {
@@ -7912,7 +8246,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5940628359022816546
+  ParentId: 8925348516643317199
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7937,77 +8271,14 @@ Objects {
     IsAttenuationEnabled: true
   }
   InstanceHistory {
-    SelfId: 6882383075063548028
-    SubobjectId: 14430641285807916771
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 2283195588719472124
+    SubobjectId: 887080072830044088
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 5052584299928412870
-  Name: "Liquid Decal"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5940628359022816546
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Type"
-      Enum {
-        Value: "mc:eliquiddecaltype:1"
-      }
-    }
-    Overrides {
-      Name: "bp:Color"
-      Color {
-        R: 0.68
-        G: 0.955496609
-        B: 1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 5522655696641006187
-    }
-    TeamSettings {
-    }
-    DecalBP {
-    }
-  }
-  InstanceHistory {
-    SelfId: 5052584299928412870
-    SubobjectId: 15122717689716075609
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
-  }
-  Relevance {
-    Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 10735498664060495083
+  Id: 17820699150535373635
   Name: "CVS spell pickUp client"
   Transform {
     Location {
@@ -8020,18 +8291,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5940628359022816546
+  ParentId: 8925348516643317199
   UnregisteredParameters {
     Overrides {
       Name: "cs:visualReference"
       ObjectReference {
-        SelfId: 14511197391624996418
+        SelfId: 11979555163371371389
       }
     }
     Overrides {
       Name: "cs:VFX_Circles"
       ObjectReference {
-        SelfId: 9141772137311439524
+        SelfId: 9690670696837868967
       }
     }
     Overrides {
@@ -8043,13 +8314,13 @@ Objects {
     Overrides {
       Name: "cs:SFX_Pick"
       ObjectReference {
-        SelfId: 2098417931580765446
+        SelfId: 5406937782985815833
       }
     }
     Overrides {
       Name: "cs:SFX_suction"
       ObjectReference {
-        SelfId: 6882383075063548028
+        SelfId: 2283195588719472124
       }
     }
     Overrides {
@@ -8059,13 +8330,7 @@ Objects {
     Overrides {
       Name: "cs:rootSpell"
       ObjectReference {
-        SelfId: 7305746112421914722
-      }
-    }
-    Overrides {
-      Name: "cs:getSpellVFX"
-      AssetReference {
-        Id: 1859870833290217736
+        SelfId: 16232086521826593977
       }
     }
     Overrides {
@@ -8079,6 +8344,12 @@ Objects {
     Overrides {
       Name: "cs:rootSpell:tooltip"
       String: "The spell associated to this script"
+    }
+    Overrides {
+      Name: "cs:getSpellVFX"
+      AssetReference {
+        Id: 1859870833290217736
+      }
     }
   }
   Collidable_v2 {
@@ -8099,14 +8370,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10735498664060495083
-    SubobjectId: 233318687551629940
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    SelfId: 17820699150535373635
+    SubobjectId: 16478626640591853831
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 6419860262733015617
+  Id: 15940245913878974106
   Name: "ServerContext"
   Transform {
     Location {
@@ -8119,10 +8390,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7305746112421914722
-  ChildIds: 5249385872618677060
-  ChildIds: 10774392237949339455
-  ChildIds: 9468198171648801729
+  ParentId: 16232086521826593977
+  ChildIds: 14769939199303600031
+  ChildIds: 1271872680073257956
+  ChildIds: 523826871085375258
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8140,14 +8411,14 @@ Objects {
     Type: Server
   }
   InstanceHistory {
-    SelfId: 6419860262733015617
+    SelfId: 15940245913878974106
     SubobjectId: 14904418733318530270
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 9468198171648801729
+  Id: 523826871085375258
   Name: "EquipmentPickupServer"
   Transform {
     Location {
@@ -8160,12 +8431,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6419860262733015617
+  ParentId: 15940245913878974106
   UnregisteredParameters {
     Overrides {
       Name: "cs:Trigger"
       ObjectReference {
-        SelfId: 15907509811922219666
+        SelfId: 6404714834974348873
       }
     }
   }
@@ -8187,14 +8458,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9468198171648801729
+    SelfId: 523826871085375258
     SubobjectId: 1487596529011733854
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 10774392237949339455
+  Id: 1271872680073257956
   Name: "SP_addSpell"
   Transform {
     Location {
@@ -8207,18 +8478,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6419860262733015617
+  ParentId: 15940245913878974106
   UnregisteredParameters {
     Overrides {
       Name: "cs:spellRoot"
       ObjectReference {
-        SelfId: 7305746112421914722
+        SelfId: 16232086521826593977
       }
     }
     Overrides {
       Name: "cs:pickTrigSpell"
       ObjectReference {
-        SelfId: 15907509811922219666
+        SelfId: 6404714834974348873
       }
     }
     Overrides {
@@ -8248,14 +8519,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10774392237949339455
+    SelfId: 1271872680073257956
     SubobjectId: 163987333506025888
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 5249385872618677060
+  Id: 14769939199303600031
   Name: "WeaponDamageShootServer"
   Transform {
     Location {
@@ -8268,7 +8539,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6419860262733015617
+  ParentId: 15940245913878974106
   UnregisteredParameters {
     Overrides {
       Name: "cs:BaseDamage"
@@ -8293,17 +8564,18 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5249385872618677060
+    SelfId: 14769939199303600031
     SubobjectId: 16075983253745167835
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 9742661525510218251
-  Name: "raise ability"
+  Id: 9122388279565552250
+  Name: "waterBeam ability"
   Transform {
     Location {
+      Y: -1058.75012
     }
     Rotation {
     }
@@ -8313,36 +8585,30 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7305746112421914722
+  ParentId: 16232086521826593977
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:castFX"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:executeFX"
+      AssetReference {
+        Id: 17298937177186525835
+      }
+    }
+    Overrides {
+      Name: "cs:drop"
+      AssetReference {
+        Id: 5117735889527099258
+      }
+    }
     Overrides {
       Name: "cs:ability"
       ObjectReference {
-        SelfId: 5619991925431091212
-      }
-    }
-    Overrides {
-      Name: "cs:projectile"
-      AssetReference {
-        Id: 9615930250230786520
-      }
-    }
-    Overrides {
-      Name: "cs:beam"
-      AssetReference {
-        Id: 3927291034077667502
-      }
-    }
-    Overrides {
-      Name: "cs:cast_FX"
-      AssetReference {
-        Id: 12077478226394046390
-      }
-    }
-    Overrides {
-      Name: "cs:exe_COLUMN"
-      AssetReference {
-        Id: 16920023150866207430
+        SelfId: 14546333434321200343
       }
     }
   }
@@ -8361,18 +8627,12 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 1156050533409995675
+      Id: 13871595521905154388
     }
-  }
-  InstanceHistory {
-    SelfId: 9742661525510218251
-    SubobjectId: 1221652192115485844
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
   }
 }
 Objects {
-  Id: 15907509811922219666
+  Id: 6404714834974348873
   Name: "pickSpell"
   Transform {
     Location {
@@ -8385,7 +8645,7 @@ Objects {
       Z: 3.6356504
     }
   }
-  ParentId: 7305746112421914722
+  ParentId: 16232086521826593977
   UnregisteredParameters {
   }
   WantsNetworking: true
@@ -8413,15 +8673,15 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15907509811922219666
+    SelfId: 6404714834974348873
     SubobjectId: 5404916448681409549
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
   }
 }
 Objects {
-  Id: 5619991925431091212
-  Name: "waterBeam"
+  Id: 14546333434321200343
+  Name: "bubble"
   Transform {
     Location {
     }
@@ -8433,7 +8693,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7305746112421914722
+  ParentId: 16232086521826593977
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8487,16 +8747,108 @@ Objects {
         Value: "mc:eabilitysetfacing:none"
       }
     }
-    Animation: "2hand_staff_rm_combo_opener_upward_slash"
+    Animation: "dual_katana_left_hand_throw"
     KeyBinding_v2 {
-      Value: "mc:egameaction:extraaction_17"
+      Value: "mc:egameaction:extraaction_16"
     }
   }
   InstanceHistory {
-    SelfId: 5619991925431091212
+    SelfId: 14546333434321200343
     SubobjectId: 15726277267742674579
-    InstanceId: 15346031808873549115
-    TemplateId: 6126196537203584848
+    InstanceId: 15420371595996168426
+    TemplateId: 537804506944363405
+  }
+}
+Objects {
+  Id: 10226704922393261596
+  Name: "SPELL _8_tsunami"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17484086847626897149
+      value {
+        Overrides {
+          Name: "Name"
+          String: "SPELL _8_tsunami"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1994.03772
+            Y: -970.796265
+            Z: 22.9534531
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14324367480621395084
+    }
+  }
+}
+Objects {
+  Id: 15346031808873549115
+  Name: "SPELL _7_waterBeam"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17484086847626897149
+      value {
+        Overrides {
+          Name: "Name"
+          String: "SPELL _7_waterBeam"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1994.03772
+            Y: -1495.09583
+            Z: 22.9534531
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6126196537203584848
+    }
   }
 }
 Objects {
@@ -9948,17 +10300,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 2277171860367614674
-      value {
-        Overrides {
-          Name: "cs:getSpellVFX"
-          AssetReference {
-            Id: 1859870833290217736
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 15268411335749147480
       value {
         Overrides {
@@ -9976,14 +10317,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -10030,25 +10363,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 15626864506458986964
-      value {
-        Overrides {
-          Name: "cs:getSpellVFX"
-          AssetReference {
-            Id: 1859870833290217736
           }
         }
       }
@@ -13275,8 +13589,8 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 115.588
-      Y: 81.7983627
+      X: 157.054398
+      Y: 178.881927
       Z: 1
     }
   }
@@ -13333,7 +13647,7 @@ Objects {
     Overrides {
       Name: "cs:spell"
       AssetReference {
-        Id: 14023178832271403832
+        Id: 14324367480621395084
       }
     }
   }

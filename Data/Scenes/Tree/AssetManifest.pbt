@@ -395,6 +395,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4145773917286817108
+  Name: "Watersplash Large VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_watersplash_larger"
+  }
+}
+Assets {
   Id: 3906146812223150222
   Name: "Flashbang Post Process"
   PlatformAssetType: 8
@@ -440,6 +449,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2671164133412648285
+  Name: "Basic Water Splash VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_watersplash"
+  }
+}
+Assets {
   Id: 2289845238589602368
   Name: "Smoke Puff Radial VFX"
   PlatformAssetType: 8
@@ -482,6 +500,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_base_curl"
+  }
+}
+Assets {
+  Id: 268486789918582866
+  Name: "Water Jet VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_water_jet"
   }
 }
 Assets {

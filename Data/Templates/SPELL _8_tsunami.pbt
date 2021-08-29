@@ -1,6 +1,6 @@
 Assets {
   Id: 14324367480621395084
-  Name: "SPELL _8_raise"
+  Name: "SPELL _8_tsunami"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -18,7 +18,7 @@ Assets {
         ParentId: 4781671109827199097
         ChildIds: 15726277267742674579
         ChildIds: 5404916448681409549
-        ChildIds: 1221652192115485844
+        ChildIds: 2772420153569315271
         ChildIds: 14904418733318530270
         ChildIds: 10395538022606654570
         ChildIds: 13423724015220068205
@@ -40,6 +40,10 @@ Assets {
             Int: 5
           }
           Overrides {
+            Name: "cs:extraDmg"
+            Int: 15
+          }
+          Overrides {
             Name: "cs:linkToEquipment:tooltip"
             String: "If enabled,  animation stance, and some FX will be added when fire spell. Default = true"
           }
@@ -54,6 +58,10 @@ Assets {
           Overrides {
             Name: "cs:waveLife:tooltip"
             String: "life of the tsunami in seconds. Default = 5"
+          }
+          Overrides {
+            Name: "cs:extraDmg:tooltip"
+            String: "Extra damage done by tsunami"
           }
         }
         WantsNetworking: true
@@ -75,13 +83,13 @@ Assets {
           }
           Weapon {
             ProjectileAssetRef {
-              Id: 12965508538043441751
+              Id: 5117735889527099258
             }
             MuzzleFlashAssetRef {
-              Id: 9379420623325059936
+              Id: 17298937177186525835
             }
             TrailAssetRef {
-              Id: 2336733781318849399
+              Id: 1485372274567140240
             }
             ImpactAssetRef {
               Id: 13218744182045489980
@@ -117,8 +125,8 @@ Assets {
             MaxAmmo: -1
             AmmoType: "rocksP"
             MultiShot: 1
-            ProjectileSpeed: 5000
-            ProjectileLifeSpan: 5
+            ProjectileSpeed: 10000
+            ProjectileLifeSpan: 4
             ProjectileLength: 100
             ProjectileRadius: 50
             ProjectileDrag: 0.2
@@ -171,7 +179,7 @@ Assets {
         Ability {
           IsEnabled: true
           CastPhaseSettings {
-            Duration: 0.5
+            Duration: 2
             PreventOtherAbilities: true
             IsTargetDataUpdated: true
             Facing_V2 {
@@ -208,7 +216,7 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "2hand_sword_rm_combo_opener_cone"
+          Animation: "unarmed_wave"
           KeyBinding_v2 {
             Value: "mc:egameaction:extraaction_18"
           }
@@ -257,10 +265,11 @@ Assets {
         }
       }
       Objects {
-        Id: 1221652192115485844
-        Name: "raise ability"
+        Id: 2772420153569315271
+        Name: "tsunami  ability"
         Transform {
           Location {
+            Y: -524.299561
           }
           Rotation {
           }
@@ -273,33 +282,27 @@ Assets {
         ParentId: 17484086847626897149
         UnregisteredParameters {
           Overrides {
+            Name: "cs:castFX"
+            AssetReference {
+              Id: 1917907138588389337
+            }
+          }
+          Overrides {
+            Name: "cs:executeFX"
+            AssetReference {
+              Id: 17298937177186525835
+            }
+          }
+          Overrides {
+            Name: "cs:tsunamiWave"
+            AssetReference {
+              Id: 18000411511564172416
+            }
+          }
+          Overrides {
             Name: "cs:ability"
             ObjectReference {
               SubObjectId: 15726277267742674579
-            }
-          }
-          Overrides {
-            Name: "cs:projectile"
-            AssetReference {
-              Id: 9615930250230786520
-            }
-          }
-          Overrides {
-            Name: "cs:beam"
-            AssetReference {
-              Id: 3927291034077667502
-            }
-          }
-          Overrides {
-            Name: "cs:cast_FX"
-            AssetReference {
-              Id: 12077478226394046390
-            }
-          }
-          Overrides {
-            Name: "cs:exe_COLUMN"
-            AssetReference {
-              Id: 16920023150866207430
             }
           }
         }
@@ -318,7 +321,7 @@ Assets {
         }
         Script {
           ScriptAsset {
-            Id: 1156050533409995675
+            Id: 16928813330305804015
           }
         }
       }
@@ -628,6 +631,12 @@ Assets {
           Overrides {
             Name: "cs:rootSpell:tooltip"
             String: "The spell associated to this script"
+          }
+          Overrides {
+            Name: "cs:getSpellVFX"
+            AssetReference {
+              Id: 1859870833290217736
+            }
           }
         }
         Collidable_v2 {

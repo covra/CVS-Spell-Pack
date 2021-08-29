@@ -215,7 +215,7 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "2hand_staff_magic_bolt"
+          Animation: "1hand_melee_shield_bash"
           KeyBinding_v2 {
             Value: "mc:egameaction:extraaction_15"
           }
@@ -628,6 +628,12 @@ Assets {
           Overrides {
             Name: "cs:rootSpell:tooltip"
             String: "The spell associated to this script"
+          }
+          Overrides {
+            Name: "cs:getSpellVFX"
+            AssetReference {
+              Id: 1859870833290217736
+            }
           }
         }
         Collidable_v2 {

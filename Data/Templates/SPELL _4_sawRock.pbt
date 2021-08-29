@@ -207,7 +207,7 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "unarmed_magic_bolt"
+          Animation: "2hand_staff_rm_combo_opener_upward_slash"
           KeyBinding_v2 {
             Value: "mc:egameaction:extraaction_14"
           }
@@ -560,6 +560,12 @@ Assets {
           Overrides {
             Name: "cs:rootSpell:tooltip"
             String: "The spell associated to this script"
+          }
+          Overrides {
+            Name: "cs:getSpellVFX"
+            AssetReference {
+              Id: 1859870833290217736
+            }
           }
         }
         Collidable_v2 {
