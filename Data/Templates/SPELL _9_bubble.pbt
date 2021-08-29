@@ -18,7 +18,7 @@ Assets {
         ParentId: 4781671109827199097
         ChildIds: 15726277267742674579
         ChildIds: 5404916448681409549
-        ChildIds: 1221652192115485844
+        ChildIds: 7888401248602366014
         ChildIds: 14904418733318530270
         ChildIds: 10395538022606654570
         ChildIds: 13423724015220068205
@@ -75,13 +75,13 @@ Assets {
           }
           Weapon {
             ProjectileAssetRef {
-              Id: 12965508538043441751
+              Id: 5117735889527099258
             }
             MuzzleFlashAssetRef {
-              Id: 9379420623325059936
+              Id: 17298937177186525835
             }
             TrailAssetRef {
-              Id: 2336733781318849399
+              Id: 1485372274567140240
             }
             ImpactAssetRef {
               Id: 13218744182045489980
@@ -210,7 +210,7 @@ Assets {
           }
           Animation: "dual_katana_left_hand_throw"
           KeyBinding_v2 {
-            Value: "mc:egameaction:extraaction_16"
+            Value: "mc:egameaction:extraaction_19"
           }
         }
       }
@@ -257,10 +257,11 @@ Assets {
         }
       }
       Objects {
-        Id: 1221652192115485844
-        Name: "raise ability"
+        Id: 7888401248602366014
+        Name: "bubble ability"
         Transform {
           Location {
+            Y: -1058.75012
           }
           Rotation {
           }
@@ -273,33 +274,45 @@ Assets {
         ParentId: 17484086847626897149
         UnregisteredParameters {
           Overrides {
+            Name: "cs:castFX"
+            AssetReference {
+              Id: 17298937177186525835
+            }
+          }
+          Overrides {
+            Name: "cs:executeFX"
+            AssetReference {
+              Id: 17298937177186525835
+            }
+          }
+          Overrides {
+            Name: "cs:drop"
+            AssetReference {
+              Id: 5117735889527099258
+            }
+          }
+          Overrides {
             Name: "cs:ability"
             ObjectReference {
               SubObjectId: 15726277267742674579
             }
           }
           Overrides {
-            Name: "cs:projectile"
-            AssetReference {
-              Id: 9615930250230786520
-            }
-          }
-          Overrides {
             Name: "cs:beam"
             AssetReference {
-              Id: 3927291034077667502
+              Id: 6471569811965329120
             }
           }
           Overrides {
-            Name: "cs:cast_FX"
+            Name: "cs:refPos"
             AssetReference {
-              Id: 12077478226394046390
+              Id: 4204850054797319489
             }
           }
           Overrides {
-            Name: "cs:exe_COLUMN"
+            Name: "cs:bubble"
             AssetReference {
-              Id: 16920023150866207430
+              Id: 6457277294086654769
             }
           }
         }
@@ -318,7 +331,7 @@ Assets {
         }
         Script {
           ScriptAsset {
-            Id: 1156050533409995675
+            Id: 18291596161967744665
           }
         }
       }
@@ -628,6 +641,12 @@ Assets {
           Overrides {
             Name: "cs:rootSpell:tooltip"
             String: "The spell associated to this script"
+          }
+          Overrides {
+            Name: "cs:getSpellVFX"
+            AssetReference {
+              Id: 1859870833290217736
+            }
           }
         }
         Collidable_v2 {

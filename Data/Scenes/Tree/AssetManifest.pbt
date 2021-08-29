@@ -35,15 +35,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17069742372289035238
-  Name: "Waterfall 90 Inner Corner"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "longexposure_waterfall_90ic_2"
-  }
-}
-Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -68,15 +59,6 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_big_hammer_explode_ground_impact_01a_Cue_ref"
-  }
-}
-Assets {
-  Id: 16110071597010325588
-  Name: "Waterfall Small SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_waterfall_Cue"
   }
 }
 Assets {
@@ -158,15 +140,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_grass_artificial_001_uv_ref"
-  }
-}
-Assets {
-  Id: 14709524153462319699
-  Name: "Waterfall Base Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_waterfall_base_volume"
   }
 }
 Assets {
@@ -266,15 +239,6 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_magic_wind_blast_long_01_Cue_ref"
-  }
-}
-Assets {
-  Id: 7910650172613730361
-  Name: "Hill 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_hill_003"
   }
 }
 Assets {
@@ -473,15 +437,6 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_magic_wind_blast_02_Cue_ref"
-  }
-}
-Assets {
-  Id: 1588720728486075658
-  Name: "Faceted Water"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "water_faceted_001"
   }
 }
 Assets {

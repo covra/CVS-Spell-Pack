@@ -43,13 +43,14 @@ Assets {
         Transform {
           Location {
             X: -117.246582
+            Y: -229.512207
             Z: 138.462158
           }
           Rotation {
           }
           Scale {
             X: 3.07418799
-            Y: 11.2466602
+            Y: 12.5872555
             Z: 3.94421172
           }
         }
@@ -69,7 +70,6 @@ Assets {
         }
         Trigger {
           TeamSettings {
-            IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
           TriggerShape_v2 {
@@ -112,7 +112,6 @@ Assets {
             Id: 12095835209017042614
           }
           Teams {
-            IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
           StaticMesh {
@@ -133,9 +132,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.83592474
+            Y: 1.83592474
+            Z: 1.83592474
           }
         }
         ParentId: 8777210535795985244

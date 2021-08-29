@@ -40,6 +40,12 @@ function onImpact(weapon, data)
 			print(script.name.." >> impact from tsunami!", target)
 			local v3 = (player:GetWorldPosition() - weapon.owner:GetWorldPosition()):GetNormalized()
 			local wave = World.SpawnAsset(WAVE,{position = weapon.owner :GetWorldPosition(), rotation = weapon.owner:GetWorldRotation()})
+			local teamP = weapon.owner.team
+			for _,o in pairs (wave:GetChildren()) do 
+				if not o:IsA("NetworkContext") then 
+					o.team = teamP
+				end 
+			end 
 			wave:MoveTo(player:GetWorldPosition(), 3, true)
 			wave:ScaleTo(Vector3.ZERO, 6)
 			local trigg = wave:FindChildByType("Trigger")
@@ -48,13 +54,10 @@ function onImpact(weapon, data)
 					player:ResetVelocity()		
 					player:EnableRagdoll()
 					player:ResetVelocity()
-					player:AddImpulse(v3 * 500)
+					player:AddImpulse(v3 * 150)
 					player:ApplyDamage(newDamageInfo)						 
 				end
 			end)
-			--local hR = data:GetHitResult()
-			--local trf = hR:GetTransform()
-			
 			Task.Spawn(function()
 				if Object.IsValid (player) then 
 					player:DisableRagdoll()
