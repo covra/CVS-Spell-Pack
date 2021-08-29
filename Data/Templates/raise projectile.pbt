@@ -1,13 +1,13 @@
 Assets {
-  Id: 9615930250230786520
-  Name: "stoned projectile"
+  Id: 12965508538043441751
+  Name: "raise projectile"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 7812900950973073523
       Objects {
         Id: 7812900950973073523
-        Name: "stoned projectile"
+        Name: "raise projectile"
         Transform {
           Scale {
             X: 1
@@ -19,6 +19,7 @@ Assets {
         ChildIds: 13902351266953317767
         UnregisteredParameters {
         }
+        Lifespan: 5
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41,6 +42,7 @@ Assets {
         Name: "client"
         Transform {
           Location {
+            Z: 156.573944
           }
           Rotation {
             Yaw: 83.2896805
@@ -52,6 +54,7 @@ Assets {
           }
         }
         ParentId: 7812900950973073523
+        ChildIds: 17204790174383661071
         ChildIds: 7604061439458798361
         WantsNetworking: true
         Collidable_v2 {
@@ -67,6 +70,47 @@ Assets {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
         }
         NetworkContext {
+        }
+      }
+      Objects {
+        Id: 17204790174383661071
+        Name: "CVS onDestroy"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13902351266953317767
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:debrisObjects"
+            AssetReference {
+              Id: 11534115932795800184
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 14763155711843342161
+          }
         }
       }
       Objects {

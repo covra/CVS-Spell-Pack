@@ -5,6 +5,8 @@ local VFX_BEAM = script:GetCustomProperty("VFX_Beam"):WaitForObject()
 local SFX_PICK = script:GetCustomProperty("SFX_Pick"):WaitForObject()
 local SFX_SUCTION = script:GetCustomProperty("SFX_suction"):WaitForObject()
 local ROOT_SPELL = script:GetCustomProperty("rootSpell"):WaitForObject()
+--assets
+local GET_SPELL = script:GetCustomProperty("getSpellVFX")
 --user exposed
 local ANIM_TYPE = script:GetCustomProperty("animationType")
 --local
@@ -13,6 +15,7 @@ local listAdd = nil
 
 -------------------------------------------------------
 
+--EVENT receive from server to start animation
 function onRecServ (player, destroy, ref)
 	local spell = ref:GetObject()
 	if spell == ROOT_SPELL then 		
@@ -60,7 +63,7 @@ function EARTH_anim ()
 	local expFX = VISUAL_FOLDER:FindChildByName("expl")
 	local circle = VISUAL_FOLDER:FindChildByName("circle")
 	local puf = VISUAL_FOLDER:FindChildByName("puf1")
-	Task.Spawn(function() SFX_SUCTION:Play() puf:Play() end , 5)
+	Task.Spawn(function() SFX_SUCTION:Play() puf:Play() end , 5.5)
 	expFX:Play()
 	expFX:SetSmartProperty("Looping", true)
 	dustFX:MoveTo(dustFX:GetWorldPosition() + Vector3.UP *200, 3)
@@ -75,11 +78,54 @@ function EARTH_anim ()
 end 
 
 function AIR_anim ()
-
+	local OBJECT = VISUAL_FOLDER:FindChildByName("circle")
+	local tornadoFX = VISUAL_FOLDER:FindChildByName("Tornado VFX")
+	Task.Spawn(function() SFX_SUCTION:Play()end , 3)
+		Task.Spawn(function() 
+			tornadoFX:ScaleTo(Vector3.New(0.3,0.3,4),3)
+		Task.Wait(2)
+			tornadoFX:ScaleTo(Vector3.ZERO,0.3)
+	end)
+	Task.Spawn(function()		
+		OBJECT:StopRotate()
+		for i= 3,100, 3 do 			
+			OBJECT:RotateContinuous(OBJECT:GetWorldRotation(), i, true)
+			Task.Wait(0.1)
+		end
+		Task.Wait(0.5)
+		local circles = OBJECT:FindDescendantsByType("Vfx")
+		for _,w in pairs (circles) do 
+			w:ScaleTo(Vector3.ZERO,0.3)
+		end
+	end,0.5)
+	
 end 
 
 function  WATER_anim ()
-
+	local OBJECT = VISUAL_FOLDER:FindChildByName("circle")
+	local waterFalls = VISUAL_FOLDER:FindDescendantsByName("Waterfall 90 Inner Corner")
+	Task.Spawn(function() SFX_SUCTION:Play()end , 3)
+	Task.Spawn(function() 
+		for _,w in pairs (waterFalls) do 
+			w:ScaleTo(Vector3.New(0.3,0.3,4),3)
+		end
+		Task.Wait(2)
+		for _,w in pairs (waterFalls) do 
+			w:ScaleTo(Vector3.ZERO,0.3)
+		end
+	end)
+	Task.Spawn(function()		
+		OBJECT:StopRotate()
+		for i= 3,100, 3 do 			
+			OBJECT:RotateContinuous(OBJECT:GetWorldRotation(), i, true)
+			Task.Wait(0.1)
+		end
+		Task.Wait(0.5)
+		local circles = OBJECT:FindDescendantsByType("Vfx")
+		for _,w in pairs (circles) do 
+			w:ScaleTo(Vector3.ZERO,0.3)
+		end
+	end,0.5)
 end 
 
 
@@ -94,7 +140,9 @@ function animCircles()
 end 
 
 function onDestroy (objectSelf)
-	if Object.IsValid(listAdd) then 
+	World.SpawnAsset(GET_SPELL,{position = localPlayer:GetWorldPosition() - Vector3.UP * 50})
+	--print(script.name.." >> destroying pickup client: ")
+	if Object.IsValid(listAdd) then		
 		listAdd:Disconnect()
 	end
 end

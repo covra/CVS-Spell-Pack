@@ -7,8 +7,8 @@ function OnPlayerJoined(player)
 	player.team = index
 	
 	print("player joined: " .. player.name, player.team)
-	local localSpell = World.SpawnAsset(spell)
-	localSpell:Equip(player)
+--	local localSpell = World.SpawnAsset(spell)
+	--localSpell:Equip(player)
 end
 
 function OnPlayerLeft(player)

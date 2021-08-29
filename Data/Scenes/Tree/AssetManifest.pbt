@@ -8,12 +8,39 @@ Assets {
   }
 }
 Assets {
+  Id: 18323305709355461055
+  Name: "Magic Circle Generator Advanced: Basic VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_magic_circle_generator_basic"
+  }
+}
+Assets {
+  Id: 17518180378751572853
+  Name: "Suction Whoosh 05 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_suction_whoosh_05_Cue_ref"
+  }
+}
+Assets {
   Id: 17239665496848081969
   Name: "Dust Motes Volume VFX"
   PlatformAssetType: 8
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_dust_motes"
+  }
+}
+Assets {
+  Id: 17069742372289035238
+  Name: "Waterfall 90 Inner Corner"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "longexposure_waterfall_90ic_2"
   }
 }
 Assets {
@@ -44,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16110071597010325588
+  Name: "Waterfall Small SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_waterfall_Cue"
+  }
+}
+Assets {
   Id: 15862839354445934362
   Name: "Plasma Impact VFX"
   PlatformAssetType: 8
@@ -59,6 +95,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fan_book_open_001_ref"
+  }
+}
+Assets {
+  Id: 15731690341913003386
+  Name: "Tornado VFX"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_tornado"
+  }
+}
+Assets {
+  Id: 15696524381397938084
+  Name: "Magic Circle Generator Advanced: Scifi VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_magic_circle_generator_scifi"
   }
 }
 Assets {
@@ -104,6 +158,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_grass_artificial_001_uv_ref"
+  }
+}
+Assets {
+  Id: 14709524153462319699
+  Name: "Waterfall Base Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_waterfall_base_volume"
   }
 }
 Assets {
@@ -179,12 +242,39 @@ Assets {
   }
 }
 Assets {
+  Id: 9337660376557937055
+  Name: "Magic Dark Low Drone Spell Cast 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_magic_dark_low_drone_spell_cast_01_Cue_ref"
+  }
+}
+Assets {
   Id: 8468221781841598779
   Name: "Plasma Muzzleflash VFX"
   PlatformAssetType: 8
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_plasma_muzzleflash"
+  }
+}
+Assets {
+  Id: 8187935643580968598
+  Name: "Magic Wind Blast Long 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_magic_wind_blast_long_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 7910650172613730361
+  Name: "Hill 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hill_003"
   }
 }
 Assets {
@@ -203,6 +293,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_002_sm_rock_generic_002_LOD0"
+  }
+}
+Assets {
+  Id: 7318134248763047666
+  Name: "Nature Wind Strong Wavy 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_nature_wind_strong_wavy_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 6466573658342400750
+  Name: "Magic Circle Generator Advanced: Nature VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_magic_circle_generator_nature"
   }
 }
 Assets {
@@ -233,6 +341,24 @@ Assets {
   }
 }
 Assets {
+  Id: 5522655696641006187
+  Name: "Liquid Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "dcl_liquid"
+  }
+}
+Assets {
+  Id: 5179905132911329401
+  Name: "Nature Wind Steady 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_nature_wind_steady_01_Cue_ref"
+  }
+}
+Assets {
   Id: 4743545353488241913
   Name: "Tank Muzzle Flash VFX"
   PlatformAssetType: 8
@@ -248,6 +374,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_Teleporter_BeamDown"
+  }
+}
+Assets {
+  Id: 4691829036757304382
+  Name: "Magic Wind Blast 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_magic_wind_blast_01_Cue_ref"
   }
 }
 Assets {
@@ -314,6 +449,24 @@ Assets {
   }
 }
 Assets {
+  Id: 1896610805540244792
+  Name: "Magic Wind Blast 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_magic_wind_blast_02_Cue_ref"
+  }
+}
+Assets {
+  Id: 1588720728486075658
+  Name: "Faceted Water"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "water_faceted_001"
+  }
+}
+Assets {
   Id: 876407560728839966
   Name: "Explosion Kit Soft Dust Spikes VFX"
   PlatformAssetType: 8
@@ -338,5 +491,14 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "plastic_matte_001"
+  }
+}
+Assets {
+  Id: 30094386527494621
+  Name: "Evil Scary Haunted Wind Howling Loop 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_evil_scary_haunted_wind_howling_loop_01_Cue_ref"
   }
 }

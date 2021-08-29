@@ -75,7 +75,7 @@ Assets {
           }
           Weapon {
             ProjectileAssetRef {
-              Id: 9615930250230786520
+              Id: 12965508538043441751
             }
             MuzzleFlashAssetRef {
               Id: 9379420623325059936
@@ -88,6 +88,7 @@ Assets {
             }
             Muzzle {
               Location {
+                X: 100
               }
               Rotation {
               }
@@ -119,7 +120,7 @@ Assets {
             ProjectileSpeed: 5000
             ProjectileLifeSpan: 5
             ProjectileLength: 100
-            ProjectileRadius: 200
+            ProjectileRadius: 50
             ProjectileDrag: 0.2
             SpreadMin: 1
             SpreadMax: 1
@@ -278,15 +279,21 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:stonedProjectile"
+            Name: "cs:projectile"
             AssetReference {
               Id: 9615930250230786520
             }
           }
           Overrides {
+            Name: "cs:beam"
+            AssetReference {
+              Id: 3927291034077667502
+            }
+          }
+          Overrides {
             Name: "cs:cast_FX"
             AssetReference {
-              Id: 17383847746536209118
+              Id: 12077478226394046390
             }
           }
           Overrides {

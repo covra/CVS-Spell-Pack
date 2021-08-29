@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 8545238584137842983
         ChildIds: 11378430699751749919
         ChildIds: 7842929756320764398
         ChildIds: 784002915497078422
@@ -46,6 +46,14 @@ Assets {
           Overrides {
             Name: "cs:extraFireDamage:tooltip"
             String: "If enabled, a fire extra will burn the target player causing extra damage. Default = enabled"
+          }
+          Overrides {
+            Name: "cs:animationStancePick"
+            String: "1hand_melee_shield_block"
+          }
+          Overrides {
+            Name: "cs:animationStancePick:tooltip"
+            String: "Animation stance to the player when picks the spell"
           }
         }
         WantsNetworking: true
@@ -621,6 +629,12 @@ Assets {
             Name: "cs:rootSpell"
             ObjectReference {
               SubObjectId: 14517814200896022533
+            }
+          }
+          Overrides {
+            Name: "cs:getSpellVFX"
+            AssetReference {
+              Id: 1859870833290217736
             }
           }
           Overrides {

@@ -46,6 +46,14 @@ Assets {
             Name: "cs:extraFireDamage:tooltip"
             String: "If enabled, a fire extra will burn the target player causing extra damage. Default = enabled"
           }
+          Overrides {
+            Name: "cs:animationStancePick"
+            String: "1hand_melee_shield_block"
+          }
+          Overrides {
+            Name: "cs:animationStancePick:tooltip"
+            String: "Animation stance to the player when picks the spell"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -591,6 +599,12 @@ Assets {
             Name: "cs:rootSpell:tooltip"
             String: "The spell associated to this script"
           }
+          Overrides {
+            Name: "cs:getSpellVFX"
+            AssetReference {
+              Id: 1859870833290217736
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -743,7 +757,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Life"
-            Float: 2.09284043
+            Float: 1.02211666
           }
           Overrides {
             Name: "bp:Color"
@@ -755,7 +769,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 23.3102016
+            Float: 5.80606
           }
         }
         Collidable_v2 {
@@ -804,11 +818,11 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "bp:Life"
-            Float: 2.38655734
+            Float: 1.22243083
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 12.9404697
+            Float: 3.86597
           }
           Overrides {
             Name: "bp:Color"
@@ -935,30 +949,30 @@ Assets {
           Overrides {
             Name: "bp:Color"
             Color {
-              R: 0.53
-              G: 0.21059604
+              R: 0.429999948
+              G: 0.111059584
               A: 0.417
             }
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 34.0454979
+            Float: 17.4465981
           }
           Overrides {
             Name: "bp:Gravity"
-            Float: 0.229217529
+            Float: 0.0827827454
           }
           Overrides {
             Name: "bp:Life"
-            Float: 8.0230341
+            Float: 6.89247322
           }
           Overrides {
             Name: "bp:Particle Scale Multiplier"
-            Float: 1.57912076
+            Float: 1.44166875
           }
           Overrides {
             Name: "bp:Density"
-            Float: 3.4609
+            Float: 2.30597854
           }
         }
         Collidable_v2 {
