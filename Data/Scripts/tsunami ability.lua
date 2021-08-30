@@ -49,12 +49,14 @@ function onImpact(weapon, data)
 			wave:MoveTo(player:GetWorldPosition(), 3, true)
 			wave:ScaleTo(Vector3.ZERO, 6)
 			local trigg = wave:FindChildByType("Trigger")
-			listT = trigg.beginOverlapEvent:Connect(function() 
-				if Object.IsValid(player) then
+			listT = trigg.beginOverlapEvent:Connect(function(trigg, player) 
+				if player:IsA("Player") and Object.IsValid(player) then
 					player:ResetVelocity()		
 					player:EnableRagdoll()
 					player:ResetVelocity()
 					player:AddImpulse(v3 * 150)
+				    newDamageInfo.sourceAbility = ABILITY_ROOT
+   					newDamageInfo.sourcePlayer = weapon.owner
 					player:ApplyDamage(newDamageInfo)						 
 				end
 			end)

@@ -7,7 +7,7 @@ Assets {
       RootId: 11600719966956235199
       Objects {
         Id: 11600719966956235199
-        Name: "SPELL _10_shock"
+        Name: "SPELL _11_rain"
         Transform {
           Scale {
             X: 1
@@ -18,7 +18,6 @@ Assets {
         ParentId: 4781671109827199097
         ChildIds: 1107842620200882351
         ChildIds: 3658253939134499957
-        ChildIds: 17061619366961128106
         ChildIds: 2178487497604680827
         ChildIds: 8046135719342105986
         ChildIds: 2832261866977593299
@@ -29,15 +28,23 @@ Assets {
           }
           Overrides {
             Name: "cs:spell_Name"
-            String: "Tornado"
+            String: "Cursed Rain"
           }
           Overrides {
             Name: "cs:animationStancePick"
             String: "1hand_melee_shield_block"
           }
           Overrides {
-            Name: "cs:bubbleLife"
+            Name: "cs:rainingTime"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:rainingDmg"
             Int: 5
+          }
+          Overrides {
+            Name: "cs:cloudSpeed"
+            Float: 400
           }
           Overrides {
             Name: "cs:linkToEquipment:tooltip"
@@ -52,8 +59,16 @@ Assets {
             String: "Animation stance to the player when picks the spell"
           }
           Overrides {
-            Name: "cs:bubbleLife:tooltip"
+            Name: "cs:rainingTime:tooltip"
             String: "Life of the bubble in seconds. Default = 5"
+          }
+          Overrides {
+            Name: "cs:rainingDmg:tooltip"
+            String: "Extra damage of the cursed rain"
+          }
+          Overrides {
+            Name: "cs:cloudSpeed:tooltip"
+            String: "Velocity in cm/s of the following cloud to the player. Default = 400"
           }
         }
         WantsNetworking: true
@@ -78,13 +93,13 @@ Assets {
               Id: 12965508538043441751
             }
             MuzzleFlashAssetRef {
-              Id: 9379420623325059936
+              Id: 9950077699570118052
             }
             TrailAssetRef {
-              Id: 2336733781318849399
+              Id: 17629835760640608647
             }
             ImpactAssetRef {
-              Id: 13218744182045489980
+              Id: 15827420062768715771
             }
             Muzzle {
               Location {
@@ -142,7 +157,7 @@ Assets {
       }
       Objects {
         Id: 1107842620200882351
-        Name: "shock"
+        Name: "rain"
         Transform {
           Location {
           }
@@ -210,7 +225,7 @@ Assets {
           }
           Animation: "dual_melee_right_hand_slash_right"
           KeyBinding_v2 {
-            Value: "mc:egameaction:extraaction_60"
+            Value: "mc:egameaction:extraaction_61"
           }
         }
       }
@@ -257,72 +272,6 @@ Assets {
         }
       }
       Objects {
-        Id: 17061619366961128106
-        Name: "raise ability"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 11600719966956235199
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:ability"
-            ObjectReference {
-              SubObjectId: 1107842620200882351
-            }
-          }
-          Overrides {
-            Name: "cs:projectile"
-            AssetReference {
-              Id: 9615930250230786520
-            }
-          }
-          Overrides {
-            Name: "cs:beam"
-            AssetReference {
-              Id: 3927291034077667502
-            }
-          }
-          Overrides {
-            Name: "cs:cast_FX"
-            AssetReference {
-              Id: 12077478226394046390
-            }
-          }
-          Overrides {
-            Name: "cs:exe_COLUMN"
-            AssetReference {
-              Id: 16920023150866207430
-            }
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        Script {
-          ScriptAsset {
-            Id: 1156050533409995675
-          }
-        }
-      }
-      Objects {
         Id: 2178487497604680827
         Name: "ServerContext"
         Transform {
@@ -337,6 +286,7 @@ Assets {
           }
         }
         ParentId: 11600719966956235199
+        ChildIds: 4963479536365075305
         ChildIds: 13310763265960445588
         ChildIds: 1919931453835220798
         ChildIds: 18059689713574421380
@@ -355,6 +305,65 @@ Assets {
         }
         NetworkContext {
           Type: Server
+        }
+      }
+      Objects {
+        Id: 4963479536365075305
+        Name: "rain ability"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2178487497604680827
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:castFX"
+            AssetReference {
+              Id: 485917193941752555
+            }
+          }
+          Overrides {
+            Name: "cs:executeFX"
+            AssetReference {
+              Id: 841534158063459245
+            }
+          }
+          Overrides {
+            Name: "cs:cloud"
+            AssetReference {
+              Id: 16040045487979840312
+            }
+          }
+          Overrides {
+            Name: "cs:ability"
+            ObjectReference {
+              SubObjectId: 1107842620200882351
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 15999914420909598682
+          }
         }
       }
       Objects {
@@ -497,8 +506,6 @@ Assets {
         Name: "PickUp FX"
         Transform {
           Location {
-            X: -64.5206299
-            Y: 36.7185059
           }
           Rotation {
           }
@@ -535,9 +542,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 1.00000036
-            Y: 1.00000036
-            Z: 1.00000036
+            X: 0.7
+            Y: 0.7
+            Z: 0.7
           }
         }
         ParentId: 8046135719342105986
@@ -629,6 +636,12 @@ Assets {
           Overrides {
             Name: "cs:rootSpell:tooltip"
             String: "The spell associated to this script"
+          }
+          Overrides {
+            Name: "cs:getSpellVFX"
+            AssetReference {
+              Id: 1859870833290217736
+            }
           }
         }
         Collidable_v2 {
