@@ -605,7 +605,7 @@ Assets {
           Overrides {
             Name: "cs:VFX_Beam"
             ObjectReference {
-              SelfId: 2248858136691647401
+              SubObjectId: 12025710980318975002
             }
           }
           Overrides {

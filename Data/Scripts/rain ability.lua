@@ -8,6 +8,7 @@ local SPELL_ROOT = ABILITY_ROOT.parent
 local RAINING_TIME = SPELL_ROOT:GetCustomProperty("rainingTime")
 local EXTRA_DMG = SPELL_ROOT:GetCustomProperty("rainingDmg")
 local CLOUD_SPEED = SPELL_ROOT:GetCustomProperty("cloudSpeed")
+local SLOW_PLAYER = SPELL_ROOT:GetCustomProperty("slowPlayer")
 --local 
 local listC = nil
 local listE = nil
@@ -47,19 +48,29 @@ function onImpact(weapon, data)
 		Task.Spawn(function()			
 			while true do 
 				if Object.IsValid(trigg) then 
-					trigg:ScaleTo(Vector3.ZERO, 0.5)
+					trigg:ScaleTo(Vector3.ZERO, 0.1)
 				end
-				Task.Wait(0.5)
+				Task.Wait(0.1)
 				if Object.IsValid(trigg) then 
-					trigg:ScaleTo(origScale, 1)
+					trigg:ScaleTo(origScale, 0.3)
 				end
+				Task.Wait(0.3)
 			end
 			listT:Disconnect()
 		end,RAINING_TIME )
 		listT = trigg.beginOverlapEvent:Connect( function(trigg, player)
 			if player:IsA("Player") then
-				--cl:AttachToPlayer(player, "nameplate")
-				cl:Follow(player,CLOUD_SPEED, 50)
+				Task.Spawn(function() if Object.IsValid(player) and SLOW_PLAYER then 
+					if player.serverUserData.maxWalk == nil then 
+						player.serverUserData.maxWalk = player.maxWalkSpeed
+						player.maxWalkSpeed = player.maxWalkSpeed /3
+					end
+				end end)
+				Task.Spawn(function() if Object.IsValid(player) and SLOW_PLAYER then 
+	        			player.maxWalkSpeed = player.serverUserData.maxWalk 
+	        		end
+	        	end, RAINING_TIME +1)
+	        	cl:Follow(player,CLOUD_SPEED, 50)
 				newDamageInfo.sourceAbility = ABILITY_ROOT
    				newDamageInfo.sourcePlayer = weapon.owner
 				player:ApplyDamage(newDamageInfo)		

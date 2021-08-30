@@ -16,7 +16,7 @@ end
 
 function onUnequip (equip, player)
 	if lastStance ~= nil then 
-		print(script.name.." >> Restoring last animation stance for "..player.name..": ",lastStance)
+		--print(script.name.." >> Restoring last animation stance for "..player.name..": ",lastStance)
 		player.animationStance = lastStance
 	else 
 		player.animationStance = "unarmed_stance"

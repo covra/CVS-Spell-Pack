@@ -47,6 +47,14 @@ Assets {
             Name: "cs:extraFireDamage:tooltip"
             String: "If enabled, a fire extra will burn the target player causing extra damage. Default = enabled"
           }
+          Overrides {
+            Name: "cs:animationStancePick"
+            String: "1hand_melee_shield_block"
+          }
+          Overrides {
+            Name: "cs:animationStancePick:tooltip"
+            String: "Animation stance to the player when picks the spell"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -578,6 +586,12 @@ Assets {
           Overrides {
             Name: "cs:rootSpell:tooltip"
             String: "The spell associated to this script"
+          }
+          Overrides {
+            Name: "cs:getSpellVFX"
+            AssetReference {
+              Id: 1859870833290217736
+            }
           }
         }
         Collidable_v2 {

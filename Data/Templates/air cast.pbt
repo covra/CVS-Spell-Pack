@@ -7,7 +7,7 @@ Assets {
       RootId: 15538338889681500843
       Objects {
         Id: 15538338889681500843
-        Name: "air exe"
+        Name: "air cast"
         Transform {
           Scale {
             X: 1.5999999
@@ -17,6 +17,7 @@ Assets {
         }
         ParentId: 4781671109827199097
         ChildIds: 7445373668786803571
+        Lifespan: 4
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39,7 +40,7 @@ Assets {
         Name: "Magic Circle Aura"
         Transform {
           Location {
-            Z: -100
+            Z: 20
           }
           Rotation {
           }
@@ -51,6 +52,7 @@ Assets {
         }
         ParentId: 15538338889681500843
         ChildIds: 13998002624801276986
+        ChildIds: 8254071602161435735
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -2026,6 +2028,73 @@ Assets {
           CastVolumetricShadows: true
         }
       }
+      Objects {
+        Id: 8254071602161435735
+        Name: "Curling Dust VFX"
+        Transform {
+          Location {
+            X: 31.3056946
+            Y: 7.1812439
+            Z: -19.5758533
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.62499994
+            Y: 0.62499994
+            Z: 0.62499994
+          }
+        }
+        ParentId: 7445373668786803571
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Enable Dust"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Debris Color"
+            Color {
+              R: 0.202185392
+              B: 0.429999948
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.839801192
+              G: 0.410000026
+              B: 1
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 710877093761989948
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
     }
     Assets {
       Id: 4204935042848427516
@@ -2052,6 +2121,15 @@ Assets {
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_Treasure_Rays"
+      }
+    }
+    Assets {
+      Id: 710877093761989948
+      Name: "Curling Dust VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_base_curl"
       }
     }
     PrimaryAssetId {

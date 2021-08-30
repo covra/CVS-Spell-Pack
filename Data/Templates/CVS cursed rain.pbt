@@ -94,6 +94,8 @@ Assets {
         ChildIds: 8466523026093104869
         ChildIds: 3783587172020051011
         ChildIds: 643303830442703553
+        ChildIds: 10463962589017853507
+        ChildIds: 13323836618210929694
         ChildIds: 15274126900532869192
         WantsNetworking: true
         Collidable_v2 {
@@ -348,6 +350,112 @@ Assets {
               LinearDamping: 0.01
             }
             BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 10463962589017853507
+        Name: "thunder"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6941701349053790776
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Type"
+            Enum {
+              Value: "mc:esfx_thunder:27"
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 7341050082379621545
+          }
+          TeamSettings {
+          }
+          AudioBP {
+            AutoPlay: true
+            Repeat: true
+            Volume: 1.96120572
+            Falloff: 3600
+            Radius: 400
+            EnableOcclusion: true
+            IsSpatializationEnabled: true
+            IsAttenuationEnabled: true
+          }
+        }
+      }
+      Objects {
+        Id: 13323836618210929694
+        Name: "thunder"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6941701349053790776
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Type"
+            Enum {
+              Value: "mc:esfx_thunder:26"
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 7341050082379621545
+          }
+          TeamSettings {
+          }
+          AudioBP {
+            AutoPlay: true
+            Repeat: true
+            Volume: 1.96120572
+            Falloff: 3600
+            Radius: 400
+            EnableOcclusion: true
+            IsSpatializationEnabled: true
+            IsAttenuationEnabled: true
           }
         }
       }
@@ -936,6 +1044,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "fxsm_NeonSign_Skull"
+      }
+    }
+    Assets {
+      Id: 7341050082379621545
+      Name: "Nature Thunder Clap Boom Set 01 SFX"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "sfxabp_thunder_ref"
       }
     }
     Assets {

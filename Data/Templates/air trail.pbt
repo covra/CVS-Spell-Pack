@@ -17,6 +17,8 @@ Assets {
         }
         ParentId: 4781671109827199097
         ChildIds: 2317302548547235534
+        ChildIds: 2325604774936823785
+        ChildIds: 14845125338318218026
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -63,6 +65,162 @@ Assets {
           Overrides {
             Name: "bp:Density"
             Float: 17.2866802
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 2.47521734
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 1.86263883
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 24.5150719
+          }
+          Overrides {
+            Name: "bp:Spawn Radius"
+            Float: 0.177460983
+          }
+          Overrides {
+            Name: "bp:Chaos"
+            Float: 0
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 10648205594810987914
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 2325604774936823785
+        Name: "Spark Trail Wavy VFX"
+        Transform {
+          Location {
+            X: 5131.96777
+            Y: 3401.48975
+            Z: 399.347595
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15392370420537592309
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.308675855
+              B: 0.789999962
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 17.2866802
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 3.63339067
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 1.86263883
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 24.5150719
+          }
+          Overrides {
+            Name: "bp:Spawn Radius"
+            Float: 0.177460983
+          }
+          Overrides {
+            Name: "bp:Chaos"
+            Float: 0
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 10648205594810987914
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 14845125338318218026
+        Name: "Spark Trail Wavy VFX"
+        Transform {
+          Location {
+            X: 5131.96777
+            Y: 3401.48975
+            Z: 399.347595
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15392370420537592309
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.308675855
+              B: 0.789999962
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 7.96580601
           }
           Overrides {
             Name: "bp:Life"

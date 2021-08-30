@@ -1,5 +1,4 @@
 --assets
-local CAST_FX = script:GetCustomProperty("castFX")
 local EXE_FX = script:GetCustomProperty("executeFX")
 local IMPACT = script:GetCustomProperty("impact")
 --custom

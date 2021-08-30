@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 16548111010530110591
         ChildIds: 15726277267742674579
         ChildIds: 5404916448681409549
         ChildIds: 1221652192115485844
@@ -529,6 +529,7 @@ Assets {
         Name: "pickup earth"
         Transform {
           Location {
+            Z: 1
           }
           Rotation {
           }
@@ -614,6 +615,12 @@ Assets {
             Name: "cs:rootSpell"
             ObjectReference {
               SubObjectId: 17484086847626897149
+            }
+          }
+          Overrides {
+            Name: "cs:getSpellVFX"
+            AssetReference {
+              Id: 1859870833290217736
             }
           }
           Overrides {

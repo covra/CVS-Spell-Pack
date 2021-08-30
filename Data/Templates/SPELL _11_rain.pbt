@@ -1,13 +1,13 @@
 Assets {
-  Id: 7706523634593610607
-  Name: "SPELL _10_shock"
+  Id: 5166133976995413270
+  Name: "SPELL _11_rain"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 11600719966956235199
       Objects {
         Id: 11600719966956235199
-        Name: "SPELL _10_shock"
+        Name: "SPELL _11_rain"
         Transform {
           Scale {
             X: 1
@@ -18,7 +18,7 @@ Assets {
         ParentId: 4781671109827199097
         ChildIds: 1107842620200882351
         ChildIds: 3658253939134499957
-        ChildIds: 14307522818698514783
+        ChildIds: 4963479536365075305
         ChildIds: 2178487497604680827
         ChildIds: 8046135719342105986
         ChildIds: 2832261866977593299
@@ -29,15 +29,27 @@ Assets {
           }
           Overrides {
             Name: "cs:spell_Name"
-            String: "Ray Shock"
+            String: "Cursed Rain"
           }
           Overrides {
             Name: "cs:animationStancePick"
             String: "1hand_melee_shield_block"
           }
           Overrides {
-            Name: "cs:timeStunned"
-            Float: 1
+            Name: "cs:rainingTime"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:rainingDmg"
+            Int: 5
+          }
+          Overrides {
+            Name: "cs:cloudSpeed"
+            Float: 400
+          }
+          Overrides {
+            Name: "cs:slowPlayer"
+            Bool: true
           }
           Overrides {
             Name: "cs:linkToEquipment:tooltip"
@@ -52,8 +64,20 @@ Assets {
             String: "Animation stance to the player when picks the spell"
           }
           Overrides {
-            Name: "cs:timeStunned:tooltip"
-            String: "Time in seconds, the targetted player is stunned"
+            Name: "cs:rainingTime:tooltip"
+            String: "Life of the bubble in seconds. Default = 5"
+          }
+          Overrides {
+            Name: "cs:rainingDmg:tooltip"
+            String: "Extra damage of the cursed rain"
+          }
+          Overrides {
+            Name: "cs:cloudSpeed:tooltip"
+            String: "Velocity in cm/s of the following cloud to the player. Default = 400"
+          }
+          Overrides {
+            Name: "cs:slowPlayer:tooltip"
+            String: "If enabled, rain will slow player for a third. Default = true"
           }
         }
         WantsNetworking: true
@@ -88,7 +112,7 @@ Assets {
             }
             Muzzle {
               Location {
-                X: 55
+                X: 100
               }
               Rotation {
               }
@@ -109,7 +133,7 @@ Assets {
             BurstDuration: 4
             Range: 100000
             ImpactPlayerAssetRef {
-              Id: 13635265755717147765
+              Id: 307406115803496087
             }
             ReticleType {
               Value: "mc:ereticletype:crosshair"
@@ -142,7 +166,7 @@ Assets {
       }
       Objects {
         Id: 1107842620200882351
-        Name: "shock"
+        Name: "rain"
         Transform {
           Location {
           }
@@ -208,9 +232,9 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "dual_melee_right_hand_slash_right"
+          Animation: "dual_katana_right_hand_throw"
           KeyBinding_v2 {
-            Value: "mc:egameaction:extraaction_60"
+            Value: "mc:egameaction:extraaction_61"
           }
         }
       }
@@ -257,8 +281,8 @@ Assets {
         }
       }
       Objects {
-        Id: 14307522818698514783
-        Name: "shock ability"
+        Id: 4963479536365075305
+        Name: "rain ability"
         Transform {
           Location {
           }
@@ -273,15 +297,21 @@ Assets {
         ParentId: 11600719966956235199
         UnregisteredParameters {
           Overrides {
-            Name: "cs:executeFX"
+            Name: "cs:castFX"
             AssetReference {
-              Id: 56092514601387240
+              Id: 485917193941752555
             }
           }
           Overrides {
-            Name: "cs:impact"
+            Name: "cs:executeFX"
             AssetReference {
-              Id: 13635265755717147765
+              Id: 841534158063459245
+            }
+          }
+          Overrides {
+            Name: "cs:cloud"
+            AssetReference {
+              Id: 16040045487979840312
             }
           }
           Overrides {
@@ -306,7 +336,7 @@ Assets {
         }
         Script {
           ScriptAsset {
-            Id: 9533477851215206561
+            Id: 15999914420909598682
           }
         }
       }
@@ -517,14 +547,13 @@ Assets {
         Name: "pickup air"
         Transform {
           Location {
-            Y: 3.58252168
           }
           Rotation {
           }
           Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
+            X: 0.8
+            Y: 0.8
+            Z: 0.8
           }
         }
         ParentId: 8046135719342105986

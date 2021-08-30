@@ -594,8 +594,8 @@ Assets {
         Control {
           Width: 100
           Height: 100
-          UIX: 225.079407
-          UIY: -121.281006
+          UIX: 99.0259399
+          UIY: -49.2979736
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
