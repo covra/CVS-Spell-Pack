@@ -1,67 +1,22 @@
 Assets {
-  Id: 13021288233952350450
+  Id: 6457277294086654769
   Name: "bubble BUBBLE"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 4440787951322056283
+      RootId: 1020880315144198949
       Objects {
-        Id: 4440787951322056283
-        Name: "bubble"
+        Id: 1020880315144198949
+        Name: "bubble BUBBLE"
         Transform {
-          Scale {
-            X: 4.29685783
-            Y: 4.29685783
-            Z: 4.29685783
-          }
-        }
-        ParentId: 4781671109827199097
-        ChildIds: 16547703475836323954
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        PhysicsObject {
-          PhysicsShape {
-            Value: "mc:ephysicsshape:sphere"
-          }
-          Settings {
-            Mass: 100
-            LinearDamping: 10
-            AngularDamping: 10
-          }
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          Radius: 40.4567528
-        }
-      }
-      Objects {
-        Id: 16547703475836323954
-        Name: "ClientContext"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
           Scale {
             X: 1
             Y: 1
             Z: 1
           }
         }
-        ParentId: 4440787951322056283
-        ChildIds: 2665517378784167622
+        ParentId: 4781671109827199097
+        ChildIds: 5266256020094439691
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -70,7 +25,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         EditorIndicatorVisibility {
           Value: "mc:eindicatorvisibility:visiblewhenselected"
@@ -79,7 +34,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2665517378784167622
+        Id: 5266256020094439691
         Name: "PhysicsSphereMesh"
         Transform {
           Location {
@@ -87,12 +42,12 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 0.76650387
-            Y: 0.76650387
-            Z: 0.76650387
+            X: 2.44781184
+            Y: 2.44781184
+            Z: 2.44781184
           }
         }
-        ParentId: 16547703475836323954
+        ParentId: 1020880315144198949
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -101,7 +56,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 16630259605395466384
+              Id: 14153618592147306740
             }
           }
           Overrides {
@@ -109,7 +64,7 @@ Assets {
             Color {
               G: 0.516556144
               B: 0.78
-              A: 0.498000026
+              A: 0.958000064
             }
           }
         }
@@ -153,12 +108,12 @@ Assets {
       }
     }
     Assets {
-      Id: 16630259605395466384
-      Name: "Frosted Glass"
+      Id: 14153618592147306740
+      Name: "Bubble"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "fxma_frosted_glass"
+        AssetId: "fxmi_bubble"
       }
     }
     PrimaryAssetId {

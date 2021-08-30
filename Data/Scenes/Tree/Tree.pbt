@@ -41,9 +41,6 @@ Objects {
   ChildIds: 18278720400746410147
   ChildIds: 16543066514754936141
   ChildIds: 16238231457572033949
-  ChildIds: 15346031808873549115
-  ChildIds: 10226704922393261596
-  ChildIds: 15420371595996168426
   ChildIds: 4855247575180844931
   ChildIds: 9052128156351745310
   ChildIds: 5337986729710165281
@@ -53,14 +50,9 @@ Objects {
   ChildIds: 8595123538963548594
   ChildIds: 9488681593954022034
   ChildIds: 12206672794416826894
-  ChildIds: 10056722456127619208
   ChildIds: 2157964027846914811
-  ChildIds: 4124199818548385885
   ChildIds: 5057942099460025834
   ChildIds: 13285753884443477945
-  ChildIds: 12537691133361027386
-  ChildIds: 17991189507564368198
-  ChildIds: 8384723822772099218
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -73,137 +65,6 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 8384723822772099218
-  Name: "bubble BUB 2"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 15161603065456704146
-      value {
-        Overrides {
-          Name: "Name"
-          String: "bubble BUB 2"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 3042.29126
-            Y: -3430.72876
-            Z: 94.2167511
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 6457277294086654769
-    }
-  }
-}
-Objects {
-  Id: 17991189507564368198
-  Name: "wave castfx"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 18387400593702869834
-      value {
-        Overrides {
-          Name: "Name"
-          String: "wave castfx"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 819.731873
-            Y: 298.893646
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1917907138588389337
-    }
-  }
-}
-Objects {
-  Id: 12537691133361027386
-  Name: "water beam"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3615195464143534717
-      value {
-        Overrides {
-          Name: "Name"
-          String: "water beam"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1188.15491
-            Y: -627.514832
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 6471569811965329120
-    }
   }
 }
 Objects {
@@ -308,52 +169,6 @@ Objects {
   }
 }
 Objects {
-  Id: 4124199818548385885
-  Name: "water ref pos"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12877339965293575985
-      value {
-        Overrides {
-          Name: "Name"
-          String: "water ref pos"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1316.48535
-            Y: -792.90387
-            Z: 41.1815109
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 4204850054797319489
-    }
-  }
-}
-Objects {
   Id: 2157964027846914811
   Name: "Watersplash Large VFX"
   Transform {
@@ -394,52 +209,6 @@ Objects {
   }
   Relevance {
     Value: "mc:eproxyrelevance:medium"
-  }
-}
-Objects {
-  Id: 10056722456127619208
-  Name: "water projectile"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7812900950973073523
-      value {
-        Overrides {
-          Name: "Name"
-          String: "water projectile"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1543.72925
-            Y: -603.57666
-            Z: 66.1337204
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 5117735889527099258
-    }
   }
 }
 Objects {
@@ -6584,144 +6353,6 @@ Objects {
   }
 }
 Objects {
-  Id: 15420371595996168426
-  Name: "SPELL _9_bubble"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 17484086847626897149
-      value {
-        Overrides {
-          Name: "Name"
-          String: "SPELL _9_bubble"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1994.03772
-            Y: -436.345703
-            Z: 22.9534531
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 537804506944363405
-    }
-  }
-}
-Objects {
-  Id: 10226704922393261596
-  Name: "SPELL _8_tsunami"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 17484086847626897149
-      value {
-        Overrides {
-          Name: "Name"
-          String: "SPELL _8_tsunami"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1994.03772
-            Y: -970.796265
-            Z: 22.9534531
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14324367480621395084
-    }
-  }
-}
-Objects {
-  Id: 15346031808873549115
-  Name: "SPELL _7_waterBeam"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 17484086847626897149
-      value {
-        Overrides {
-          Name: "Name"
-          String: "SPELL _7_waterBeam"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1994.03772
-            Y: -1495.09583
-            Z: 22.9534531
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 6126196537203584848
-    }
-  }
-}
-Objects {
   Id: 16238231457572033949
   Name: "CVS_Spell_Equipment"
   Transform {
@@ -8146,8 +7777,173 @@ Objects {
   ChildIds: 8045286141521107460
   ChildIds: 2941284182451720294
   ChildIds: 8700556463523737897
+  ChildIds: 15346031808873549115
+  ChildIds: 10226704922393261596
+  ChildIds: 15420371595996168426
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 15420371595996168426
+  Name: "SPELL _9_bubble"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8545238584137842983
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17484086847626897149
+      value {
+        Overrides {
+          Name: "Name"
+          String: "SPELL _9_bubble"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1915.5874
+            Y: -1242.40125
+            Z: 22.9534302
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 537804506944363405
+    }
+  }
+}
+Objects {
+  Id: 10226704922393261596
+  Name: "SPELL _8_tsunami"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8545238584137842983
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17484086847626897149
+      value {
+        Overrides {
+          Name: "Name"
+          String: "SPELL _8_tsunami"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1915.5874
+            Y: -1776.85181
+            Z: 22.9534302
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14324367480621395084
+    }
+  }
+}
+Objects {
+  Id: 15346031808873549115
+  Name: "SPELL _7_waterBeam"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8545238584137842983
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17484086847626897149
+      value {
+        Overrides {
+          Name: "Name"
+          String: "SPELL _7_waterBeam"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1915.5874
+            Y: -2301.15137
+            Z: 22.9534302
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6126196537203584848
+    }
   }
 }
 Objects {
