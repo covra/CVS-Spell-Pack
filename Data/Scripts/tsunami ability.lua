@@ -2,6 +2,8 @@
 local ABILITY_ROOT = script:GetCustomProperty("ability"):WaitForObject()
 local SPELL_ROOT = ABILITY_ROOT.parent
 local EXTRA_DMG = SPELL_ROOT:GetCustomProperty("extraDmg")
+local SPEED_TSUNAMI = SPELL_ROOT:GetCustomProperty("tsunamiSpeed")
+local MAX_LIFE = SPELL_ROOT:GetCustomProperty("maxWaveLife")
 --asset
 local CAST_FX = script:GetCustomProperty("castFX")
 local EXE_FX = script:GetCustomProperty("executeFX")
@@ -35,19 +37,14 @@ end
 function onImpact(weapon, data)	
 	local target = data.targetObject
 	if Object.IsValid(target) then 
-		if  target:IsA("Player") then
-			local player = target
-			print(script.name.." >> impact from tsunami!", target)
-			local v3 = (player:GetWorldPosition() - weapon.owner:GetWorldPosition()):GetNormalized()
 			local wave = World.SpawnAsset(WAVE,{position = weapon.owner :GetWorldPosition(), rotation = weapon.owner:GetWorldRotation()})
-			local teamP = weapon.owner.team
-			for _,o in pairs (wave:GetChildren()) do 
-				if not o:IsA("NetworkContext") then 
-					o.team = teamP
-				end 
-			end 
-			wave:MoveTo(player:GetWorldPosition(), 3, true)
-			wave:ScaleTo(Vector3.ZERO, 6)
+			wave.lifeSpan = MAX_LIFE
+			local pos = data:GetHitResult():GetImpactPosition()
+			local v3 = (pos - weapon.owner:GetWorldPosition()):GetNormalized()
+			local distance = ((v3.x*v3.x) + (v3.y*v3.y) +(v3.z*v3.z))
+			local velTsu = distance / SPEED_TSUNAMI
+			wave:MoveTo(pos, velTsu, true)
+			Task.Spawn(function() wave:ScaleTo(Vector3.ZERO, 1) end,velTsu)
 			local trigg = wave:FindChildByType("Trigger")
 			listT = trigg.beginOverlapEvent:Connect(function(trigg, player) 
 				if player:IsA("Player") and Object.IsValid(player) then
@@ -67,8 +64,7 @@ function onImpact(weapon, data)
 				if Object.IsValid(listT) then 
 					listT:Disconnect()
 				end
-			end, 5)			
-        end
+			end, 5)		
     end 
 end 
 

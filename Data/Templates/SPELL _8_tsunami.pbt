@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 14562564265740093973
         ChildIds: 15726277267742674579
         ChildIds: 5404916448681409549
         ChildIds: 2772420153569315271
@@ -36,12 +36,16 @@ Assets {
             String: "1hand_melee_shield_block"
           }
           Overrides {
-            Name: "cs:waveLife"
-            Int: 5
+            Name: "cs:maxWaveLife"
+            Int: 10
           }
           Overrides {
             Name: "cs:extraDmg"
             Int: 15
+          }
+          Overrides {
+            Name: "cs:tsunamiSpeed"
+            Float: 200
           }
           Overrides {
             Name: "cs:linkToEquipment:tooltip"
@@ -56,12 +60,16 @@ Assets {
             String: "Animation stance to the player when picks the spell"
           }
           Overrides {
-            Name: "cs:waveLife:tooltip"
+            Name: "cs:maxWaveLife:tooltip"
             String: "life of the tsunami in seconds. Default = 5"
           }
           Overrides {
             Name: "cs:extraDmg:tooltip"
             String: "Extra damage done by tsunami"
+          }
+          Overrides {
+            Name: "cs:tsunamiSpeed:tooltip"
+            String: "Speed at which the tsunami is moving"
           }
         }
         WantsNetworking: true
@@ -542,6 +550,7 @@ Assets {
           }
         }
         ParentId: 10395538022606654570
+        ChildIds: 13394545054300817195
         ChildIds: 15402832087484574473
         ChildIds: 1020180000157650396
         ChildIds: 2854940702339914799
@@ -562,6 +571,50 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 13394545054300817195
+        Name: "Ambience Water Lapping Deep Glugs Loop 01 SFX"
+        Transform {
+          Location {
+            X: 61.6948776
+            Y: 306.174347
+            Z: -24.2833538
+          }
+          Rotation {
+            Yaw: 1.36603767e-05
+          }
+          Scale {
+            X: 1.45892572
+            Y: 1.45892572
+            Z: 1.45892572
+          }
+        }
+        ParentId: 14147678825496907064
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 10184144542042932522
+          }
+          AutoPlay: true
+          Volume: 1
+          Falloff: 500
+          Radius: -1
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
         }
       }
       Objects {
@@ -1988,6 +2041,15 @@ Assets {
       }
     }
     Assets {
+      Id: 10184144542042932522
+      Name: "Ambience Water Lapping Deep Glugs Loop 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_ambience_water_lapping_deep_glugs_loop_01_Cue_ref"
+      }
+    }
+    Assets {
       Id: 5522655696641006187
       Name: "Liquid Decal"
       PlatformAssetType: 14
@@ -2110,4 +2172,5 @@ Assets {
     }
   }
   SerializationVersion: 97
+  DirectlyPublished: true
 }

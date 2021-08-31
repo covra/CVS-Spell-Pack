@@ -19,7 +19,6 @@ Assets {
         ChildIds: 7403955341474746853
         ChildIds: 3669722157686795861
         ChildIds: 18161527741679376818
-        Lifespan: 7
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -140,6 +139,12 @@ Assets {
         ParentId: 8777210535795985244
         ChildIds: 4887497993698384299
         ChildIds: 1158682637316938478
+        ChildIds: 4408878341847573036
+        ChildIds: 12204309272754903089
+        ChildIds: 16976673140613959454
+        ChildIds: 13047843534197354106
+        ChildIds: 2974576642283112582
+        ChildIds: 353467233990984399
         ChildIds: 17731413898194201413
         WantsNetworking: true
         Collidable_v2 {
@@ -269,6 +274,247 @@ Assets {
         }
       }
       Objects {
+        Id: 4408878341847573036
+        Name: "Deep Airy Room Tone Loop 01"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.544684649
+            Y: 0.544684649
+            Z: 0.544684649
+          }
+        }
+        ParentId: 18161527741679376818
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 7360247068917180413
+          }
+          AutoPlay: true
+          Volume: 4
+          Falloff: -1
+          Radius: -1
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 12204309272754903089
+        Name: "Nature Beach Small Waves Loop 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.544684649
+            Y: 0.544684649
+            Z: 0.544684649
+          }
+        }
+        ParentId: 18161527741679376818
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 6771375057076565323
+          }
+          AutoPlay: true
+          Volume: 4
+          Falloff: -1
+          Radius: -1
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 16976673140613959454
+        Name: "Nature Beach Large Waves Loop 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.544684649
+            Y: 0.544684649
+            Z: 0.544684649
+          }
+        }
+        ParentId: 18161527741679376818
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 12418014555569911261
+          }
+          AutoPlay: true
+          Volume: 4
+          Falloff: -1
+          Radius: -1
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 13047843534197354106
+        Name: "Creature Beast Deep Low Breath 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.544684649
+            Y: 0.544684649
+            Z: 0.544684649
+          }
+        }
+        ParentId: 18161527741679376818
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 18035823905207484753
+          }
+          AutoPlay: true
+          Repeat: true
+          Volume: 1
+          Falloff: -1
+          Radius: -1
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 2974576642283112582
+        Name: "Ground Shaking Deep Impact Hit 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.544684649
+            Y: 0.544684649
+            Z: 0.544684649
+          }
+        }
+        ParentId: 18161527741679376818
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 4294809395628580878
+          }
+          AutoPlay: true
+          Volume: 1.9089371
+          Falloff: -1
+          Radius: -1
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 353467233990984399
+        Name: "Ambience Water Lapping Deep Glugs Loop 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18161527741679376818
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 10184144542042932522
+          }
+          AutoPlay: true
+          Volume: 2
+          Falloff: -1
+          Radius: -1
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
+      Objects {
         Id: 17731413898194201413
         Name: "Waterfall Top Volume VFX"
         Transform {
@@ -347,6 +593,60 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "longexposure_waterfall_straight"
+      }
+    }
+    Assets {
+      Id: 7360247068917180413
+      Name: "Deep Airy Room Tone Loop 01"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_deep_airy_room_tone_loop_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 6771375057076565323
+      Name: "Nature Beach Small Waves Loop 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_nature_beach_small_waves_loop_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 12418014555569911261
+      Name: "Nature Beach Large Waves Loop 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_nature_beach_large_waves_loop_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 18035823905207484753
+      Name: "Creature Beast Deep Low Breath 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_creature_beast_deep_low_breath_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 4294809395628580878
+      Name: "Ground Shaking Deep Impact Hit 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_designer_ground_shaking_deep_impact_hit_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 10184144542042932522
+      Name: "Ambience Water Lapping Deep Glugs Loop 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_ambience_water_lapping_deep_glugs_loop_01_Cue_ref"
       }
     }
     Assets {

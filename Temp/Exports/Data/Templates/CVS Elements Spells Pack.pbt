@@ -109,13 +109,14 @@ Assets {
           AssetId: "None"
         }
       }
+      DirectlyPublished: true
     }
     Assets {
       Id: 9586536453305928820
       Name: "CVS_README_SPELLS"
       PlatformAssetType: 3
       TextAsset {
-        Text: "--[[\r\n\r\n\t\t\t\tCVS-CoVraworkS-by Covra\r\n\t\t\t\t=======================\r\n\t\t\thttps://discord.gg/jW6dEBu6xE\r\n\r\nDescription\r\n===========\r\n\r\n\t>> This is a pack of 12 spells categorized in the basic elements: fire, earth, air and water:\r\n\t\r\n\t\t\t\t\t\t\t\t\tFIRE:\r\n\t\t\t\t\t\t\t\t\t=====\r\n\t\t- FireBall: Basic fire ball, fast and deadly\r\n\t\t- Shrapnel: The spell throws a bunch of burning pieces of shrapnel to the enemy, \r\n\t\t- Cauldron: You will summon a burning lava cauldron which will cook your opponents\r\n\t\t\r\n\t\t\t\t\t\t\t\t\tEARTH:\r\n\t\t\t\t\t\t\t\t\t=====\r\n\t\t- Saw of Rocks: A chain of spiky rocks will grown in your view of sight\r\n\t\t- Stoned: You will turn into a stone statue for a few seconds, even the most powerful enemy\r\n\t\t- Raise: You will summon a rock pillar which will throw and knock down enemies\r\n\t\t\t\t\t\t\t\t\tWATER:\r\n\t\t\t\t\t\t\t\t\t=====\r\n\t\t- Water Beam: A powerfull intense jet of water will destroy your enemies\r\n\t\t- Tsunami: You will summon a great wave that will drag and hit anyone who is ahead\r\n\t\t- Bubble It: Put whoever you want in a bubble for a few seconds and block it\r\n\t\t\t\t\t\t\t\t\tAIR:\r\n\t\t\t\t\t\t\t\t\t=====\r\n\t\t- Ray Shock: An electric shock will take down a pega to him\r\n\t\t- Cursed Rain: A cloud with poisoned water will chase anyone who dares to approach\r\n\t\t- Tornado: A powerful tornado will be summoned and wipe out whoever is ahead.\r\n\t\t\r\n\t- They are built under basic \'Weapon\' class equipment, so they are completly ready to drag&drop to the game\r\n\t- Is also includded a visual reference, a spell book, (equipment) [CVS_Spell_Equipment] . If this is equipped, some selected (under custom exposedproperties  ) spells will be linked to it, to make extra FX when cast\r\n\t  This is because, you can  add a staff, a wand or whatever....\r\n\t- [CVS TEAM MAKER and TEST]: This script is used to quickly test a spell and, in addition, it divides the players who join in two teams: 1 and 2. Sure Core scripts better, but this one is extremely simple\r\n\t- All the spells have a \'Custom properties\' exclusive to each one. They are found at the end, below the custom properties of the weapon (like \'extraDamage\'\t , \'spell_Name\' , \'DPS\' , \'bubbleLife\'...\r\n\t\tI have tried to explain all of them  in the \'custom tooltip\' associated to them\r\nTips\r\n====\r\n\r\n\t- If you want to use the visual equipment, it should be equipped first, to the rest of spells be able to be linked with it\r\n\t- If you put the spells under a equipment, some features like spreading projectile, doesnt work. This is a Core limitation, so it is a better practice, if you want to equip several spells, to  make them one by one or spawning them and later, equip them to player\r\n\t- Dont forget to use teams!  Some directed spells, like fireball, doesnt do damage if target player is in the same team \r\n\t- Take your time to explore the dozens of templates included in the pack. Maybe you can build amazing FX!\r\n\t- You can add the spells directly in the map, directly to the player when join, or maybe in a spawn ... I tried to see all scenarios to use as easily as possible\r\n\t- When a spell is equipped, 2 elements are deleted: \'Pickup Trigger\'(Trigger)  and \'Pickup FX\' (Folder) to save networked and performance (It can be easyly modified if you want to re-use the spells)\r\n\t- [Saw of rocks] spends a lot of networked objects. If this will be a problem modify the ratio in seconds of spike spawn. Lower number means more spikes per second. Default = 0.07\r\n\t- To test the spells I use 2 CC templates very useful and simple: \'Show cursor\' and \'Advanced UI bar\'\r\n\t- To trigger the spells, you can choose a key binded. Right now they are binded to 1 to 9 number keys plus F1,F2 and F3 (12 spells)\r\n\t\r\n\t\r\n- Please Dm to Discord any suggestion or bug!\r\nAugust 2021\r\n\r\n\r\n- If you want contenido en espa\303\221ol, dimelo y traduzco ;)\r\n\r\n--]]"
+        Text: "--[[\r\n\r\n\t\t\t\tCVS-CoVraworkS-by Covra\r\n\t\t\t\t=======================\r\n\t\t\thttps://discord.gg/jW6dEBu6xE\r\n\r\nDescription\r\n===========\r\n\r\n\t>> This is a pack of 12 spells categorized in the basic elements: fire, earth, air and water:\r\n\t\r\n\t\t\t\t\t\t\t\t\tFIRE:\r\n\t\t\t\t\t\t\t\t\t=====\r\n\t\t- FireBall: Basic fire ball, fast and deadly\r\n\t\t- Shrapnel: The spell throws a bunch of burning pieces of shrapnel to the enemy, \r\n\t\t- Cauldron: You will summon a burning lava cauldron which will cook your opponents\r\n\t\t\r\n\t\t\t\t\t\t\t\t\tEARTH:\r\n\t\t\t\t\t\t\t\t\t=====\r\n\t\t- Saw of Rocks: A chain of spiky rocks will grown in your view of sight\r\n\t\t- Stoned: You will turn into a stone statue for a few seconds, even the most powerful enemy\r\n\t\t- Raise: You will summon a rock pillar which will throw and knock down enemies\r\n\t\t\t\t\t\t\t\t\tWATER:\r\n\t\t\t\t\t\t\t\t\t=====\r\n\t\t- Water Beam: A powerfull intense jet of water will destroy your enemies\r\n\t\t- Tsunami: You will summon a great wave that will drag and hit anyone who is ahead\r\n\t\t- Bubble It: Put whoever you want in a bubble for a few seconds and block it\r\n\t\t\t\t\t\t\t\t\tAIR:\r\n\t\t\t\t\t\t\t\t\t=====\r\n\t\t- Ray Shock: An electric shock will take down a pega to him\r\n\t\t- Cursed Rain: A cloud with poisoned water will chase anyone who dares to approach\r\n\t\t- Tornado: A powerful tornado will be summoned and wipe out whoever is ahead.\r\n\t\t\r\n\t- They are built under basic \'Weapon\' class equipment, so they are completly ready to drag&drop to the game\r\n\t- Is also includded a visual reference, a spell book, (equipment) [CVS_Spell_Equipment] . If this is equipped, some selected (under custom exposedproperties  ) spells will be linked to it, to make extra FX when cast\r\n\t  This is because, you can  add a staff, a wand or whatever....\r\n\t- [CVS TEAM MAKER and TEST]: This script is used to quickly test a spell and, in addition, it divides the players who join in two teams: 1 and 2. Sure Core scripts better, but this one is extremely simple\r\n\t- All the spells have a \'Custom properties\' exclusive to each one. They are found at the end, below the custom properties of the weapon (like \'extraDamage\'\t , \'spell_Name\' , \'DPS\' , \'bubbleLife\'...\r\n\t\tI have tried to explain all of them  in the \'custom tooltip\' associated to them\r\nTips\r\n====\r\n\r\n\t- If you want to use the visual equipment, it should be equipped first, to the rest of spells be able to be linked with it\r\n\t- If you put the spells under a equipment, some features like spreading projectile, doesnt work. This is a Core limitation, so it is a better practice, if you want to equip several spells, to  make them one by one or spawning them and later, equip them to player\r\n\t- Dont forget to use teams!  Some directed spells, like fireball, doesnt do damage if target player is in the same team \r\n\t- Take your time to explore the dozens of templates included in the pack. For sure you can build amazing FX!\r\n\t- Most of templates have \'lifeSpan\' parammeter pre-setted, so check this if something dissappear suddenly! ;)\r\n\t- You can add the spells directly in the map, directly to the player when join, or maybe in a spawn ... I tried to see all scenarios to use as easily as possible\r\n\t- When a spell is equipped, 2 elements are deleted: \'Pickup Trigger\'(Trigger)  and \'Pickup FX\' (Folder) to save networked and performance (It can be easyly modified if you want to re-use the spells)\r\n\t- [Saw of rocks] spends a lot of networked objects. If this will be a problem modify the ratio in seconds of spike spawn. Lower number means more spikes per second. Default = 0.07\r\n\t- To test the spells I use 2 CC templates very useful and simple: \'Show cursor\' and \'Advanced UI bar\'\r\n\t- To trigger the spells, you can choose a key binded. Right now they are binded to 1 to 9 number keys plus F1,F2 and F3 (12 spells)\r\n\t\r\n\t\r\n- Please Dm to Discord any suggestion or bug!\r\nAugust 2021\r\n\r\n\r\n- If you want contenido en espa\303\221ol, dimelo y traduzco ;)\r\n\r\n--]]"
       }
     }
     Assets {
@@ -747,6 +748,7 @@ Assets {
           AssetId: "None"
         }
       }
+      DirectlyPublished: true
     }
     Assets {
       Id: 16412487958273494145
@@ -4647,6 +4649,7 @@ Assets {
           AssetId: "None"
         }
       }
+      DirectlyPublished: true
     }
     Assets {
       Id: 9337660376557937055
@@ -9072,10 +9075,10 @@ Assets {
                   Id: 10907755067141016943
                 }
                 MuzzleFlashAssetRef {
-                  Id: 841534158063459245
+                  Id: 1473059549154194203
                 }
                 TrailAssetRef {
-                  Id: 841534158063459245
+                  Id: 12841816668802294556
                 }
                 ImpactAssetRef {
                   Id: 14315832551668553556
@@ -12114,6 +12117,7 @@ Assets {
           AssetId: "None"
         }
       }
+      DirectlyPublished: true
     }
     Assets {
       Id: 6652974207271369531
@@ -14525,6 +14529,666 @@ Assets {
       PlatformAssetType: 3
       TextAsset {
         Text: "\r\nlocal LAVA_DROPS = script:GetCustomProperty(\"fireBallLavaDrops\")\r\nlocal BURNING = script:GetCustomProperty(\"fireBallImpactBurning2\")\r\n\r\n\r\n\r\nlocal drop = World.SpawnAsset(LAVA_DROPS,{position = script:GetWorldPosition()})\r\nWorld.SpawnAsset(BURNING,{position = script:GetWorldPosition()})\r\n"
+      }
+    }
+    Assets {
+      Id: 12841816668802294556
+      Name: "fireBall Trail"
+      PlatformAssetType: 5
+      TemplateAsset {
+        ObjectBlock {
+          RootId: 10946212692244874263
+          Objects {
+            Id: 10946212692244874263
+            Name: "fireBall Trail"
+            Transform {
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 4781671109827199097
+            ChildIds: 335704095740502039
+            ChildIds: 18039120964158377668
+            ChildIds: 6108958047972524953
+            ChildIds: 10769103474808257461
+            WantsNetworking: true
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:forceoff"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            NetworkContext {
+            }
+          }
+          Objects {
+            Id: 335704095740502039
+            Name: "Spark Trail Wavy VFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 10946212692244874263
+            UnregisteredParameters {
+              Overrides {
+                Name: "bp:Life"
+                Float: 5
+              }
+              Overrides {
+                Name: "bp:Chaos"
+                Float: 6.10936403
+              }
+            }
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            Blueprint {
+              BlueprintAsset {
+                Id: 5197337186322862858
+              }
+              TeamSettings {
+              }
+              Vfx {
+                AutoPlay: true
+              }
+            }
+            Relevance {
+              Value: "mc:eproxyrelevance:medium"
+            }
+          }
+          Objects {
+            Id: 18039120964158377668
+            Name: "Torch Fire VFX"
+            Transform {
+              Location {
+                X: 0.941131592
+                Y: 2.48468018
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 10946212692244874263
+            UnregisteredParameters {
+              Overrides {
+                Name: "bp:Life"
+                Float: 1.47653854
+              }
+              Overrides {
+                Name: "bp:Emissive Boost"
+                Float: 12.9404697
+              }
+              Overrides {
+                Name: "bp:Color"
+                Color {
+                  R: 1
+                  G: 0.268278182
+                  B: 0.13
+                  A: 1
+                }
+              }
+              Overrides {
+                Name: "bp:Velocity Max"
+                Float: 0.886062622
+              }
+              Overrides {
+                Name: "bp:Max Velocity Life Multiplier"
+                Float: 0.233134046
+              }
+            }
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            Blueprint {
+              BlueprintAsset {
+                Id: 14040801277181328014
+              }
+              TeamSettings {
+              }
+              Vfx {
+                AutoPlay: true
+              }
+            }
+            Relevance {
+              Value: "mc:eproxyrelevance:medium"
+            }
+          }
+          Objects {
+            Id: 6108958047972524953
+            Name: "Torch Fire VFX"
+            Transform {
+              Location {
+                X: -0.941146851
+                Y: -2.48468018
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 10946212692244874263
+            UnregisteredParameters {
+              Overrides {
+                Name: "bp:Velocity Max"
+                Float: 0.92214936
+              }
+              Overrides {
+                Name: "bp:Particle Scale Multiplier"
+                Float: 1.5251826
+              }
+              Overrides {
+                Name: "bp:Life"
+                Float: 1.50772488
+              }
+              Overrides {
+                Name: "bp:Color"
+                Color {
+                  R: 0.49
+                  G: 2.33650212e-07
+                  A: 1
+                }
+              }
+            }
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            Blueprint {
+              BlueprintAsset {
+                Id: 14040801277181328014
+              }
+              TeamSettings {
+              }
+              Vfx {
+                AutoPlay: true
+              }
+            }
+            Relevance {
+              Value: "mc:eproxyrelevance:medium"
+            }
+          }
+          Objects {
+            Id: 10769103474808257461
+            Name: "Spark Trail Wavy VFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 10946212692244874263
+            UnregisteredParameters {
+              Overrides {
+                Name: "bp:Life"
+                Float: 5
+              }
+              Overrides {
+                Name: "bp:Chaos"
+                Float: 1.4147656
+              }
+              Overrides {
+                Name: "bp:Color"
+                Color {
+                  R: 0.86
+                  G: 4.10079963e-07
+                  A: 1
+                }
+              }
+              Overrides {
+                Name: "bp:Emissive Boost"
+                Float: 24.1268559
+              }
+              Overrides {
+                Name: "bp:Particle Scale Multiplier"
+                Float: 0.944488585
+              }
+            }
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            Blueprint {
+              BlueprintAsset {
+                Id: 5197337186322862858
+              }
+              TeamSettings {
+              }
+              Vfx {
+                AutoPlay: true
+              }
+            }
+            Relevance {
+              Value: "mc:eproxyrelevance:medium"
+            }
+          }
+        }
+        PrimaryAssetId {
+          AssetType: "None"
+          AssetId: "None"
+        }
+      }
+    }
+    Assets {
+      Id: 5197337186322862858
+      Name: "Spark Trail Wavy VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_spark_trail_wavy"
+      }
+    }
+    Assets {
+      Id: 1473059549154194203
+      Name: "shrapnell muzzle"
+      PlatformAssetType: 5
+      TemplateAsset {
+        ObjectBlock {
+          RootId: 5656815703598729539
+          Objects {
+            Id: 5656815703598729539
+            Name: "shrapnell muzzle"
+            Transform {
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 4781671109827199097
+            ChildIds: 17427865354265233737
+            ChildIds: 13788420384988895120
+            ChildIds: 646589946104235741
+            ChildIds: 3354415554535308261
+            ChildIds: 6557941619813222265
+            ChildIds: 15954551350520501451
+            WantsNetworking: true
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:forceoff"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            NetworkContext {
+            }
+          }
+          Objects {
+            Id: 17427865354265233737
+            Name: "Rocket Launcher Muzzleflash VFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 5656815703598729539
+            UnregisteredParameters {
+              Overrides {
+                Name: "bp:Enable Smoke"
+                Bool: false
+              }
+            }
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            Blueprint {
+              BlueprintAsset {
+                Id: 16736334751691545013
+              }
+              TeamSettings {
+              }
+              Vfx {
+                AutoPlay: true
+              }
+            }
+            Relevance {
+              Value: "mc:eproxyrelevance:medium"
+            }
+          }
+          Objects {
+            Id: 13788420384988895120
+            Name: "Cannon Tank Artillery Shots Set 01 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 5656815703598729539
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            Blueprint {
+              BlueprintAsset {
+                Id: 403100736066458395
+              }
+              TeamSettings {
+              }
+              AudioBP {
+                AutoPlay: true
+                Volume: 1
+                Falloff: 1200
+                Radius: 1000
+                EnableOcclusion: true
+                IsSpatializationEnabled: true
+                IsAttenuationEnabled: true
+              }
+            }
+          }
+          Objects {
+            Id: 646589946104235741
+            Name: "Cannon Artillery Shell Whiz Flyby Passby 01 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 5656815703598729539
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 11551018371631357963
+              }
+              AutoPlay: true
+              Volume: 1
+              Falloff: 1200
+              Radius: 1000
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
+            }
+          }
+          Objects {
+            Id: 3354415554535308261
+            Name: "Magic Dark Bolt Whoosh 01 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 5656815703598729539
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 17651422371987128755
+              }
+              AutoPlay: true
+              Volume: 1
+              Falloff: -1
+              Radius: 800
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
+            }
+          }
+          Objects {
+            Id: 6557941619813222265
+            Name: "Fireworks Missile Rocket Launch Whoosh 01 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 5656815703598729539
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 18383433040333110833
+              }
+              AutoPlay: true
+              Volume: 1
+              Falloff: 1200
+              Radius: 1000
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
+            }
+          }
+          Objects {
+            Id: 15954551350520501451
+            Name: "Magic Dark Fire Attack Spell 01 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 5656815703598729539
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 13399901825000031947
+              }
+              AutoPlay: true
+              Pitch: -1123.89612
+              Volume: 3
+              Falloff: 600
+              Radius: 824.294922
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
+            }
+          }
+        }
+        PrimaryAssetId {
+          AssetType: "None"
+          AssetId: "None"
+        }
+      }
+    }
+    Assets {
+      Id: 13399901825000031947
+      Name: "Magic Dark Fire Attack Spell 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_dark_fire_attack_spell_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 18383433040333110833
+      Name: "Fireworks Missile Rocket Launch Whoosh 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_fireworks_missile_rocket_launch_whoosh_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 17651422371987128755
+      Name: "Magic Dark Bolt Whoosh 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_dark_bolt_whoosh_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 11551018371631357963
+      Name: "Cannon Artillery Shell Whiz Flyby Passby 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_cannon_artillery_whiz_passby_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 403100736066458395
+      Name: "Cannon Tank Artillery Shots Set 01 SFX"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "sfxabp_gunshot_cannons_ref"
+      }
+    }
+    Assets {
+      Id: 16736334751691545013
+      Name: "Rocket Launcher Muzzleflash VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_rocket_launcher_muzzleflash"
       }
     }
     Assets {
@@ -19079,6 +19743,7 @@ Assets {
           AssetId: "None"
         }
       }
+      DirectlyPublished: true
     }
     Assets {
       Id: 8507973944816971552
@@ -19551,313 +20216,6 @@ Assets {
       }
     }
     Assets {
-      Id: 12841816668802294556
-      Name: "fireBall Trail"
-      PlatformAssetType: 5
-      TemplateAsset {
-        ObjectBlock {
-          RootId: 10946212692244874263
-          Objects {
-            Id: 10946212692244874263
-            Name: "fireBall Trail"
-            Transform {
-              Scale {
-                X: 1
-                Y: 1
-                Z: 1
-              }
-            }
-            ParentId: 4781671109827199097
-            ChildIds: 335704095740502039
-            ChildIds: 18039120964158377668
-            ChildIds: 6108958047972524953
-            ChildIds: 10769103474808257461
-            WantsNetworking: true
-            Collidable_v2 {
-              Value: "mc:ecollisionsetting:forceoff"
-            }
-            Visible_v2 {
-              Value: "mc:evisibilitysetting:inheritfromparent"
-            }
-            CameraCollidable {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            EditorIndicatorVisibility {
-              Value: "mc:eindicatorvisibility:visiblewhenselected"
-            }
-            NetworkContext {
-            }
-          }
-          Objects {
-            Id: 335704095740502039
-            Name: "Spark Trail Wavy VFX"
-            Transform {
-              Location {
-              }
-              Rotation {
-              }
-              Scale {
-                X: 1
-                Y: 1
-                Z: 1
-              }
-            }
-            ParentId: 10946212692244874263
-            UnregisteredParameters {
-              Overrides {
-                Name: "bp:Life"
-                Float: 5
-              }
-              Overrides {
-                Name: "bp:Chaos"
-                Float: 6.10936403
-              }
-            }
-            Collidable_v2 {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            Visible_v2 {
-              Value: "mc:evisibilitysetting:inheritfromparent"
-            }
-            CameraCollidable {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            EditorIndicatorVisibility {
-              Value: "mc:eindicatorvisibility:visiblewhenselected"
-            }
-            Blueprint {
-              BlueprintAsset {
-                Id: 5197337186322862858
-              }
-              TeamSettings {
-              }
-              Vfx {
-                AutoPlay: true
-              }
-            }
-            Relevance {
-              Value: "mc:eproxyrelevance:medium"
-            }
-          }
-          Objects {
-            Id: 18039120964158377668
-            Name: "Torch Fire VFX"
-            Transform {
-              Location {
-                X: 0.941131592
-                Y: 2.48468018
-              }
-              Rotation {
-              }
-              Scale {
-                X: 1
-                Y: 1
-                Z: 1
-              }
-            }
-            ParentId: 10946212692244874263
-            UnregisteredParameters {
-              Overrides {
-                Name: "bp:Life"
-                Float: 1.47653854
-              }
-              Overrides {
-                Name: "bp:Emissive Boost"
-                Float: 12.9404697
-              }
-              Overrides {
-                Name: "bp:Color"
-                Color {
-                  R: 1
-                  G: 0.268278182
-                  B: 0.13
-                  A: 1
-                }
-              }
-              Overrides {
-                Name: "bp:Velocity Max"
-                Float: 0.886062622
-              }
-              Overrides {
-                Name: "bp:Max Velocity Life Multiplier"
-                Float: 0.233134046
-              }
-            }
-            Collidable_v2 {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            Visible_v2 {
-              Value: "mc:evisibilitysetting:inheritfromparent"
-            }
-            CameraCollidable {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            EditorIndicatorVisibility {
-              Value: "mc:eindicatorvisibility:visiblewhenselected"
-            }
-            Blueprint {
-              BlueprintAsset {
-                Id: 14040801277181328014
-              }
-              TeamSettings {
-              }
-              Vfx {
-                AutoPlay: true
-              }
-            }
-            Relevance {
-              Value: "mc:eproxyrelevance:medium"
-            }
-          }
-          Objects {
-            Id: 6108958047972524953
-            Name: "Torch Fire VFX"
-            Transform {
-              Location {
-                X: -0.941146851
-                Y: -2.48468018
-              }
-              Rotation {
-              }
-              Scale {
-                X: 1
-                Y: 1
-                Z: 1
-              }
-            }
-            ParentId: 10946212692244874263
-            UnregisteredParameters {
-              Overrides {
-                Name: "bp:Velocity Max"
-                Float: 0.92214936
-              }
-              Overrides {
-                Name: "bp:Particle Scale Multiplier"
-                Float: 1.5251826
-              }
-              Overrides {
-                Name: "bp:Life"
-                Float: 1.50772488
-              }
-              Overrides {
-                Name: "bp:Color"
-                Color {
-                  R: 0.49
-                  G: 2.33650212e-07
-                  A: 1
-                }
-              }
-            }
-            Collidable_v2 {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            Visible_v2 {
-              Value: "mc:evisibilitysetting:inheritfromparent"
-            }
-            CameraCollidable {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            EditorIndicatorVisibility {
-              Value: "mc:eindicatorvisibility:visiblewhenselected"
-            }
-            Blueprint {
-              BlueprintAsset {
-                Id: 14040801277181328014
-              }
-              TeamSettings {
-              }
-              Vfx {
-                AutoPlay: true
-              }
-            }
-            Relevance {
-              Value: "mc:eproxyrelevance:medium"
-            }
-          }
-          Objects {
-            Id: 10769103474808257461
-            Name: "Spark Trail Wavy VFX"
-            Transform {
-              Location {
-              }
-              Rotation {
-              }
-              Scale {
-                X: 1
-                Y: 1
-                Z: 1
-              }
-            }
-            ParentId: 10946212692244874263
-            UnregisteredParameters {
-              Overrides {
-                Name: "bp:Life"
-                Float: 5
-              }
-              Overrides {
-                Name: "bp:Chaos"
-                Float: 1.4147656
-              }
-              Overrides {
-                Name: "bp:Color"
-                Color {
-                  R: 0.86
-                  G: 4.10079963e-07
-                  A: 1
-                }
-              }
-              Overrides {
-                Name: "bp:Emissive Boost"
-                Float: 24.1268559
-              }
-              Overrides {
-                Name: "bp:Particle Scale Multiplier"
-                Float: 0.944488585
-              }
-            }
-            Collidable_v2 {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            Visible_v2 {
-              Value: "mc:evisibilitysetting:inheritfromparent"
-            }
-            CameraCollidable {
-              Value: "mc:ecollisionsetting:inheritfromparent"
-            }
-            EditorIndicatorVisibility {
-              Value: "mc:eindicatorvisibility:visiblewhenselected"
-            }
-            Blueprint {
-              BlueprintAsset {
-                Id: 5197337186322862858
-              }
-              TeamSettings {
-              }
-              Vfx {
-                AutoPlay: true
-              }
-            }
-            Relevance {
-              Value: "mc:eproxyrelevance:medium"
-            }
-          }
-        }
-        PrimaryAssetId {
-          AssetType: "None"
-          AssetId: "None"
-        }
-      }
-    }
-    Assets {
-      Id: 5197337186322862858
-      Name: "Spark Trail Wavy VFX"
-      PlatformAssetType: 8
-      PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_spark_trail_wavy"
-      }
-    }
-    Assets {
       Id: 6006475471038264845
       Name: "fireBall muzzle"
       PlatformAssetType: 5
@@ -20027,33 +20385,6 @@ Assets {
           AssetType: "None"
           AssetId: "None"
         }
-      }
-    }
-    Assets {
-      Id: 13399901825000031947
-      Name: "Magic Dark Fire Attack Spell 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_magic_dark_fire_attack_spell_01_Cue_ref"
-      }
-    }
-    Assets {
-      Id: 17651422371987128755
-      Name: "Magic Dark Bolt Whoosh 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_magic_dark_bolt_whoosh_01_Cue_ref"
-      }
-    }
-    Assets {
-      Id: 16736334751691545013
-      Name: "Rocket Launcher Muzzleflash VFX"
-      PlatformAssetType: 8
-      PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_rocket_launcher_muzzleflash"
       }
     }
     Assets {
@@ -20409,7 +20740,7 @@ Assets {
                 Z: 1
               }
             }
-            ParentId: 4781671109827199097
+            ParentId: 14562564265740093973
             ChildIds: 15726277267742674579
             ChildIds: 5404916448681409549
             ChildIds: 7888401248602366014
@@ -21240,6 +21571,7 @@ Assets {
             ChildIds: 10780541417262335971
             ChildIds: 13982421886463116923
             ChildIds: 3117448758005068281
+            ChildIds: 18392446605849779021
             ChildIds: 9207343719102600833
             Collidable_v2 {
               Value: "mc:ecollisionsetting:inheritfromparent"
@@ -22173,6 +22505,46 @@ Assets {
             }
           }
           Objects {
+            Id: 18392446605849779021
+            Name: "Ambience Water Lapping Deep Glugs Loop 01 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 13105454134615757113
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 10184144542042932522
+              }
+              AutoPlay: true
+              Volume: 1
+              Falloff: 500
+              Radius: -1
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
+            }
+          }
+          Objects {
             Id: 9207343719102600833
             Name: "Object Rotator Continuous"
             Transform {
@@ -22399,6 +22771,7 @@ Assets {
           AssetId: "None"
         }
       }
+      DirectlyPublished: true
     }
     Assets {
       Id: 5522655696641006187
@@ -22407,6 +22780,15 @@ Assets {
       PrimaryAsset {
         AssetType: "DecalBlueprintAssetRef"
         AssetId: "dcl_liquid"
+      }
+    }
+    Assets {
+      Id: 10184144542042932522
+      Name: "Ambience Water Lapping Deep Glugs Loop 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_ambience_water_lapping_deep_glugs_loop_01_Cue_ref"
       }
     }
     Assets {
@@ -22481,6 +22863,9 @@ Assets {
               }
             }
             ParentId: 4781671109827199097
+            ChildIds: 9714812634148721853
+            ChildIds: 6189089478704739019
+            ChildIds: 7114742538694874175
             ChildIds: 5266256020094439691
             WantsNetworking: true
             Collidable_v2 {
@@ -22496,6 +22881,127 @@ Assets {
               Value: "mc:eindicatorvisibility:visiblewhenselected"
             }
             NetworkContext {
+            }
+          }
+          Objects {
+            Id: 9714812634148721853
+            Name: "Magic Water Bubble Spell Cast 01 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 1020880315144198949
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 5846044572923038875
+              }
+              AutoPlay: true
+              Volume: 1
+              Falloff: -1
+              Radius: -1
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
+            }
+          }
+          Objects {
+            Id: 6189089478704739019
+            Name: "Magic Water Bubble Spell Cast 02 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 1020880315144198949
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 14070745972732129730
+              }
+              AutoPlay: true
+              Volume: 1
+              Falloff: -1
+              Radius: -1
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
+            }
+          }
+          Objects {
+            Id: 7114742538694874175
+            Name: "Ambience Underwater Bubbles Designed 01 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 1020880315144198949
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 3088498949253202575
+              }
+              AutoPlay: true
+              Repeat: true
+              Volume: 1
+              Falloff: 800
+              Radius: 300
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
             }
           }
           Objects {
@@ -22576,6 +23082,33 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "fxmi_bubble"
+      }
+    }
+    Assets {
+      Id: 3088498949253202575
+      Name: "Ambience Underwater Bubbles Designed 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_ambience_underwaterbubbles_designed_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 14070745972732129730
+      Name: "Magic Water Bubble Spell Cast 02 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_water_bubble_spell_cast_02_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 5846044572923038875
+      Name: "Magic Water Bubble Spell Cast 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_water_bubble_spell_cast_01_Cue_ref"
       }
     }
     Assets {
@@ -23088,7 +23621,7 @@ Assets {
       Name: "bubble ability"
       PlatformAssetType: 3
       TextAsset {
-        Text: "--assets\r\nlocal CAST_FX = script:GetCustomProperty(\"castFX\")\r\nlocal EXE_FX = script:GetCustomProperty(\"executeFX\")\r\nlocal DROP = script:GetCustomProperty(\"drop\")\r\nlocal BEAM = script:GetCustomProperty(\"beam\")\r\nlocal REF_POS = script:GetCustomProperty(\"refPos\")\r\nlocal BUBBLE = script:GetCustomProperty(\"bubble\")\r\n--custom\r\nlocal ABILITY_ROOT = script:GetCustomProperty(\"ability\"):WaitForObject()\r\nlocal SPELL_ROOT = ABILITY_ROOT.parent\r\nlocal EXTRA_DMG = SPELL_ROOT:GetCustomProperty(\"bubbleLife\")\r\n--local \r\nlocal listC = nil\r\nlocal listE = nil\r\n\r\n---------------------------------------------------------------\r\n\r\nfunction onCast (ab)\r\n\tprint(script.name..\" >> casting..\"..ab.owner.name)\r\n\tlocal player = ab.owner\r\n\tWorld.SpawnAsset(CAST_FX,{position = player:GetWorldPosition(), rotation = player:GetWorldRotation()})\r\nend \r\n\r\nfunction onExecute (ab)\r\n\tlocal player = ab.owner\r\n\tWorld.SpawnAsset(EXE_FX,{position = player:GetWorldPosition(), rotation = player:GetWorldRotation()})\r\nend \r\n\r\n\r\nfunction onImpact(weapon, data)\t\r\n\tlocal target = data.targetObject\r\n\tif Object.IsValid(target) then \r\n\t\tif  target:IsA(\"Player\") then\r\n\t\t\tlocal player = target \t\t\t\r\n\t\t\tlocal bub = World.SpawnAsset(BUBBLE,{position = player:GetWorldPosition()})\r\n\t\t\tbub:AttachToPlayer(player, \"lower_spine\")\r\n\t\t\tlocal veloc = player:GetVelocity()\r\n\t\tplayer.serverUserData.movC = player.movementControlMode\r\n\t\tplayer.serverUserData.gravity = player.gravityScale\r\n\t\tplayer.serverUserData.jumpVelocity = player.jumpVelocity\r\n\t\tplayer.movementControlMode = MovementControlMode.NONE  \r\n\t\tplayer.gravityScale = -0.002 --1.9\r\n\t\tplayer:SetWorldPosition(player:GetWorldPosition() + (Vector3.UP * 30))\r\n\t\tplayer:SetVelocity(Vector3.RIGHT * (veloc/2))\r\n\t\tplayer.brakingDecelerationFalling = -5  -- 0\r\n\t\tplayer.jumpVelocity = 0 -- 1000\r\n\t\tlocal countDown = 0\r\n\t\tlocal imp = 8\r\n\t\tlocal dist = 150\r\n\t\tlocal playerRotOrig = player:GetWorldRotation()\t\t\r\n\t\tlocal playerRot = playerRotOrig\r\n\t\trepeat\r\n\t\t\tlocal playerposition = player:GetWorldPosition()\r\n\t\t\tlocal hN = World.Raycast(playerposition, playerposition + Vector3.New(0,0,dist),{ignorePlayers = true}) \r\n\t\t\t--CoreDebug.DrawLine(playerposition, playerposition + Vector3.New(0,0,dist), {duration = 0.2,thickness = 3, color = Color.RED })\r\n\t\t\tlocal hS = World.Raycast(playerposition, playerposition + Vector3.New(0,0,-dist),{ignorePlayers = true}) \r\n\t\t\t--CoreDebug.DrawLine(playerposition, playerposition + Vector3.New(0,0,-dist), {duration = 0.2,thickness = 3, color = Color.GREEN })\r\n\t\t\tlocal hW = World.Raycast(playerposition, playerposition + Vector3.New(0,dist,0),{ignorePlayers = true}) \r\n\t\t\t--CoreDebug.DrawLine(playerposition, playerposition + Vector3.New(0,dist,0), {duration = 0.2,thickness = 3, color = Color.BLUE })\r\n\t\t\tlocal hO = World.Raycast(playerposition, playerposition + Vector3.New(0,-dist,0),{ignorePlayers = true}) \r\n\t\t\t--CoreDebug.DrawLine(playerposition, playerposition + Vector3.New(0,-dist,0), {duration = 0.2,thickness = 3, color = Color.YELLOW })\r\n\t\t\tif hN then  if hN.other:IsA(\"StaticMesh\") then player:AddImpulse(Vector3.UP * (-imp * player.mass)) end --player:AddImpulse(Vector3.UP * (-imp * player.mass))\r\n\t\t\telseif hS then  if  hS.other:IsA(\"StaticMesh\") then    player:AddImpulse(Vector3.UP * (imp * player.mass)) end\r\n\t\t\telseif hW then   if  hW.other:IsA(\"StaticMesh\") then    player:AddImpulse(Vector3.RIGHT * (imp * player.mass)) end\r\n\t\t\telseif hO then  if  hO.other:IsA(\"StaticMesh\") then    player:AddImpulse(Vector3.RIGHT * (imp * player.mass)) end\r\n\t\t\tend\r\n\t\t\tplayerRot.y = playerRot.y + 2\r\n\t\t\tplayer:SetWorldRotation(playerRot)\r\n\t\t\tTask.Wait(0.1)\r\n\t\t\tcountDown = countDown + 1\r\n\t\tuntil countDown == 100--150\r\n\t\tbub:Detach()\r\n\t\tbub:Destroy()\r\n\t\tplayer:SetWorldRotation(playerRotOrig)\r\n\t\tplayer:SetWorldRotation(Rotation.New(0,0,0))\r\n\t\tplayer.movementControlMode = player.serverUserData.movC\r\n\t\tplayer.gravityScale = player.serverUserData.gravity \r\n\t\tplayer.jumpVelocity = player.serverUserData.jumpVelocity \t\t\t\r\n\t\tend\r\n\tend \r\nend \r\n\t\t\r\n\t\t\r\n\t\t\r\nfunction OnEquipped (eq, ply)\r\n\tlistC = ABILITY_ROOT.castEvent:Connect(onCast)\r\n\tlistE = ABILITY_ROOT.executeEvent:Connect(onExecute)\r\nend \r\n\r\n\r\nfunction OnUnequipped (eq, ply)\r\n\tif Object.IsValid (listC) then \r\n\t\tlistC:Disconnect()\r\n\t\tlistE:Disconnect()\r\n\tend \r\nend \r\n\r\n\r\n--Init\r\nSPELL_ROOT.equippedEvent:Connect(OnEquipped)\r\nSPELL_ROOT.unequippedEvent:Connect(OnUnequipped)\r\nSPELL_ROOT.targetImpactedEvent:Connect(onImpact)"
+        Text: "--assets\r\nlocal CAST_FX = script:GetCustomProperty(\"castFX\")\r\nlocal EXE_FX = script:GetCustomProperty(\"executeFX\")\r\nlocal DROP = script:GetCustomProperty(\"drop\")\r\nlocal BEAM = script:GetCustomProperty(\"beam\")\r\nlocal REF_POS = script:GetCustomProperty(\"refPos\")\r\nlocal BUBBLE = script:GetCustomProperty(\"bubble\")\r\n--custom\r\nlocal ABILITY_ROOT = script:GetCustomProperty(\"ability\"):WaitForObject()\r\nlocal SPELL_ROOT = ABILITY_ROOT.parent\r\nlocal EXTRA_DMG = SPELL_ROOT:GetCustomProperty(\"bubbleLife\")\r\n--local \r\nlocal listC = nil\r\nlocal listE = nil\r\n\r\n---------------------------------------------------------------\r\n\r\nfunction onCast (ab)\r\n\tprint(script.name..\" >> casting..\"..ab.owner.name)\r\n\tlocal player = ab.owner\r\n\tWorld.SpawnAsset(CAST_FX,{position = player:GetWorldPosition(), rotation = player:GetWorldRotation()})\r\nend \r\n\r\nfunction onExecute (ab)\r\n\tlocal player = ab.owner\r\n\tWorld.SpawnAsset(EXE_FX,{position = player:GetWorldPosition(), rotation = player:GetWorldRotation()})\r\nend \r\n\r\n\r\nfunction onImpact(weapon, data)\t\r\n\tlocal target = data.targetObject\r\n\tif Object.IsValid(target) then \r\n\t\tif  target:IsA(\"Player\") then\r\n\t\t\tlocal player = target \t\t\t\r\n\t\t\tlocal bub = World.SpawnAsset(BUBBLE,{position = player:GetWorldPosition()})\r\n\t\t\tbub:AttachToPlayer(player, \"lower_spine\")\r\n\t\t\tlocal veloc = player:GetVelocity()\r\n\t\tplayer.serverUserData.movC = player.movementControlMode\r\n\t\tplayer.serverUserData.gravity = player.gravityScale\r\n\t\tplayer.serverUserData.jumpVelocity = player.jumpVelocity\r\n\t\tplayer.movementControlMode = MovementControlMode.NONE  \r\n\t\tplayer.gravityScale = -0.002 --1.9\r\n\t\tplayer:SetWorldPosition(player:GetWorldPosition() + (Vector3.UP * 30))\r\n\t\tplayer:SetVelocity(Vector3.RIGHT * (veloc/2))\r\n\t\tplayer.brakingDecelerationFalling = -5  -- 0\r\n\t\tplayer.jumpVelocity = 0 -- 1000\r\n\t\tlocal countDown = 0\r\n\t\tlocal imp = 8\r\n\t\tlocal dist = 150\r\n\t\tlocal playerRotOrig = player:GetWorldRotation()\t\t\r\n\t\tlocal playerRot = playerRotOrig\r\n\t\trepeat\r\n\t\t\tlocal playerposition = player:GetWorldPosition()\r\n\t\t\tlocal hN = World.Raycast(playerposition, playerposition + Vector3.New(0,0,dist),{ignorePlayers = true}) \r\n\t\t\t--CoreDebug.DrawLine(playerposition, playerposition + Vector3.New(0,0,dist), {duration = 0.2,thickness = 3, color = Color.RED })\r\n\t\t\tlocal hS = World.Raycast(playerposition, playerposition + Vector3.New(0,0,-dist),{ignorePlayers = true}) \r\n\t\t\t--CoreDebug.DrawLine(playerposition, playerposition + Vector3.New(0,0,-dist), {duration = 0.2,thickness = 3, color = Color.GREEN })\r\n\t\t\tlocal hW = World.Raycast(playerposition, playerposition + Vector3.New(0,dist,0),{ignorePlayers = true}) \r\n\t\t\t--CoreDebug.DrawLine(playerposition, playerposition + Vector3.New(0,dist,0), {duration = 0.2,thickness = 3, color = Color.BLUE })\r\n\t\t\tlocal hO = World.Raycast(playerposition, playerposition + Vector3.New(0,-dist,0),{ignorePlayers = true}) \r\n\t\t\t--CoreDebug.DrawLine(playerposition, playerposition + Vector3.New(0,-dist,0), {duration = 0.2,thickness = 3, color = Color.YELLOW })\r\n\t\t\tif hN then  if hN.other:IsA(\"StaticMesh\") then player:AddImpulse(Vector3.UP * (-imp * player.mass)) end --player:AddImpulse(Vector3.UP * (-imp * player.mass))\r\n\t\t\telseif hS then  if  hS.other:IsA(\"StaticMesh\") then    player:AddImpulse(Vector3.UP * (imp * player.mass)) end\r\n\t\t\telseif hW then   if  hW.other:IsA(\"StaticMesh\") then    player:AddImpulse(Vector3.RIGHT * (imp * player.mass)) end\r\n\t\t\telseif hO then  if  hO.other:IsA(\"StaticMesh\") then    player:AddImpulse(Vector3.RIGHT * (imp * player.mass)) end\r\n\t\t\tend\r\n\t\t\tplayerRot.y = playerRot.y + 2\r\n\t\t\tplayer:SetWorldRotation(playerRot)\r\n\t\t\tTask.Wait(0.1)\r\n\t\t\tcountDown = countDown + 1\r\n\t\tuntil countDown == 100--150\r\n\t\tbub:Detach()\r\n\t\tbub:Destroy()\r\n\t\tplayer:SetWorldRotation(playerRotOrig)\r\n\t\tplayer:SetWorldRotation(Rotation.New(0,0,0))\r\n\t\tplayer.movementControlMode = player.serverUserData.movC\r\n\t\tplayer.gravityScale = player.serverUserData.gravity \r\n\t\tplayer.jumpVelocity = player.serverUserData.jumpVelocity \r\n\t\telse \r\n\t\t\tlocal posP = weapon.owner :GetWorldPosition()\r\n\t\t\tlocal rotP = weapon.owner:GetWorldRotation()\r\n\t\t\tlocal dirV3 = (rotP * posP):GetNormalized()\r\n\t\t\tlocal bub = World.SpawnAsset(BUBBLE,{position = weapon.owner:GetWorldPosition() + dirV3 * 100 + Vector3.UP * 200})\r\n\t\t\tlocal bublife = 5\r\n\t\t\tbub.lifeSpan = bublife\r\n\t\t\tTask.Wait(1)\r\n\t\t\tbub:MoveTo(dirV3 * 5000, bublife)\r\n\t\tend\r\n\tend \r\nend \r\n\t\t\r\n\t\t\r\n\t\t\r\nfunction OnEquipped (eq, ply)\r\n\tlistC = ABILITY_ROOT.castEvent:Connect(onCast)\r\n\tlistE = ABILITY_ROOT.executeEvent:Connect(onExecute)\r\nend \r\n\r\n\r\nfunction OnUnequipped (eq, ply)\r\n\tif Object.IsValid (listC) then \r\n\t\tlistC:Disconnect()\r\n\t\tlistE:Disconnect()\r\n\tend \r\nend \r\n\r\n\r\n--Init\r\nSPELL_ROOT.equippedEvent:Connect(OnEquipped)\r\nSPELL_ROOT.unequippedEvent:Connect(OnUnequipped)\r\nSPELL_ROOT.targetImpactedEvent:Connect(onImpact)"
       }
     }
     Assets {
@@ -24961,7 +25494,7 @@ Assets {
                 Z: 1
               }
             }
-            ParentId: 4781671109827199097
+            ParentId: 14562564265740093973
             ChildIds: 15726277267742674579
             ChildIds: 5404916448681409549
             ChildIds: 2772420153569315271
@@ -24982,12 +25515,16 @@ Assets {
                 String: "1hand_melee_shield_block"
               }
               Overrides {
-                Name: "cs:waveLife"
-                Int: 5
+                Name: "cs:maxWaveLife"
+                Int: 10
               }
               Overrides {
                 Name: "cs:extraDmg"
                 Int: 15
+              }
+              Overrides {
+                Name: "cs:tsunamiSpeed"
+                Float: 200
               }
               Overrides {
                 Name: "cs:linkToEquipment:tooltip"
@@ -25002,12 +25539,16 @@ Assets {
                 String: "Animation stance to the player when picks the spell"
               }
               Overrides {
-                Name: "cs:waveLife:tooltip"
+                Name: "cs:maxWaveLife:tooltip"
                 String: "life of the tsunami in seconds. Default = 5"
               }
               Overrides {
                 Name: "cs:extraDmg:tooltip"
                 String: "Extra damage done by tsunami"
+              }
+              Overrides {
+                Name: "cs:tsunamiSpeed:tooltip"
+                String: "Speed at which the tsunami is moving"
               }
             }
             WantsNetworking: true
@@ -25488,6 +26029,7 @@ Assets {
               }
             }
             ParentId: 10395538022606654570
+            ChildIds: 13394545054300817195
             ChildIds: 15402832087484574473
             ChildIds: 1020180000157650396
             ChildIds: 2854940702339914799
@@ -25508,6 +26050,50 @@ Assets {
             }
             Folder {
               IsGroup: true
+            }
+          }
+          Objects {
+            Id: 13394545054300817195
+            Name: "Ambience Water Lapping Deep Glugs Loop 01 SFX"
+            Transform {
+              Location {
+                X: 61.6948776
+                Y: 306.174347
+                Z: -24.2833538
+              }
+              Rotation {
+                Yaw: 1.36603767e-05
+              }
+              Scale {
+                X: 1.45892572
+                Y: 1.45892572
+                Z: 1.45892572
+              }
+            }
+            ParentId: 14147678825496907064
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 10184144542042932522
+              }
+              AutoPlay: true
+              Volume: 1
+              Falloff: 500
+              Radius: -1
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
             }
           }
           Objects {
@@ -26938,6 +27524,7 @@ Assets {
           AssetId: "None"
         }
       }
+      DirectlyPublished: true
     }
     Assets {
       Id: 18000411511564172416
@@ -26960,7 +27547,6 @@ Assets {
             ChildIds: 7403955341474746853
             ChildIds: 3669722157686795861
             ChildIds: 18161527741679376818
-            Lifespan: 7
             WantsNetworking: true
             Collidable_v2 {
               Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27081,6 +27667,12 @@ Assets {
             ParentId: 8777210535795985244
             ChildIds: 4887497993698384299
             ChildIds: 1158682637316938478
+            ChildIds: 4408878341847573036
+            ChildIds: 12204309272754903089
+            ChildIds: 16976673140613959454
+            ChildIds: 13047843534197354106
+            ChildIds: 2974576642283112582
+            ChildIds: 353467233990984399
             ChildIds: 17731413898194201413
             WantsNetworking: true
             Collidable_v2 {
@@ -27210,6 +27802,247 @@ Assets {
             }
           }
           Objects {
+            Id: 4408878341847573036
+            Name: "Deep Airy Room Tone Loop 01"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 0.544684649
+                Y: 0.544684649
+                Z: 0.544684649
+              }
+            }
+            ParentId: 18161527741679376818
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 7360247068917180413
+              }
+              AutoPlay: true
+              Volume: 4
+              Falloff: -1
+              Radius: -1
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
+            }
+          }
+          Objects {
+            Id: 12204309272754903089
+            Name: "Nature Beach Small Waves Loop 01 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 0.544684649
+                Y: 0.544684649
+                Z: 0.544684649
+              }
+            }
+            ParentId: 18161527741679376818
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 6771375057076565323
+              }
+              AutoPlay: true
+              Volume: 4
+              Falloff: -1
+              Radius: -1
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
+            }
+          }
+          Objects {
+            Id: 16976673140613959454
+            Name: "Nature Beach Large Waves Loop 01 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 0.544684649
+                Y: 0.544684649
+                Z: 0.544684649
+              }
+            }
+            ParentId: 18161527741679376818
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 12418014555569911261
+              }
+              AutoPlay: true
+              Volume: 4
+              Falloff: -1
+              Radius: -1
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
+            }
+          }
+          Objects {
+            Id: 13047843534197354106
+            Name: "Creature Beast Deep Low Breath 01 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 0.544684649
+                Y: 0.544684649
+                Z: 0.544684649
+              }
+            }
+            ParentId: 18161527741679376818
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 18035823905207484753
+              }
+              AutoPlay: true
+              Repeat: true
+              Volume: 1
+              Falloff: -1
+              Radius: -1
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
+            }
+          }
+          Objects {
+            Id: 2974576642283112582
+            Name: "Ground Shaking Deep Impact Hit 01 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 0.544684649
+                Y: 0.544684649
+                Z: 0.544684649
+              }
+            }
+            ParentId: 18161527741679376818
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 4294809395628580878
+              }
+              AutoPlay: true
+              Volume: 1.9089371
+              Falloff: -1
+              Radius: -1
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
+            }
+          }
+          Objects {
+            Id: 353467233990984399
+            Name: "Ambience Water Lapping Deep Glugs Loop 01 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 18161527741679376818
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 10184144542042932522
+              }
+              AutoPlay: true
+              Volume: 2
+              Falloff: -1
+              Radius: -1
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
+            }
+          }
+          Objects {
             Id: 17731413898194201413
             Name: "Waterfall Top Volume VFX"
             Transform {
@@ -27267,6 +28100,51 @@ Assets {
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_waterfall_top"
+      }
+    }
+    Assets {
+      Id: 4294809395628580878
+      Name: "Ground Shaking Deep Impact Hit 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_designer_ground_shaking_deep_impact_hit_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 18035823905207484753
+      Name: "Creature Beast Deep Low Breath 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_creature_beast_deep_low_breath_01a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 12418014555569911261
+      Name: "Nature Beach Large Waves Loop 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_nature_beach_large_waves_loop_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 6771375057076565323
+      Name: "Nature Beach Small Waves Loop 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_nature_beach_small_waves_loop_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 7360247068917180413
+      Name: "Deep Airy Room Tone Loop 01"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_deep_airy_room_tone_loop_01_Cue_ref"
       }
     }
     Assets {
@@ -29455,7 +30333,7 @@ Assets {
       Name: "tsunami ability"
       PlatformAssetType: 3
       TextAsset {
-        Text: "--custom\r\nlocal ABILITY_ROOT = script:GetCustomProperty(\"ability\"):WaitForObject()\r\nlocal SPELL_ROOT = ABILITY_ROOT.parent\r\nlocal EXTRA_DMG = SPELL_ROOT:GetCustomProperty(\"extraDmg\")\r\n--asset\r\nlocal CAST_FX = script:GetCustomProperty(\"castFX\")\r\nlocal EXE_FX = script:GetCustomProperty(\"executeFX\")\r\nlocal WAVE = script:GetCustomProperty(\"tsunamiWave\")\r\n--local \r\nlocal listC = nil\r\nlocal listE = nil\r\nlocal listT = nil\r\nlocal newDamageInfo = nil\r\n\r\n---------------------------------------------------------------------\r\n\r\n\r\nfunction buildDamage ()\r\n\tnewDamageInfo = Damage.New(EXTRA_DMG)\r\n    newDamageInfo.reason = DamageReason.COMBAT\r\nend \r\n\r\nfunction onCast (ab)\r\n\tprint(script.name..\" >> casting..\"..ab.owner.name)\r\n\tlocal player = ab.owner\r\n\tWorld.SpawnAsset(CAST_FX,{position = player:GetWorldPosition(), rotation = player:GetWorldRotation()})\r\nend \r\n\r\nfunction onExecute (ab)\r\n\tlocal player = ab.owner\r\n\tWorld.SpawnAsset(EXE_FX,{position = player:GetWorldPosition(), rotation = player:GetWorldRotation()})\r\nend \r\n\r\n\r\nfunction onImpact(weapon, data)\t\r\n\tlocal target = data.targetObject\r\n\tif Object.IsValid(target) then \r\n\t\tif  target:IsA(\"Player\") then\r\n\t\t\tlocal player = target\r\n\t\t\tprint(script.name..\" >> impact from tsunami!\", target)\r\n\t\t\tlocal v3 = (player:GetWorldPosition() - weapon.owner:GetWorldPosition()):GetNormalized()\r\n\t\t\tlocal wave = World.SpawnAsset(WAVE,{position = weapon.owner :GetWorldPosition(), rotation = weapon.owner:GetWorldRotation()})\r\n\t\t\tlocal teamP = weapon.owner.team\r\n\t\t\tfor _,o in pairs (wave:GetChildren()) do \r\n\t\t\t\tif not o:IsA(\"NetworkContext\") then \r\n\t\t\t\t\to.team = teamP\r\n\t\t\t\tend \r\n\t\t\tend \r\n\t\t\twave:MoveTo(player:GetWorldPosition(), 3, true)\r\n\t\t\twave:ScaleTo(Vector3.ZERO, 6)\r\n\t\t\tlocal trigg = wave:FindChildByType(\"Trigger\")\r\n\t\t\tlistT = trigg.beginOverlapEvent:Connect(function(trigg, player) \r\n\t\t\t\tif player:IsA(\"Player\") and Object.IsValid(player) then\r\n\t\t\t\t\tplayer:ResetVelocity()\t\t\r\n\t\t\t\t\tplayer:EnableRagdoll()\r\n\t\t\t\t\tplayer:ResetVelocity()\r\n\t\t\t\t\tplayer:AddImpulse(v3 * 150)\r\n\t\t\t\t    newDamageInfo.sourceAbility = ABILITY_ROOT\r\n   \t\t\t\t\tnewDamageInfo.sourcePlayer = weapon.owner\r\n\t\t\t\t\tplayer:ApplyDamage(newDamageInfo)\t\t\t\t\t\t \r\n\t\t\t\tend\r\n\t\t\tend)\r\n\t\t\tTask.Spawn(function()\r\n\t\t\t\tif Object.IsValid (player) then \r\n\t\t\t\t\tplayer:DisableRagdoll()\r\n\t\t\t\tend \r\n\t\t\t\tif Object.IsValid(listT) then \r\n\t\t\t\t\tlistT:Disconnect()\r\n\t\t\t\tend\r\n\t\t\tend, 5)\t\t\t\r\n        end\r\n    end \r\nend \r\n\r\n\r\n\r\nfunction OnEquipped (eq, ply)\r\n\tlistC = ABILITY_ROOT.castEvent:Connect(onCast)\r\n\tlistE = ABILITY_ROOT.executeEvent:Connect(onExecute)\r\nend \r\n\r\n\r\nfunction OnUnequipped (eq, ply)\r\n\tif Object.IsValid (listC) then \r\n\t\tlistC:Disconnect()\r\n\t\tlistE:Disconnect()\r\n\tend \r\nend \r\n\r\n\r\n--Init\r\nbuildDamage()\r\nSPELL_ROOT.equippedEvent:Connect(OnEquipped)\r\nSPELL_ROOT.unequippedEvent:Connect(OnUnequipped)\r\nSPELL_ROOT.targetImpactedEvent:Connect(onImpact)\r\n"
+        Text: "--custom\r\nlocal ABILITY_ROOT = script:GetCustomProperty(\"ability\"):WaitForObject()\r\nlocal SPELL_ROOT = ABILITY_ROOT.parent\r\nlocal EXTRA_DMG = SPELL_ROOT:GetCustomProperty(\"extraDmg\")\r\nlocal SPEED_TSUNAMI = SPELL_ROOT:GetCustomProperty(\"tsunamiSpeed\")\r\nlocal MAX_LIFE = SPELL_ROOT:GetCustomProperty(\"maxWaveLife\")\r\n--asset\r\nlocal CAST_FX = script:GetCustomProperty(\"castFX\")\r\nlocal EXE_FX = script:GetCustomProperty(\"executeFX\")\r\nlocal WAVE = script:GetCustomProperty(\"tsunamiWave\")\r\n--local \r\nlocal listC = nil\r\nlocal listE = nil\r\nlocal listT = nil\r\nlocal newDamageInfo = nil\r\n\r\n---------------------------------------------------------------------\r\n\r\n\r\nfunction buildDamage ()\r\n\tnewDamageInfo = Damage.New(EXTRA_DMG)\r\n    newDamageInfo.reason = DamageReason.COMBAT\r\nend \r\n\r\nfunction onCast (ab)\r\n\tprint(script.name..\" >> casting..\"..ab.owner.name)\r\n\tlocal player = ab.owner\r\n\tWorld.SpawnAsset(CAST_FX,{position = player:GetWorldPosition(), rotation = player:GetWorldRotation()})\r\nend \r\n\r\nfunction onExecute (ab)\r\n\tlocal player = ab.owner\r\n\tWorld.SpawnAsset(EXE_FX,{position = player:GetWorldPosition(), rotation = player:GetWorldRotation()})\r\nend \r\n\r\n\r\nfunction onImpact(weapon, data)\t\r\n\tlocal target = data.targetObject\r\n\tif Object.IsValid(target) then \r\n\t\t\tlocal wave = World.SpawnAsset(WAVE,{position = weapon.owner :GetWorldPosition(), rotation = weapon.owner:GetWorldRotation()})\r\n\t\t\twave.lifeSpan = MAX_LIFE\r\n\t\t\tlocal pos = data:GetHitResult():GetImpactPosition()\r\n\t\t\tlocal v3 = (pos - weapon.owner:GetWorldPosition()):GetNormalized()\r\n\t\t\tlocal distance = ((v3.x*v3.x) + (v3.y*v3.y) +(v3.z*v3.z))\r\n\t\t\tlocal velTsu = distance / SPEED_TSUNAMI\r\n\t\t\twave:MoveTo(pos, velTsu, true)\r\n\t\t\tTask.Spawn(function() wave:ScaleTo(Vector3.ZERO, 1) end,velTsu)\r\n\t\t\tlocal trigg = wave:FindChildByType(\"Trigger\")\r\n\t\t\tlistT = trigg.beginOverlapEvent:Connect(function(trigg, player) \r\n\t\t\t\tif player:IsA(\"Player\") and Object.IsValid(player) then\r\n\t\t\t\t\tplayer:ResetVelocity()\t\t\r\n\t\t\t\t\tplayer:EnableRagdoll()\r\n\t\t\t\t\tplayer:ResetVelocity()\r\n\t\t\t\t\tplayer:AddImpulse(v3 * 150)\r\n\t\t\t\t    newDamageInfo.sourceAbility = ABILITY_ROOT\r\n   \t\t\t\t\tnewDamageInfo.sourcePlayer = weapon.owner\r\n\t\t\t\t\tplayer:ApplyDamage(newDamageInfo)\t\t\t\t\t\t \r\n\t\t\t\tend\r\n\t\t\tend)\r\n\t\t\tTask.Spawn(function()\r\n\t\t\t\tif Object.IsValid (player) then \r\n\t\t\t\t\tplayer:DisableRagdoll()\r\n\t\t\t\tend \r\n\t\t\t\tif Object.IsValid(listT) then \r\n\t\t\t\t\tlistT:Disconnect()\r\n\t\t\t\tend\r\n\t\t\tend, 5)\t\t\r\n    end \r\nend \r\n\r\n\r\n\r\nfunction OnEquipped (eq, ply)\r\n\tlistC = ABILITY_ROOT.castEvent:Connect(onCast)\r\n\tlistE = ABILITY_ROOT.executeEvent:Connect(onExecute)\r\nend \r\n\r\n\r\nfunction OnUnequipped (eq, ply)\r\n\tif Object.IsValid (listC) then \r\n\t\tlistC:Disconnect()\r\n\t\tlistE:Disconnect()\r\n\tend \r\nend \r\n\r\n\r\n--Init\r\nbuildDamage()\r\nSPELL_ROOT.equippedEvent:Connect(OnEquipped)\r\nSPELL_ROOT.unequippedEvent:Connect(OnUnequipped)\r\nSPELL_ROOT.targetImpactedEvent:Connect(onImpact)\r\n"
       }
     }
     Assets {
@@ -29475,7 +30353,7 @@ Assets {
                 Z: 1
               }
             }
-            ParentId: 4781671109827199097
+            ParentId: 14562564265740093973
             ChildIds: 15726277267742674579
             ChildIds: 5404916448681409549
             ChildIds: 1874125827447400170
@@ -30021,6 +30899,7 @@ Assets {
             ChildIds: 9868866402607738166
             ChildIds: 6819272404579780829
             ChildIds: 6109539362349021207
+            ChildIds: 12532392831775138841
             Collidable_v2 {
               Value: "mc:ecollisionsetting:inheritfromparent"
             }
@@ -31372,6 +32251,50 @@ Assets {
             }
           }
           Objects {
+            Id: 12532392831775138841
+            Name: "Ambience Water Lapping Deep Glugs Loop 01 SFX"
+            Transform {
+              Location {
+                X: 153.312195
+                Y: 730.381165
+                Z: -30.4834557
+              }
+              Rotation {
+                Yaw: 2.39056608e-05
+              }
+              Scale {
+                X: 1.83142292
+                Y: 1.83142292
+                Z: 1.83142292
+              }
+            }
+            ParentId: 14245333394779186109
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 10184144542042932522
+              }
+              AutoPlay: true
+              Volume: 1
+              Falloff: 500
+              Radius: -1
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
+            }
+          }
+          Objects {
             Id: 13423724015220068205
             Name: "ClientContext"
             Transform {
@@ -31456,6 +32379,7 @@ Assets {
           AssetId: "None"
         }
       }
+      DirectlyPublished: true
     }
     Assets {
       Id: 13871595521905154388
@@ -34663,6 +35587,7 @@ Assets {
           AssetId: "None"
         }
       }
+      DirectlyPublished: true
     }
     Assets {
       Id: 16751224094635422494
@@ -34956,7 +35881,7 @@ Assets {
               Value: "mc:ecollisionsetting:forceon"
             }
             Visible_v2 {
-              Value: "mc:evisibilitysetting:forceon"
+              Value: "mc:evisibilitysetting:forceoff"
             }
             CameraCollidable {
               Value: "mc:ecollisionsetting:forceoff"
@@ -35001,6 +35926,11 @@ Assets {
             ChildIds: 7095341581765493701
             ChildIds: 11823981129281004506
             ChildIds: 5021921863946777650
+            ChildIds: 13289908102316259618
+            ChildIds: 3468351752650051593
+            ChildIds: 7153126850386426461
+            ChildIds: 16809982001626289912
+            ChildIds: 18256518766761783255
             ChildIds: 9440562440450863043
             ChildIds: 11741193713058729766
             WantsNetworking: true
@@ -35207,6 +36137,208 @@ Assets {
             }
             Relevance {
               Value: "mc:eproxyrelevance:medium"
+            }
+          }
+          Objects {
+            Id: 13289908102316259618
+            Name: "Sci-fi Dark Synth Subtle Whoosh 01 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 4726093723614440020
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 12821768377524419957
+              }
+              AutoPlay: true
+              Pitch: -958.886841
+              Volume: 4
+              Falloff: 1000
+              Radius: 1000
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
+            }
+          }
+          Objects {
+            Id: 3468351752650051593
+            Name: "Magic Deep Heavy Poof Whoosh 01 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 4726093723614440020
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 2818758157170387987
+              }
+              AutoPlay: true
+              Volume: 1
+              Falloff: 1000
+              Radius: 1000
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
+            }
+          }
+          Objects {
+            Id: 7153126850386426461
+            Name: "Magic Dark Whoosh 01 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 4726093723614440020
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 10775020959051797902
+              }
+              AutoPlay: true
+              Pitch: -2400
+              Volume: 1
+              Falloff: 1000
+              Radius: 1000
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
+            }
+          }
+          Objects {
+            Id: 16809982001626289912
+            Name: "Material Rolling Movement Rocks Stones Debris Loop 01 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 4726093723614440020
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 18272980542394204206
+              }
+              AutoPlay: true
+              Volume: 1
+              Falloff: 1000
+              Radius: 1000
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
+            }
+          }
+          Objects {
+            Id: 18256518766761783255
+            Name: "Material Rolling Movement Rock Heavy Rumble 02 SFX"
+            Transform {
+              Location {
+              }
+              Rotation {
+              }
+              Scale {
+                X: 1
+                Y: 1
+                Z: 1
+              }
+            }
+            ParentId: 4726093723614440020
+            Collidable_v2 {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            Visible_v2 {
+              Value: "mc:evisibilitysetting:inheritfromparent"
+            }
+            CameraCollidable {
+              Value: "mc:ecollisionsetting:inheritfromparent"
+            }
+            EditorIndicatorVisibility {
+              Value: "mc:eindicatorvisibility:visiblewhenselected"
+            }
+            AudioInstance {
+              AudioAsset {
+                Id: 16357363261568345768
+              }
+              AutoPlay: true
+              Volume: 1
+              Falloff: 1000
+              Radius: 1000
+              EnableOcclusion: true
+              IsSpatializationEnabled: true
+              IsAttenuationEnabled: true
             }
           }
           Objects {
@@ -35673,6 +36805,42 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_rock_generic_008"
+      }
+    }
+    Assets {
+      Id: 18272980542394204206
+      Name: "Material Rolling Movement Rocks Stones Debris Loop 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_material_rolling_movement_rocks_stones_debris_loop_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 10775020959051797902
+      Name: "Magic Dark Whoosh 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_dark_whoosh_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 2818758157170387987
+      Name: "Magic Deep Heavy Poof Whoosh 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_deep_heavy_magic_poof_whoosh_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 12821768377524419957
+      Name: "Sci-fi Dark Synth Subtle Whoosh 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_scifi_dark_synth_subtle_whoosh_01_Cue_ref"
       }
     }
     Assets {
@@ -36186,15 +37354,6 @@ Assets {
           AssetType: "None"
           AssetId: "None"
         }
-      }
-    }
-    Assets {
-      Id: 18272980542394204206
-      Name: "Material Rolling Movement Rocks Stones Debris Loop 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_material_rolling_movement_rocks_stones_debris_loop_01_Cue_ref"
       }
     }
     Assets {
@@ -36963,7 +38122,7 @@ Assets {
       Name: "raise ability"
       PlatformAssetType: 3
       TextAsset {
-        Text: "--custom\r\nlocal ABILITY_ROOT = script:GetCustomProperty(\"ability\"):WaitForObject()\r\nlocal SPELL_ROOT = ABILITY_ROOT.parent\r\nlocal TIME_STONED = script:GetCustomProperty(\"timeStoned\")\r\n--asset\r\nlocal ROCK = script:GetCustomProperty(\"projectile\")\r\nlocal BEAM = script:GetCustomProperty(\"beam\")\r\nlocal CAST_FX = script:GetCustomProperty(\"cast_FX\")\r\nlocal EXE_COLUMN = script:GetCustomProperty(\"exe_COLUMN\")\r\n--local \r\nlocal listC = nil\r\nlocal listE = nil\r\nlocal cl = nil\r\nif SPELL_ROOT.owner == localPlayer then \r\n\r\nend \r\n---------------------------------------------------------------------\r\n\r\nfunction onCast (ab)\r\n\tprint(script.name..\" >> casting..\"..ab.owner.name)\r\n\tlocal player = ab.owner\r\n\tlocal v3 = player:GetWorldPosition() + player:GetWorldTransform():GetForwardVector() * 100\r\n\tWorld.SpawnAsset(CAST_FX,{position = v3, rotation = player:GetWorldRotation(), scale = Vector3.ONE / 2})\r\nend \r\n\r\nfunction onExecute (ab)\r\n\tlocal player = ab.owner\r\nend \r\n\r\n\r\nfunction onImpact(weapon, data)\t\r\n\tlocal target = data.targetObject\r\n\tif Object.IsValid(target) then \r\n\t\tlocal hR = data:GetHitResult()\r\n\t\tlocal rockPos = hR:GetImpactPosition()\r\n\t\tlocal rock = World.SpawnAsset(ROCK,{position = rockPos})\r\n\t\tlocal beamCONT = World.SpawnAsset(BEAM,{position = weapon.owner:GetWorldPosition() })\r\n\t\tlocal beam = beamCONT:FindDescendantByType(\"Vfx\")\r\n\t\tbeam:AttachToPlayer(weapon.owner, \"neck\")\r\n\t\tbeam:SetSmartProperty(\"Target Scene Object Reference\", rock:GetReference())\t\r\n\t\tTask.Spawn( function() \r\n\t\t\tif Object.IsValid(beam) then \r\n\t\t\t\tbeam:Detach()\r\n\t\t\t\tbeam:Destroy()\r\n\t\t\t\tTask.Wait(0.5)\r\n\t\t\t\trock:Destroy()\r\n\t\t\tend\r\n\t\tend,3)\r\n\t\tif  target:IsA(\"Player\") then\r\n\t\t\tlocal player = target\r\n\t\t\tprint(script.name..\" >> impact from raise!\", target)\r\n\t\t\tplayer.serverUserData.maxWalk = 600\r\n\t\t\tTask.Spawn(function()\r\n\t\t\t\tif Object.IsValid (player) then \r\n\t\t\t\t\tlocal collide = cl:FindChildByName(\"collide\")\r\n\t\t\t\t\tcollide:Destroy()\r\n\t\t\t\t\tplayer.isVisible = true\r\n\t\t\t\t\tplayer.isMovementEnabled = true\r\n\t\t\t\t\tplayer.maxWalkSpeed =  player.serverUserData.maxWalk\t\t\t\t\t\r\n\t\t\t\t\tTask.Wait(0.5)\r\n\t\t\t\t\tcl:Destroy()\r\n\t\t\t\t\tTask.Wait(0.5)\r\n\t\t\t\t\tplayer:DisableRagdoll()\r\n\t\t\t\tend \r\n\t\t\tend, 5)\r\n\t\t\tcl = World.SpawnAsset(EXE_COLUMN,{position = player:GetWorldPosition(), rotation = player:GetWorldRotation()})\r\n\t\t\tplayer:EnableRagdoll()\r\n\t\t\tplayer:ResetVelocity()\r\n\t\t\tplayer:AddImpulse(Vector3.UP * 500)\r\n\t\t\tlocal platform = cl:FindChildByName(\"collide\")\r\n\t\t\tplatform:MoveTo(player:GetWorldPosition()+Vector3.UP*1000,3)\t\t\r\n\t        player.serverUserData.maxWalk = player.maxWalkSpeed\r\n\t        player.isMovementEnabled = false\r\n        end\r\n    end \r\nend \r\n\r\n\r\n\r\nfunction OnEquipped (eq, ply)\r\n\tlistC = ABILITY_ROOT.castEvent:Connect(onCast)\r\n\tlistE = ABILITY_ROOT.executeEvent:Connect(onExecute)\r\nend \r\n\r\n\r\nfunction OnUnequipped (eq, ply)\r\n\tif Object.IsValid (listC) then \r\n\t\tlistC:Disconnect()\r\n\t\tlistE:Disconnect()\r\n\tend \r\nend \r\n\r\n\r\n--Init\r\nSPELL_ROOT.equippedEvent:Connect(OnEquipped)\r\nSPELL_ROOT.unequippedEvent:Connect(OnUnequipped)\r\nSPELL_ROOT.targetImpactedEvent:Connect(onImpact)\r\n"
+        Text: "--custom\r\nlocal ABILITY_ROOT = script:GetCustomProperty(\"ability\"):WaitForObject()\r\nlocal SPELL_ROOT = ABILITY_ROOT.parent\r\nlocal TIME_STONED = script:GetCustomProperty(\"timeStoned\")\r\n--asset\r\nlocal ROCK = script:GetCustomProperty(\"projectile\")\r\nlocal BEAM = script:GetCustomProperty(\"beam\")\r\nlocal CAST_FX = script:GetCustomProperty(\"cast_FX\")\r\nlocal EXE_COLUMN = script:GetCustomProperty(\"exe_COLUMN\")\r\n--local \r\nlocal listC = nil\r\nlocal listE = nil\r\nlocal cl = nil\r\nif SPELL_ROOT.owner == localPlayer then \r\n\r\nend \r\n---------------------------------------------------------------------\r\n\r\nfunction onCast (ab)\r\n\tprint(script.name..\" >> casting..\"..ab.owner.name)\r\n\tlocal player = ab.owner\r\n\tlocal v3 = player:GetWorldPosition() + player:GetWorldTransform():GetForwardVector() * 100\r\n\tWorld.SpawnAsset(CAST_FX,{position = v3, rotation = player:GetWorldRotation(), scale = Vector3.ONE / 2})\r\nend \r\n\r\nfunction onExecute (ab)\r\n\tlocal player = ab.owner\r\nend \r\n\r\n\r\nfunction onImpact(weapon, data)\t\r\n\tlocal target = data.targetObject\r\n\tif Object.IsValid(target) then \r\n\t\tlocal hR = data:GetHitResult()\r\n\t\tlocal rockPos = hR:GetImpactPosition()\r\n\t\tlocal rock = World.SpawnAsset(ROCK,{position = rockPos})\r\n\t\tlocal beamCONT = World.SpawnAsset(BEAM,{position = weapon.owner:GetWorldPosition() })\r\n\t\tlocal beam = beamCONT:FindDescendantByType(\"Vfx\")\r\n\t\tbeam:AttachToPlayer(weapon.owner, \"neck\")\r\n\t\tbeam:SetSmartProperty(\"Target Scene Object Reference\", rock:GetReference())\t\r\n\t\tTask.Spawn( function() \r\n\t\t\tif Object.IsValid(beam) then \r\n\t\t\t\tbeam:Detach()\r\n\t\t\t\tbeam:Destroy()\r\n\t\t\t\tTask.Wait(0.5)\r\n\t\t\t\trock:Destroy()\r\n\t\t\tend\r\n\t\tend,3)\r\n\t\tif  target:IsA(\"Player\") then\r\n\t\t\tlocal player = target\r\n\t\t\tprint(script.name..\" >> impact from raise!\", target)\r\n\t\t\tplayer.serverUserData.maxWalk = 600\r\n\t\t\tTask.Spawn(function()\r\n\t\t\t\tif Object.IsValid (player) then \r\n\t\t\t\t\tlocal collide = cl:FindChildByName(\"collide\")\r\n\t\t\t\t\tcollide:Destroy()\r\n\t\t\t\t\tplayer.isVisible = true\r\n\t\t\t\t\tplayer.isMovementEnabled = true\r\n\t\t\t\t\tplayer.maxWalkSpeed =  player.serverUserData.maxWalk\t\t\t\t\t\r\n\t\t\t\t\tTask.Wait(0.5)\r\n\t\t\t\t\tcl:Destroy()\r\n\t\t\t\t\tTask.Wait(0.5)\r\n\t\t\t\t\tplayer:DisableRagdoll()\r\n\t\t\t\tend \r\n\t\t\tend, 5)\r\n\t\t\tcl = World.SpawnAsset(EXE_COLUMN,{position = player:GetWorldPosition(), rotation = player:GetWorldRotation()})\r\n\t\t\tplayer:EnableRagdoll()\r\n\t\t\tplayer:ResetVelocity()\r\n\t\t\tplayer:AddImpulse(Vector3.UP * 500)\r\n\t\t\tlocal platform = cl:FindChildByName(\"collide\")\r\n\t\t\tplatform:MoveTo(player:GetWorldPosition()+Vector3.UP*1000,3)\t\t\r\n\t        player.serverUserData.maxWalk = player.maxWalkSpeed\r\n\t        player.isMovementEnabled = false\r\n\t    else \r\n\t    \tlocal pos = data:GetHitResult():GetImpactPosition()\r\n\t    \tlocal obj = World.SpawnAsset(EXE_COLUMN,{position = pos})\r\n\t    \tlocal platform = obj:FindChildByName(\"collide\")\r\n\t\t\tplatform:MoveTo(obj:GetWorldPosition()+Vector3.UP*1000,3)\t\t\r\n\t    \tTask.Wait(5)\r\n\t    \tobj:Destroy()\r\n        end\r\n    end \r\nend \r\n\r\n\r\n\r\nfunction OnEquipped (eq, ply)\r\n\tlistC = ABILITY_ROOT.castEvent:Connect(onCast)\r\n\tlistE = ABILITY_ROOT.executeEvent:Connect(onExecute)\r\nend \r\n\r\n\r\nfunction OnUnequipped (eq, ply)\r\n\tif Object.IsValid (listC) then \r\n\t\tlistC:Disconnect()\r\n\t\tlistE:Disconnect()\r\n\tend \r\nend \r\n\r\n\r\n--Init\r\nSPELL_ROOT.equippedEvent:Connect(OnEquipped)\r\nSPELL_ROOT.unequippedEvent:Connect(OnUnequipped)\r\nSPELL_ROOT.targetImpactedEvent:Connect(onImpact)\r\n"
       }
     }
     Assets {
@@ -42087,6 +43246,7 @@ Assets {
           AssetId: "None"
         }
       }
+      DirectlyPublished: true
     }
     Assets {
       Id: 11120972603762616383
@@ -44890,7 +46050,7 @@ Assets {
       Name: "stoned ability"
       PlatformAssetType: 3
       TextAsset {
-        Text: "--custom\r\nlocal ABILITY_ROOT = script:GetCustomProperty(\"ability\"):WaitForObject()\r\nlocal SPELL_ROOT = ABILITY_ROOT.parent\r\nlocal TIME_STONED = SPELL_ROOT:GetCustomProperty(\"timeStoned\")\r\n--asset\r\nlocal ROCK_HAND = script:GetCustomProperty(\"stonedProjectile\")\r\nlocal CAST_FX = script:GetCustomProperty(\"cast_FX\")\r\nlocal STATUA = script:GetCustomProperty(\"statua\")\r\n\r\n--local \r\nlocal st = nil\r\nlocal listC = nil\r\nlocal listE = nil\r\nif SPELL_ROOT.owner == localPlayer then \r\n\r\nend \r\n---------------------------------------------------------------------\r\n\r\nfunction onCast (ab)\r\n\tprint(script.name..\" >> casting..\"..ab.owner.name)\r\n\tlocal player = ab.owner\r\n\tlocal v3 = player:GetWorldPosition() + player:GetWorldTransform():GetForwardVector() * 100\r\n\tWorld.SpawnAsset(CAST_FX,{position = v3, rotation = player:GetWorldRotation(), scale = Vector3.ONE / 2})\r\nend \r\n\r\nfunction onExecute (ab)\r\n\tlocal player = ab.owner\r\nend \r\n\r\nfunction onImpact(weapon, data)\t\r\n\tlocal target = data.targetObject\r\n\tif Object.IsValid(target) and target:IsA(\"Player\") then\r\n\t\tlocal player = target\r\n\t\tprint(script.name..\" >> impact from StoneIt!\", target)\r\n\t\tplayer.serverUserData.maxWalk = 600\r\n\t\tTask.Spawn(function()\r\n\t\t\tdestroyStatue(st)\r\n\t\tend, TIME_STONED-1)\r\n\t\tTask.Spawn(function()\r\n\t\t\tif Object.IsValid (player) then \r\n\t\t\t\tprint(script.name..\" >> reseting target player params (movement and visibility)\", TIME_STONED)\r\n\t\t\t\tplayer.isVisible = true\r\n\t\t\t\tplayer.isMovementEnabled = true\r\n\t\t\t\tplayer.maxWalkSpeed =  player.serverUserData.maxWalk\r\n\t\t\tend \r\n\t\tend, TIME_STONED)\r\n\t\t\r\n        player.serverUserData.maxWalk = player.maxWalkSpeed\r\n        for i = player.serverUserData.maxWalk, 0  -60 do \r\n        \tplayer.maxWalkSpeed = i\r\n        \tTask.Wait(0.2)\r\n        end \r\n        player.isMovementEnabled = false\r\n        st = World.SpawnAsset(STATUA,{position = player:GetWorldPosition()-(Vector3.UP*100), rotation = player:GetWorldRotation()})\r\n        player.isVisible = false\r\n    end \r\nend \r\n\r\nfunction destroyStatue (st)\r\n\tlocal stRef = st:GetReference()\r\n\tEvents.BroadcastToAllPlayers(\"ELE.stue\",stRef)\r\n\tTask.Wait(0.5)\r\n\tst:Destroy()\r\nend \r\n\r\nfunction OnEquipped (eq, ply)\r\n\tlistC = ABILITY_ROOT.castEvent:Connect(onCast)\r\n\tlistE = ABILITY_ROOT.executeEvent:Connect(onExecute)\r\nend \r\n\r\n\r\nfunction OnUnequipped (eq, ply)\r\n\tif Object.IsValid (listC) then \r\n\t\tlistC:Disconnect()\r\n\t\tlistE:Disconnect()\r\n\tend \r\nend \r\n\r\n\r\n--Init\r\nSPELL_ROOT.equippedEvent:Connect(OnEquipped)\r\nSPELL_ROOT.unequippedEvent:Connect(OnUnequipped)\r\nSPELL_ROOT.targetImpactedEvent:Connect(onImpact)\r\n\r\n\r\n"
+        Text: "--custom\r\nlocal ABILITY_ROOT = script:GetCustomProperty(\"ability\"):WaitForObject()\r\nlocal SPELL_ROOT = ABILITY_ROOT.parent\r\nlocal TIME_STONED = SPELL_ROOT:GetCustomProperty(\"timeStoned\")\r\n--asset\r\nlocal ROCK_HAND = script:GetCustomProperty(\"stonedProjectile\")\r\nlocal CAST_FX = script:GetCustomProperty(\"cast_FX\")\r\nlocal STATUA = script:GetCustomProperty(\"statua\")\r\n\r\n--local \r\nlocal st = nil\r\nlocal listC = nil\r\nlocal listE = nil\r\nif SPELL_ROOT.owner == localPlayer then \r\n\r\nend \r\n---------------------------------------------------------------------\r\n\r\nfunction onCast (ab)\r\n\tprint(script.name..\" >> casting..\"..ab.owner.name)\r\n\tlocal player = ab.owner\r\n\tlocal v3 = player:GetWorldPosition() + player:GetWorldTransform():GetForwardVector() * 100\r\n\tWorld.SpawnAsset(CAST_FX,{position = v3, rotation = player:GetWorldRotation(), scale = Vector3.ONE / 2})\r\nend \r\n\r\nfunction onExecute (ab)\r\n\tlocal player = ab.owner\r\nend \r\n\r\nfunction onImpact(weapon, data)\t\r\n\tlocal target = data.targetObject\r\n\tif Object.IsValid(target) and target:IsA(\"Player\") then\r\n\t\tlocal player = target\r\n\t\tprint(script.name..\" >> impact from StoneIt!\", target)\r\n\t\tplayer.serverUserData.maxWalk = 600\r\n\t\tTask.Spawn(function()\r\n\t\t\tdestroyStatue(st)\r\n\t\tend, TIME_STONED-1)\r\n\t\tTask.Spawn(function()\r\n\t\t\tif Object.IsValid (player) then \r\n\t\t\t\tprint(script.name..\" >> reseting target player params (movement and visibility)\", TIME_STONED)\r\n\t\t\t\tplayer.isVisible = true\r\n\t\t\t\tplayer.isMovementEnabled = true\r\n\t\t\t\tplayer.maxWalkSpeed =  player.serverUserData.maxWalk\r\n\t\t\tend \r\n\t\tend, TIME_STONED)\r\n\t\t\r\n        player.serverUserData.maxWalk = player.maxWalkSpeed\r\n        for i = player.serverUserData.maxWalk, 0  -60 do \r\n        \tplayer.maxWalkSpeed = i\r\n        \tTask.Wait(0.2)\r\n        end \r\n        player.isMovementEnabled = false\r\n        st = World.SpawnAsset(STATUA,{position = player:GetWorldPosition()-(Vector3.UP*100), rotation = player:GetWorldRotation()})\r\n        player.isVisible = false\r\n    else \r\n    \tlocal pos = data:GetHitResult():GetImpactPosition()\r\n    \tlocal falseSt = World.SpawnAsset(STATUA,{position = pos-(Vector3.UP*100)})\r\n    \tTask.Wait(0.7)\r\n    \tfalseSt:Destroy()\r\n    end \r\nend \r\n\r\nfunction destroyStatue (st)\r\n\tlocal stRef = st:GetReference()\r\n\tEvents.BroadcastToAllPlayers(\"ELE.stue\",stRef)\r\n\tTask.Wait(0.5)\r\n\tst:Destroy()\r\nend \r\n\r\nfunction OnEquipped (eq, ply)\r\n\tlistC = ABILITY_ROOT.castEvent:Connect(onCast)\r\n\tlistE = ABILITY_ROOT.executeEvent:Connect(onExecute)\r\nend \r\n\r\n\r\nfunction OnUnequipped (eq, ply)\r\n\tif Object.IsValid (listC) then \r\n\t\tlistC:Disconnect()\r\n\t\tlistE:Disconnect()\r\n\tend \r\nend \r\n\r\n\r\n--Init\r\nSPELL_ROOT.equippedEvent:Connect(OnEquipped)\r\nSPELL_ROOT.unequippedEvent:Connect(OnUnequipped)\r\nSPELL_ROOT.targetImpactedEvent:Connect(onImpact)\r\n\r\n\r\n"
       }
     }
     Assets {
@@ -48066,6 +49226,7 @@ Assets {
           AssetId: "None"
         }
       }
+      DirectlyPublished: true
     }
     Assets {
       Id: 17105097637587227211
@@ -51798,6 +52959,7 @@ Assets {
           AssetId: "None"
         }
       }
+      DirectlyPublished: true
     }
     Assets {
       Id: 7318134248763047666
@@ -56510,15 +57672,6 @@ Assets {
       }
     }
     Assets {
-      Id: 10775020959051797902
-      Name: "Magic Dark Whoosh 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_magic_dark_whoosh_01_Cue_ref"
-      }
-    }
-    Assets {
       Id: 5166133976995413270
       Name: "SPELL _11_rain"
       PlatformAssetType: 5
@@ -58327,6 +59480,7 @@ Assets {
           AssetId: "None"
         }
       }
+      DirectlyPublished: true
     }
     Assets {
       Id: 16040045487979840312
@@ -61206,6 +62360,7 @@ Assets {
           AssetId: "None"
         }
       }
+      DirectlyPublished: true
     }
     Assets {
       Id: 9533477851215206561
@@ -61577,6 +62732,7 @@ Assets {
     Id: "a7ea2b89774a4c6ea1629d153c908a81"
     OwnerAccountId: "2806d3a81a1945d98531567cd86090ac"
     OwnerName: "covra"
+    Description: "\r\n\t\t\t\tCVS-CoVraworkS-by Covra\r\n\t\t\t\t=======================\r\n\t\t\thttps://discord.gg/jW6dEBu6xE\r\n\r\nDescription\r\n===========\r\n\r\n\t>> This is a pack of 12 spells categorized in the basic elements: fire, earth, air and water:\r\n\t\r\n\t\t\t\t\t\t\t\t\tFIRE:\r\n\t\t\t\t\t\t\t\t\t=====\r\n\t\t- FireBall: Basic fire ball, fast and deadly\r\n\t\t- Shrapnel: The spell throws a bunch of burning pieces of shrapnel to the enemy, \r\n\t\t- Cauldron: You will summon a burning lava cauldron which will cook your opponents\r\n\t\t\r\n\t\t\t\t\t\t\t\t\tEARTH:\r\n\t\t\t\t\t\t\t\t\t=====\r\n\t\t- Saw of Rocks: A chain of spiky rocks will grown in your view of sight\r\n\t\t- Stoned: You will turn into a stone statue for a few seconds, even the most powerful enemy\r\n\t\t- Raise: You will summon a rock pillar which will throw and knock down enemies\r\n\t\t\t\t\t\t\t\t\tWATER:\r\n\t\t\t\t\t\t\t\t\t=====\r\n\t\t- Water Beam: A powerfull intense jet of water will destroy your enemies\r\n\t\t- Tsunami: You will summon a great wave that will drag and hit anyone who is ahead\r\n\t\t- Bubble It: Put whoever you want in a bubble for a few seconds and block it\r\n\t\t\t\t\t\t\t\t\tAIR:\r\n\t\t\t\t\t\t\t\t\t=====\r\n\t\t- Ray Shock: An electric shock will take down a pega to him\r\n\t\t- Cursed Rain: A cloud with poisoned water will chase anyone who dares to approach\r\n\t\t- Tornado: A powerful tornado will be summoned and wipe out whoever is ahead.\r\n\t\t\r\n\t- They are built under basic \'Weapon\' class equipment, so they are completly ready to drag&drop to the game\r\n\t- Is also includded a visual reference, a spell book, (equipment) [CVS_Spell_Equipment] . If this is equipped, some selected (under custom exposedproperties  ) spells will be linked to it, to make extra FX when cast\r\n\t  This is because, you can  add a staff, a wand or whatever....\r\n\t- [CVS TEAM MAKER and TEST]: This script is used to quickly test a spell and, in addition, it divides the players who join in two teams: 1 and 2. Sure Core scripts better, but this one is extremely simple\r\n\t- All the spells have a \'Custom properties\' exclusive to each one. They are found at the end, below the custom properties of the weapon (like \'extraDamage\'\t , \'spell_Name\' , \'DPS\' , \'bubbleLife\'...\r\n\t\tI have tried to explain all of them  in the \'custom tooltip\' associated to them\r\nTips\r\n====\r\n\r\n\t- If you want to use the visual equipment, it should be equipped first, to the rest of spells be able to be linked with it\r\n\t- If you put the spells under a equipment, some features like spreading projectile, doesnt work. This is a Core limitation, so it is a better practice, if you want to equip several spells, to  make them one by one or spawning them and later, equip them to player\r\n\t- Dont forget to use teams!  Some directed spells, like fireball, doesnt do damage if target player is in the same team \r\n\t- Take your time to explore the dozens of templates included in the pack. Maybe you can build amazing FX!\r\n\t- You can add the spells directly in the map, directly to the player when join, or maybe in a spawn ... I tried to see all scenarios to use as easily as possible\r\n\t- When a spell is equipped, 2 elements are deleted: \'Pickup Trigger\'(Trigger)  and \'Pickup FX\' (Folder) to save networked and performance (It can be easyly modified if you want to re-use the spells)\r\n\t- [Saw of rocks] spends a lot of networked objects. If this will be a problem modify the ratio in seconds of spike spawn. Lower number means more spikes per second. Default = 0.07\r\n\t- To test the spells I use 2 CC templates very useful and simple: \'Show cursor\' and \'Advanced UI bar\'\r\n\t- To trigger the spells, you can choose a key binded. Right now they are binded to 1 to 9 number keys plus F1,F2 and F3 (12 spells)\r\n\t\r\n\t\r\n- Please Dm to Discord any suggestion or bug!\r\nAugust 2021\r\n\r\n\r\n- If you want contenido en espa\303\221ol, dimelo y traduzco ;)\r\n"
   }
   SerializationVersion: 97
 }

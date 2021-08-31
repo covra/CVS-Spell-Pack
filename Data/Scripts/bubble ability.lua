@@ -75,7 +75,16 @@ function onImpact(weapon, data)
 		player:SetWorldRotation(Rotation.New(0,0,0))
 		player.movementControlMode = player.serverUserData.movC
 		player.gravityScale = player.serverUserData.gravity 
-		player.jumpVelocity = player.serverUserData.jumpVelocity 			
+		player.jumpVelocity = player.serverUserData.jumpVelocity 
+		else 
+			local posP = weapon.owner :GetWorldPosition()
+			local rotP = weapon.owner:GetWorldRotation()
+			local dirV3 = (rotP * posP):GetNormalized()
+			local bub = World.SpawnAsset(BUBBLE,{position = weapon.owner:GetWorldPosition() + dirV3 * 100 + Vector3.UP * 200})
+			local bublife = 5
+			bub.lifeSpan = bublife
+			Task.Wait(1)
+			bub:MoveTo(dirV3 * 5000, bublife)
 		end
 	end 
 end 

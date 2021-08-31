@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 14562564265740093973
         ChildIds: 15726277267742674579
         ChildIds: 5404916448681409549
         ChildIds: 7888401248602366014
@@ -846,6 +846,7 @@ Assets {
         ChildIds: 10780541417262335971
         ChildIds: 13982421886463116923
         ChildIds: 3117448758005068281
+        ChildIds: 18392446605849779021
         ChildIds: 9207343719102600833
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1779,6 +1780,46 @@ Assets {
         }
       }
       Objects {
+        Id: 18392446605849779021
+        Name: "Ambience Water Lapping Deep Glugs Loop 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13105454134615757113
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 10184144542042932522
+          }
+          AutoPlay: true
+          Volume: 1
+          Falloff: 500
+          Radius: -1
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
+      Objects {
         Id: 9207343719102600833
         Name: "Object Rotator Continuous"
         Transform {
@@ -2109,6 +2150,15 @@ Assets {
       }
     }
     Assets {
+      Id: 10184144542042932522
+      Name: "Ambience Water Lapping Deep Glugs Loop 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_ambience_water_lapping_deep_glugs_loop_01_Cue_ref"
+      }
+    }
+    Assets {
       Id: 5522655696641006187
       Name: "Liquid Decal"
       PlatformAssetType: 14
@@ -2123,4 +2173,5 @@ Assets {
     }
   }
   SerializationVersion: 97
+  DirectlyPublished: true
 }

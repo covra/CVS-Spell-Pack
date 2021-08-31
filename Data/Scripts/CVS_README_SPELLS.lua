@@ -43,7 +43,8 @@ Tips
 	- If you want to use the visual equipment, it should be equipped first, to the rest of spells be able to be linked with it
 	- If you put the spells under a equipment, some features like spreading projectile, doesnt work. This is a Core limitation, so it is a better practice, if you want to equip several spells, to  make them one by one or spawning them and later, equip them to player
 	- Dont forget to use teams!  Some directed spells, like fireball, doesnt do damage if target player is in the same team 
-	- Take your time to explore the dozens of templates included in the pack. Maybe you can build amazing FX!
+	- Take your time to explore the dozens of templates included in the pack. For sure you can build amazing FX!
+	- Most of templates have 'lifeSpan' parammeter pre-setted, so check this if something dissappear suddenly! ;)
 	- You can add the spells directly in the map, directly to the player when join, or maybe in a spawn ... I tried to see all scenarios to use as easily as possible
 	- When a spell is equipped, 2 elements are deleted: 'Pickup Trigger'(Trigger)  and 'Pickup FX' (Folder) to save networked and performance (It can be easyly modified if you want to re-use the spells)
 	- [Saw of rocks] spends a lot of networked objects. If this will be a problem modify the ratio in seconds of spike spawn. Lower number means more spikes per second. Default = 0.07

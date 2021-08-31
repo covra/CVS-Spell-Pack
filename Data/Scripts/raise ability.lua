@@ -71,6 +71,13 @@ function onImpact(weapon, data)
 			platform:MoveTo(player:GetWorldPosition()+Vector3.UP*1000,3)		
 	        player.serverUserData.maxWalk = player.maxWalkSpeed
 	        player.isMovementEnabled = false
+	    else 
+	    	local pos = data:GetHitResult():GetImpactPosition()
+	    	local obj = World.SpawnAsset(EXE_COLUMN,{position = pos})
+	    	local platform = obj:FindChildByName("collide")
+			platform:MoveTo(obj:GetWorldPosition()+Vector3.UP*1000,3)		
+	    	Task.Wait(5)
+	    	obj:Destroy()
         end
     end 
 end 

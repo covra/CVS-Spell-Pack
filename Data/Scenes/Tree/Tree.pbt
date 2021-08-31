@@ -25,8 +25,6 @@ Objects {
   ChildIds: 16548111010530110591
   ChildIds: 14562564265740093973
   ChildIds: 1568283919995133628
-  ChildIds: 583690493530835618
-  ChildIds: 13991088227732751262
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -39,88 +37,6 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 13991088227732751262
-  Name: "stoned statue"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 4051263082985037853
-      value {
-        Overrides {
-          Name: "Name"
-          String: "stoned statue"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -1134.37842
-            Y: -1112.14392
-            Z: 3.93102264
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11120972603762616383
-    }
-  }
-}
-Objects {
-  Id: 583690493530835618
-  Name: "CVS_Spell_Equipment"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 9407717667043531405
-      value {
-        Overrides {
-          Name: "Name"
-          String: "CVS_Spell_Equipment"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -2614.07275
-            Y: -1234.18054
-            Z: 143.258667
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 17032142240465713610
-    }
   }
 }
 Objects {
@@ -416,14 +332,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -467,14 +375,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -670,9 +570,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3.10021973
-            Y: -482.062256
-            Z: 0.234180361
+            X: 3.10022831
+            Y: -482.062286
           }
         }
         Overrides {
@@ -819,14 +718,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.99999994
-            Y: 0.99999994
-            Z: 1
           }
         }
       }
@@ -2680,6 +2571,12 @@ Objects {
             X: -78.4503403
             Y: -806.055542
             Z: -2.28881836e-05
+          }
+        }
+        Overrides {
+          Name: "cs:spell"
+          AssetReference {
+            Id: 537804506944363405
           }
         }
       }

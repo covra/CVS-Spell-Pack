@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 14562564265740093973
         ChildIds: 15726277267742674579
         ChildIds: 5404916448681409549
         ChildIds: 1874125827447400170
@@ -561,6 +561,7 @@ Assets {
         ChildIds: 9868866402607738166
         ChildIds: 6819272404579780829
         ChildIds: 6109539362349021207
+        ChildIds: 12532392831775138841
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1912,6 +1913,50 @@ Assets {
         }
       }
       Objects {
+        Id: 12532392831775138841
+        Name: "Ambience Water Lapping Deep Glugs Loop 01 SFX"
+        Transform {
+          Location {
+            X: 153.312195
+            Y: 730.381165
+            Z: -30.4834557
+          }
+          Rotation {
+            Yaw: 2.39056608e-05
+          }
+          Scale {
+            X: 1.83142292
+            Y: 1.83142292
+            Z: 1.83142292
+          }
+        }
+        ParentId: 14245333394779186109
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 10184144542042932522
+          }
+          AutoPlay: true
+          Volume: 1
+          Falloff: 500
+          Radius: -1
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
+      Objects {
         Id: 13423724015220068205
         Name: "ClientContext"
         Transform {
@@ -2108,10 +2153,20 @@ Assets {
         AssetId: "fxbp_dust_motes"
       }
     }
+    Assets {
+      Id: 10184144542042932522
+      Name: "Ambience Water Lapping Deep Glugs Loop 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_ambience_water_lapping_deep_glugs_loop_01_Cue_ref"
+      }
+    }
     PrimaryAssetId {
       AssetType: "None"
       AssetId: "None"
     }
   }
   SerializationVersion: 97
+  DirectlyPublished: true
 }

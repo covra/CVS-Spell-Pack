@@ -53,6 +53,11 @@ function onImpact(weapon, data)
         player.isMovementEnabled = false
         st = World.SpawnAsset(STATUA,{position = player:GetWorldPosition()-(Vector3.UP*100), rotation = player:GetWorldRotation()})
         player.isVisible = false
+    else 
+    	local pos = data:GetHitResult():GetImpactPosition()
+    	local falseSt = World.SpawnAsset(STATUA,{position = pos-(Vector3.UP*100)})
+    	Task.Wait(0.7)
+    	falseSt:Destroy()
     end 
 end 
 

@@ -68,7 +68,7 @@ Assets {
           Value: "mc:ecollisionsetting:forceon"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         CameraCollidable {
           Value: "mc:ecollisionsetting:forceoff"
@@ -113,6 +113,11 @@ Assets {
         ChildIds: 7095341581765493701
         ChildIds: 11823981129281004506
         ChildIds: 5021921863946777650
+        ChildIds: 13289908102316259618
+        ChildIds: 3468351752650051593
+        ChildIds: 7153126850386426461
+        ChildIds: 16809982001626289912
+        ChildIds: 18256518766761783255
         ChildIds: 9440562440450863043
         ChildIds: 11741193713058729766
         WantsNetworking: true
@@ -319,6 +324,208 @@ Assets {
         }
         Relevance {
           Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
+        Id: 13289908102316259618
+        Name: "Sci-fi Dark Synth Subtle Whoosh 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4726093723614440020
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 12821768377524419957
+          }
+          AutoPlay: true
+          Pitch: -958.886841
+          Volume: 4
+          Falloff: 1000
+          Radius: 1000
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 3468351752650051593
+        Name: "Magic Deep Heavy Poof Whoosh 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4726093723614440020
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 2818758157170387987
+          }
+          AutoPlay: true
+          Volume: 1
+          Falloff: 1000
+          Radius: 1000
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 7153126850386426461
+        Name: "Magic Dark Whoosh 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4726093723614440020
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 10775020959051797902
+          }
+          AutoPlay: true
+          Pitch: -2400
+          Volume: 1
+          Falloff: 1000
+          Radius: 1000
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 16809982001626289912
+        Name: "Material Rolling Movement Rocks Stones Debris Loop 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4726093723614440020
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 18272980542394204206
+          }
+          AutoPlay: true
+          Volume: 1
+          Falloff: 1000
+          Radius: 1000
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
+      Objects {
+        Id: 18256518766761783255
+        Name: "Material Rolling Movement Rock Heavy Rumble 02 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4726093723614440020
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 16357363261568345768
+          }
+          AutoPlay: true
+          Volume: 1
+          Falloff: 1000
+          Radius: 1000
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
         }
       }
       Objects {
@@ -797,6 +1004,51 @@ Assets {
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_base_curl"
+      }
+    }
+    Assets {
+      Id: 12821768377524419957
+      Name: "Sci-fi Dark Synth Subtle Whoosh 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_scifi_dark_synth_subtle_whoosh_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 2818758157170387987
+      Name: "Magic Deep Heavy Poof Whoosh 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_deep_heavy_magic_poof_whoosh_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 10775020959051797902
+      Name: "Magic Dark Whoosh 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_magic_dark_whoosh_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 18272980542394204206
+      Name: "Material Rolling Movement Rocks Stones Debris Loop 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_material_rolling_movement_rocks_stones_debris_loop_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 16357363261568345768
+      Name: "Material Rolling Movement Rock Heavy Rumble 02 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_material_rolling_movement__rock_heavy_rumble_02_Cue_ref"
       }
     }
     Assets {
