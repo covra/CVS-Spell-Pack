@@ -25,6 +25,8 @@ Objects {
   ChildIds: 16548111010530110591
   ChildIds: 14562564265740093973
   ChildIds: 1568283919995133628
+  ChildIds: 15414997480827314693
+  ChildIds: 7868508696473075513
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -37,6 +39,91 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 7868508696473075513
+  Name: "UI Canvas Spells"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7586076068034910462
+      value {
+        Overrides {
+          Name: "Name"
+          String: "UI Canvas Spells"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -817.913452
+            Y: -1131.77905
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14684900254916047023
+    }
+  }
+}
+Objects {
+  Id: 15414997480827314693
+  Name: "CVS_Spell_Equipment"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9407717667043531405
+      value {
+        Overrides {
+          Name: "Name"
+          String: "CVS_Spell_Equipment"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2947.92578
+            Y: -1211.55151
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17032142240465713610
+    }
   }
 }
 Objects {
@@ -801,7 +888,6 @@ Objects {
   ChildIds: 5070208689481196430
   ChildIds: 2746581803285178018
   ChildIds: 16799413118382691780
-  ChildIds: 10922896870361111873
   ChildIds: 15946561993339403393
   ChildIds: 2795935594054340647
   Folder {
@@ -1090,49 +1176,6 @@ Objects {
     }
     TemplateAsset {
       Id: 5499862207320953173
-    }
-  }
-}
-Objects {
-  Id: 10922896870361111873
-  Name: "UI Advanced Healthbar [WIP]"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8545238584137842983
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 64705553382715705
-      value {
-        Overrides {
-          Name: "Name"
-          String: "UI Advanced Healthbar [WIP]"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 16079199874582538402
     }
   }
 }

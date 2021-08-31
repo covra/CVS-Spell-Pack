@@ -17,9 +17,14 @@ Assets {
         }
         ParentId: 4781671109827199097
         ChildIds: 4153524961382708429
+        ChildIds: 11291672715164418522
         ChildIds: 7645480579223258349
         ChildIds: 88899185487359506
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:ADD_ALL_SPELLS_NOW"
+            Bool: true
+          }
           Overrides {
             Name: "cs:isMainEquip"
             Bool: true
@@ -29,12 +34,22 @@ Assets {
             Bool: true
           }
           Overrides {
+            Name: "cs:UICanvasSpells"
+            AssetReference {
+              Id: 14684900254916047023
+            }
+          }
+          Overrides {
             Name: "cs:isMainEquip:tooltip"
             String: "If enabled elements-spells from the pack , will link yo this to make extra FX"
           }
           Overrides {
             Name: "cs:debugPrint:tooltip"
             String: "If enabled, extra print log information will be displayed at editor Log. Default = false"
+          }
+          Overrides {
+            Name: "cs:ADD_ALL_SPELLS_NOW:tooltip"
+            String: "If enabled, all spells from the pack will be equiped  to player at the beginnig"
           }
         }
         WantsNetworking: true
@@ -102,6 +117,114 @@ Assets {
           }
           TriggerShape_v2 {
             Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
+        Id: 11291672715164418522
+        Name: "ADD_ALL_ELEMENTS_PACK"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9407717667043531405
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:SPELL1_fireBall"
+            AssetReference {
+              Id: 8430762303253286298
+            }
+          }
+          Overrides {
+            Name: "cs:SPELL2_Shrapnel"
+            AssetReference {
+              Id: 8128884686297071468
+            }
+          }
+          Overrides {
+            Name: "cs:SPELL3_Cauldron"
+            AssetReference {
+              Id: 362469234809340033
+            }
+          }
+          Overrides {
+            Name: "cs:SPELL_4_sawRock"
+            AssetReference {
+              Id: 578860159558837987
+            }
+          }
+          Overrides {
+            Name: "cs:SPELL_5_stoned"
+            AssetReference {
+              Id: 17930148120680325237
+            }
+          }
+          Overrides {
+            Name: "cs:SPELL_6_raise"
+            AssetReference {
+              Id: 14023178832271403832
+            }
+          }
+          Overrides {
+            Name: "cs:SPELL_7_waterBeam"
+            AssetReference {
+              Id: 6126196537203584848
+            }
+          }
+          Overrides {
+            Name: "cs:SPELL_8_tsunami"
+            AssetReference {
+              Id: 14324367480621395084
+            }
+          }
+          Overrides {
+            Name: "cs:SPELL_9_bubble"
+            AssetReference {
+              Id: 537804506944363405
+            }
+          }
+          Overrides {
+            Name: "cs:SPELL_10_shock"
+            AssetReference {
+              Id: 7706523634593610607
+            }
+          }
+          Overrides {
+            Name: "cs:SPELL_11_rain"
+            AssetReference {
+              Id: 5166133976995413270
+            }
+          }
+          Overrides {
+            Name: "cs:SPELL_12_tornado"
+            AssetReference {
+              Id: 16514218599883022643
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 11649468202150445175
           }
         }
       }

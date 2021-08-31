@@ -5,11 +5,10 @@ function OnPlayerJoined(player)
 	index = index + 1
 	if index == 5 then index = 1 end
 	player.team = index
-	player.isVisible = false
 	
 	print("player joined: " .. player.name, player.team)
-	local localSpell = World.SpawnAsset(spell)
-	localSpell:Equip(player)
+	--local localSpell = World.SpawnAsset(spell)
+	--localSpell:Equip(player)
 end
 
 function OnPlayerLeft(player)
